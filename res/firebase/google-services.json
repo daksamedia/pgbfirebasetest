@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1014109067246",
+    "firebase_url": "https://akadbaiq-dev-1526298256543.firebaseio.com",
+    "project_id": "akadbaiq-dev-1526298256543",
+    "storage_bucket": "akadbaiq-dev-1526298256543.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014109067246:android:32f89fae27e2ee7b",
+        "android_client_info": {
+          "package_name": "com.akadbaiq.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014109067246-q33k6ut87m48f42prsb7modbcdj8vucd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLYRl9W0kMcWgUHv76xAa7-NE0S46iHS0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
