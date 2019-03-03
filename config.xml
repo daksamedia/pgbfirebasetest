@@ -68,12 +68,7 @@
 	<plugin name="cordova-android-support-gradle-release" spec="^1.4.4">
         <variable name="ANDROID_SUPPORT_VERSION" value="25.+" />
     </plugin>
-	<plugin name="cordova-plugin-firebase" spec="https://github.com/daksamedia/cordova-plugin-firebase.git">
-		<!-- This is the Android app's "API ID" in your Firebase Console. It should have 'android' in the middle -->
-		<variable name="APP_GOOGLE_API_ID" value="1:432888659408:android:ed20f07624e36c27" />
-		<!-- This is the long "Web API Key" in your Firebase Console -->
-		<variable name="APP_GOOGLE_API_KEY" value="AIzaSyDGionc0gWkuFVtM6UKKXuTCMouSNnmV7o" />
-	</plugin>
+	
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
     <!--
