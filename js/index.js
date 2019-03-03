@@ -34,6 +34,17 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+		 // Enable to debug issues.
+		 // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+		  
+		  var notificationOpenedCallback = function(jsonData) {
+			console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+		  };
+
+		  window.plugins.OneSignal
+			.startInit("6916bddd-539a-4a8e-b155-d572be352d5e")
+			.handleNotificationOpened(notificationOpenedCallback)
+			.endInit();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
