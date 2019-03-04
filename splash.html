@@ -538,11 +538,11 @@ var lib, images, createjs, ss;
 			
 			 window.plugins.OneSignal.getIds(function(ids) { 
 				//console.log('getIds: ' + JSON.stringify(ids)); 
-				alert("userId = " + ids.userId + ", pushToken = " + ids.pushToken);
+				//alert("userId = " + ids.userId + ", pushToken = " + ids.pushToken);
 				localStorage.hd_device_token = ids.pushToken;
 			  });
 			  var notificationOpenedCallback = function(jsonData) {
-				alert('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+				//alert('notificationOpenedCallback: ' + JSON.stringify(jsonData));
 				var notif_data = eval(jsonData)
 				var this_notif_data = notif_data.notification.payload;
 				//alert(notif_data);
