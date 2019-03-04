@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haagen Daaz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="">
+<link rel="canonical" href="">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href="style/style.css" rel="stylesheet">
+<link href="style/products.css" rel="stylesheet">
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+<style>
+.store{
+	padding:10px;	
+}
+
+.store h4{
+	text-align: left;
+}
+
+@media only screen and (max-width: 320px){
+
+	.store {
+		padding: 10px 10px 35px !important;
+	}
+}
+
+
+#examples {
+	padding-top:7px;
+}
+
+#examples a {
+  text-decoration: underline;
+}
+
+#geocomplete { width: 200px}
+
+.map_canvas { 
+  width: 100%; 
+  height: 87.7vh; 
+  margin: 10px 20px 0px 0;
+}
+
+#multiple li { 
+  cursor: pointer; 
+  text-decoration: underline; 
+}
+
+#map{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 22.25%;
+    padding-top: 30px;
+    position: relative;
+    width: 100%;
+    height: 260px;
+    margin-bottom: 12px;
+}
+
+.swiper-container {
+        width: 100%;
+        /* height: 25vh; */
+        margin-top:32px;
+    }
+
+    
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+ .swiper-container .swiper-button-prev{
+		background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 27 44'%3E%3Cpath d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z' fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+		
+	}
+
+	
+
+	.swiper-container .swiper-button-next{
+		background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 27 44'%3E%3Cpath d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z' fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+		z-index: 3;
+	}
+
+</style>
+<link href="style/swiper.min.css" rel="stylesheet">
+<script src="js/swiper.min.js"></script>
+</head>
+<body></div>
+<section class="loading">
+	<img src="img/loading.gif" width="20%" />
+</section>
+<section class="header">
+	<div class="col-xs-2 back no-padding">
+		<img src="img/last-track-left-arrow.png" width="100%" ">
+	</div>
+	<div class="col-xs-8 title">
+		<span>...</span>
+	</div>
+	<div class="col-xs-2 cartbadge">
+			<div class="cart"><span class="cart-count">0</span></div>
+	</div>
+</section>
+<nav class="nav">
+	<img src="logo-head.png" width="23%" alt="swipe image" />
+	
+	<div class="current-user">
+		<div class="current-user-data">
+			<h3><a class="name_menu" data-href="profile.html">Loading...</a></h3>
+			<p class="points_menu">Your points: Loading...</p>
+		</div>
+		<div class="avatar"></div>
+		<div style="clear:both"></div>
+	</div>
+	
+	<a class="menu-cat" data-href="shop.html"><p>Catalog</p></a>
+	<a class="menu-dir" data-href="outlet.html"><p>Directory</p></a>
+	<a class="menu-gam" data-href="games.html"><p>Game</p></a>
+	<a class="menu-nws" data-href="news.html"><p>News</p></a>
+	<a class="menu-set" data-href="setting.html"><p>Setting</p></a>
+	<p class="logout">Log Out</p>	
+</nav>
+<section class="shoppage">
+	<section class="store">
+		<!--<div class="main-image">
+			<img src="https://media.foody.id/res/g1/1441/s/foody-haagen-dazs-kota-kasablanka-122-635836289991994182.jpg" alt="" style="width:100%" />
+		</div>
+		-->
+		<form>
+	      <input id="geocomplete" type="hidden" placeholder="Type in an address" size="90" />
+	    </form>
+		<div class="col-xs-12" id="map"></div>
+		<div class="swiper-container" style="max-height:10.5vh; overflow: hidden; ">
+		        <div class="swiper-wrapper">
+		          
+		            
+		        </div>
+		        <!-- Add Pagination -->
+		        <!--<div class="swiper-pagination"></div>-->
+		        <!-- Add Arrows -->
+		        <div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+		</div>
+		<h4>Address :</h4>
+		<p class="address" style="text-align: left">
+			
+		</p>
+		<table class="contacts" style="text-align: left;">
+			<tr>
+				<td class="openhour-label"><div>Open hours</div></td>
+				<td class="openhour">...</td>
+			</tr>
+			<tr>
+				<td><div class="icon-set phone"></div></td>
+				<td class="telp"><a href="tel:02129488494">....</a></td>
+			</tr>
+			<tr>
+				<td><div class="icon-set mail"></div></td>
+				<td class="email"><a href="mailto:kasablanka@haagendazsindonesia.com">.....</a></td>
+			</tr>
+		</table>
+		<div style="height:20px"></div>
+		
+		<div class="col-xs-12 no-padding buttons" style="bottom: 0 !important; position: fixed; left: 0;">
+			<div class="col-xs-6 no-padding callnow">
+				<a ><button style="background: #E3B75B; color: black; border: none; padding: 10px; width: 100%; border-right: 2px white solid; font-weight:bold; color:white">CALL NOW</button></a>
+			</div>
+			<div class="col-xs-6 no-padding sendemail">
+				<a ><button style="background: #E3B75B; color: black; border: none; padding: 10px; width: 100%; font-weight:bold; color:white">SEND EMAIL</button></a>
+			</div>
+		</div>
+	</section>
+</section>
+
+<div class="modal fade" id="lightbox" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <!--<div class="modal-header">
+	      	<img src="img/modal-success.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Success</h3>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>	
+	      </div>-->
+	      <div class="modal-body">
+	      	<div class="row">
+	      		<div class="col-xs-12">
+	      			<img src="" width="96%" />
+	      		</div>
+	      	</div>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding closebtn" data-dismiss="modal">Close</button>
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<div class="ssm-overlay ssm-toggle-nav"></div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mycart.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<script>
+if(localStorage.hd_lang==="IDN"){
+
+	$(".callnow a button").html("PANGGIL SEKARANG");
+	$(".sendemail a button").html("KIRIM SUREL");
+	$(".openhour-label").html("Jam Buka");
+	$("#lightbox .modal-footer button").html("Tutup");
+	$(".store h4").html("Alamat :")
+
+}
+
+$(".loading").show();
+$(".shoppage").hide();
+$(".back").hide();
+
+$( document ).ready( function() {
+
+	$(".back").show("fast");
+	$(".back").click(function(){
+		parent.history.back();
+		return false;
+	})
+	function getUrlParameter(sParam) {
+		var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+			sURLVariables = sPageURL.split('&'),
+			sParameterName,
+			i;
+
+		for (i = 0; i < sURLVariables.length; i++) {
+			sParameterName = sURLVariables[i].split('=');
+
+			if (sParameterName[0] === sParam) {
+				return sParameterName[1] === undefined ? true : sParameterName[1];
+			}
+		}
+	};
+	
+	var sess_key = localStorage.hd_session_key;
+	var getID = getUrlParameter('id');
+	var urlx = "http://api.haagendazsindonesia.co.id/v1/store?session_key="+ sess_key +"&store_id="+getID;
+	$.getJSON(urlx,function(store){
+		
+		var toko = $(".store");
+		//toko.find("h3").html(store.payload[0].store_name);
+		$(".title").html(store.payload[0].store_name);
+		toko.find(".address").html("<strong>"+store.payload[0].store_description+"</strong>");
+		toko.find(".contacts .openhour").html(""+store.payload[0].open_time+" - "+store.payload[0].close_time+" WIB (GMT+7)");
+		toko.find(".contacts .telp a").html(store.payload[0].phone);
+		toko.find(".contacts .telp a").attr("href","tel:"+store.payload[0].phone+"");
+		toko.find(".contacts .email a").html(store.payload[0].email);
+		toko.find(".contacts .email a").attr("href","mailto:"+store.payload[0].email+"");
+		toko.find(".buttons .sendemail a").attr("href","mailto:"+store.payload[0].email+"");
+		toko.find(".buttons .callnow a").attr("href","tel:"+store.payload[0].phone+"");
+
+		//var drop = new google.maps.Animation.DROP;
+		var options = {
+          map: "#map",
+          //location: ""+store[getID].latlong+"",
+          location: "Haagen Dazs "+store.payload[0].store_name+"",
+            markerOptions: {
+		    	animation: google.maps.Animation.DROP,
+		    	icon:"img/picker.png"
+		  	}
+        };
+        
+        $("#geocomplete").geocomplete(options);
+        var slidernews = $(".store .swiper-container").find(".swiper-wrapper");
+
+        //MAIN IMAGE
+
+        slidernews.append(
+        	'<div class="swiper-slide">'+
+			  	'<a>'+
+			  		'<img src="'+  store.payload[0].main_image +'" width="100%" />'+
+			  	'</a>'+									
+			'</div>'
+		);
+
+        //FEATURE IMAGES
+        for (var i = 0, len = store.payload[0].store_image.length; i < len; i++) {
+				
+		  		slidernews.append('<div class="swiper-slide">'+
+		  		  	'<a>'+
+		  		  		'<img src="'+  store.payload[0].store_image[i].image +'" width="100%" />'+
+		  		  	'</a>'+									
+					'</div>');
+
+
+		  		if(store.payload[0].store_image.length<=2){
+		  			$(".swiper-container").find(".swiper-button-next").hide();
+		  			$(".swiper-container").find(".swiper-button-prev").hide();
+			  		var swiper = new Swiper('.swiper-container', {
+						pagination: '.swiper-pagination',
+						paginationClickable: true,
+						//nextButton: '.swiper-button-next',
+						//prevButton: '.swiper-button-prev',
+						autoplay: 4500,
+						slidesPerView: 3,
+						spaceBetween: 3
+					});
+		  		}else{
+		  			var swiper = new Swiper('.swiper-container', {
+						pagination: '.swiper-pagination',
+						paginationClickable: true,
+						nextButton: '.swiper-button-next',
+						prevButton: '.swiper-button-prev',
+						autoplay: 4500,
+						slidesPerView: 3,
+						spaceBetween: 3
+					});
+		  		}
+		  	
+	    };
+
+	    $(".swiper-slide img").click(function(){
+	    	$("#lightbox .modal-body .row img").attr("src",$(this).attr("src"));
+	    	$("#lightbox").modal("show");
+	    });
+		//Google Maps JS
+		//Set Map
+		/*var myLatlng = new google.maps.LatLng(""+store[getID].latlong+"");
+				var imagePath = 'img/picker.png'
+				var mapOptions = {
+					zoom: 70,
+					center: myLatlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+
+			var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+			//Callout Content
+			var contentString = "Haagen Dazs "+store[getID].building+"";
+			//Set window width + content
+			var infowindow = new google.maps.InfoWindow({
+				content: contentString,
+				maxWidth: 500
+			});
+
+			//Add Marker
+			var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				icon: imagePath,
+				title: 'image title'
+			});
+
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map,marker);
+			});
+
+			//Resize Function
+			google.maps.event.addDomListener(window, "resize", function() {
+				var center = map.getCenter();
+				google.maps.event.trigger(map, "resize");
+				map.setCenter(center);
+			});
+
+			infowindow.open(map,marker);*/
+		
+	});
+
+	
+
+});
+</script>
+<script type="text/javascript" src="http://ubilabs.github.io/geocomplete/jquery.geocomplete.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3&libraries=places&key=AIzaSyDWFUAMgabo0ElziEBEhjSnfDort_1cPGg" async defer></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/jquery.slideandswipe.js"></script>
+<link href="style/bootstrap.min.css" rel="stylesheet">
+<script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

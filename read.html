@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haagen Daaz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="">
+<link rel="canonical" href="">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href="style/style.css" rel="stylesheet">
+<link href="style/products.css" rel="stylesheet">
+<script type="text/javascript" src="cordova.js"></script>
+<style type="text/css">
+	.newsread{
+		padding-top:20px !important;
+	}
+</style>
+</head>
+<body></div>
+<section class="loading">
+	<img src="img/loading.gif" width="20%" />
+</section>
+<section class="header">
+	<div class="col-xs-2 back no-padding" style="display: none;">
+		<a href="news.html">
+			<img src="img/last-track-left-arrow.png" width="100%" ">
+		</a>
+	</div>
+	<div class="col-xs-8 title">
+		<span>...</span>
+	</div>
+	<div class="col-xs-2 cartbadge">
+		<div class="cart"><span class="cart-count">0</span></div>
+	</div>
+</section>
+<nav class="nav">
+	<div class="col-xs-6 no-padding">
+		<img src="logo-head.png" width="67px" alt="swipe image" />
+	</div>
+	<div class="col-xs-6 no-padding" style="text-align: right;">
+		<a href="inbox.html"><span class="inbox-count">0</span>
+		<img src="img/inbox.svg" width="28px" style="margin-right: 10px" alt="swipe image" /></a>
+	</div>
+	<div class="current-user">
+		<div class="current-user-data">
+			<h3><a class="name_menu" data-href="profile.html">Loading...</a></h3>
+			<p class="points_menu">Your points: Loading...</p>
+		</div>
+		<div class="avatar"></div>
+		<div style="clear:both"></div>
+	</div>
+	
+	<a class="menu-cat" data-href="shop.html"><p>Catalog</p></a>
+	<a class="menu-dir" data-href="outlet.html"><p>Directory</p></a>
+	<a class="menu-gam" data-href="games.html"><p>Game</p></a>
+	<a class="menu-nws" data-href="news.html"><p>News</p></a>
+	<a class="menu-set" data-href="setting.html"><p>Setting</p></a>
+	<a class="logout" ><p>Log Out</p></a>		
+</nav>
+<section class="newspage">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 no-padding newsread">
+				<img src="" width="100%" class="img-responsive" />
+				<div style="" class="col-xs-12 newsbody">
+					
+					<h3></h3>
+					<P></P>
+				</div>
+				<div class="col-xs-12 no-padding buttons">
+					<button>Share this</button>
+				</div>				
+			</div>
+		</div>
+    </div>
+</section>
+<section class="transition" style="margin-top:100%; width: 100%; height: 20%; z-index: 100; display: none; position: relative;">
+	<img src="img/loading.gif" width="20%" />
+</section>
+<div class="ssm-overlay ssm-toggle-nav"></div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mycart.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+
+<script>
+if(localStorage.hd_lang==="IDN"){
+
+  /* SECTION 1 */
+  $(".buttons button").html("Bagikan");
+
+}
+$(".loading").show();
+$(".newspage").hide();
+$(".nav").hide();
+$(document).ready(function() {
+	$(".back").show("slow");
+	function getUrlParameter(sParam) {
+		var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+			sURLVariables = sPageURL.split('&'),
+			sParameterName,
+			i;
+
+		for (i = 0; i < sURLVariables.length; i++) {
+			sParameterName = sURLVariables[i].split('=');
+
+			if (sParameterName[0] === sParam) {
+				return sParameterName[1] === undefined ? true : sParameterName[1];
+			}
+		}
+	};
+	
+
+	var getID = getUrlParameter('id');
+	var sess_key = localStorage.hd_session_key;
+	if(localStorage.hd_lang==="IDN"){
+		var urlt = "http://api.haagendazsindonesia.co.id/v1/news?session_key="+ sess_key +"&news_id="+ getID +"&language_code=IDN";
+ 	}else{
+ 		var urlt = "http://api.haagendazsindonesia.co.id/v1/news?session_key="+ sess_key +"&news_id="+ getID +"&language_code=ENG";
+ 	}
+	
+	$.getJSON(urlt,function(news){
+		
+		var berita = $(".newsread");
+		berita.find(".newsbody h3").html(news.payload[0].title);
+		$(".title").html(news.payload[0].title);
+		$(".title").css("overflow","hidden");
+		$(".title").css("height","5vh");
+		berita.find("img").attr("src",""+ news.payload[0].main_image +"");
+		berita.find(".newsbody p").html(news.payload[0].content);
+		berita.find(".buttons button").click(function(){
+			window.plugins.socialsharing.share(''+ news.payload[0].title +'', ''+ news.payload[0].content +'', ''+ news.payload[0].main_image +'', ''+ news.payload[0].short_description +'');
+		});
+		
+		
+	});
+
+
+});
+</script>
+
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/jquery.slideandswipe.js"></script>
+<link href="style/bootstrap.min.css" rel="stylesheet">
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

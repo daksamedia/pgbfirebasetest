@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haagen Daaz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="">
+<link rel="canonical" href="">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href="style/style.css" rel="stylesheet">
+<link href="style/products.css" rel="stylesheet">
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+<style type="text/css">
+	#my-cart-table {
+		padding-bottom: 150px !important;
+	}
+
+	/* CART PAGE BEGIN */	
+	.cartpage{
+		position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    padding-top: 40px;
+	}
+
+	.inboxarea .container h3{
+		font-size: 16px;
+		margin-top: 14px;
+		font-weight: 600;		
+	}
+</style>
+</head>
+<body></div>
+<section class="loading">
+	<img src="img/loading.gif" width="20%" />
+</section>
+<section class="header">
+	<!--<div class="col-xs-2">
+		<a href="#" class="ssm-toggle-nav" title="open nav">
+			<div class="burger">-</div>
+			<div class="burger">-</div>
+			<div class="burger">-</div>
+		</a>
+	</div>-->
+	<div class="col-xs-2 back no-padding" style="display:none;">
+		<a>
+			<img src="img/last-track-left-arrow.png" width="100%" ">
+		</a>
+	</div>
+	<div class="col-xs-8 title">
+		<span>...</span>
+	</div>
+	<div class="col-xs-2 cartbadge" hidden>
+			<div class="cart"><span class="cart-count">0</span></div>
+	</div>
+</section>
+<nav class="nav">
+	<img src="logo-head.png" width="23%" alt="swipe image" />
+	
+	<div class="current-user">
+		<div class="current-user-data">
+			<h3><a class="name_menu" data-href="profile.html">Loading...</a></h3>
+			<p class="points_menu">Your points: Loading...</p>
+		</div>
+		<div class="avatar"></div>
+		<div style="clear:both"></div>
+	</div>
+	
+	<a class="menu-cat" data-href="shop.html"><p>Catalog</p></a>
+	<a class="menu-dir" data-href="outlet.html"><p>Directory</p></a>
+	<a class="menu-gam" data-href="games.html"><p>Game</p></a>
+	<a class="menu-nws" data-href="news.html"><p>News</p></a>
+	<a class="menu-set" data-href="setting.html"><p>Setting</p></a>
+	<p class="logout">Log Out</p>		
+</nav>
+<section class="cartpage">
+		
+		<section class="inboxarea" style="padding-top:0; text-align: left;">
+
+			<div class="container">
+				<div class="row">
+
+
+
+				</div>
+			</div>
+
+		</section>
+      </section>
+	<div class="ssm-overlay ssm-toggle-nav"></div>
+
+<script src="js/6fac2730d4.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/jquery.mycart.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<!-- touchSwipe library -->
+<script>
+$(document).ready(function(){
+	if(localStorage.hd_lang==="IDN"){
+
+		$(".title span").html("...");
+		
+
+	}
+	localStorage.inbox_back="xxxx";
+	var sess_key = localStorage.hd_session_key;	
+	var getID = getUrlParameter('id');
+	var urlw = "http://api.haagendazsindonesia.co.id/v1/notification?session_key="+ sess_key +"&id="+ getID +"";
+ 	
+ 	var berita = $(".inboxarea").find(".row");
+  	
+	$.getJSON(urlw,function(inbox){  		
+  		//read_status
+  		var id = inbox.payload[0].id;
+  		var param = {
+			id : id
+		}
+		var postorder = "http://api.haagendazsindonesia.co.id/v1/notification?session_key="+ sess_key +"";
+
+	    $.post(postorder, param)
+	        .done(function(data){
+	        	var orderan = jQuery.parseJSON(data)
+	        	if(orderan.is_error=="false"|| orderan.is_error==false){
+
+	        	}
+	        });
+
+
+  		$(".title span").html(inbox.payload[0].title);
+  		berita.append("<div class='col-xs-12 no-padding' style='padding-left: 10px !important;'><h3 style='font-size:15pt; margin-bottom:4px !important'>"+ inbox.payload[0].title +"</h3><small style='color:#d1d1d1; font-weight:bold;'>"+ inbox.payload[0].time +"</small><p style='margin-top: 34px;letter-spacing: normal;line-height: 16pt;'>"+ inbox.payload[0].content +"</p></div>");
+	});
+
+	$(".back").show();
+
+	$(".back").click(function(){
+		//navigator.app.backHistory();
+		location.href="inbox.html";
+		localStorage.inbox_back="xxxx";
+		//history.go(-2);
+	});
+
+
+	$(".extras").click(function(){
+		var checklis = $(this).find("img")
+		if(checklis.is(":visible")){
+			checklis.fadeOut("slow");
+			$(this).css("background","#9f2a2a");
+		}else{
+			checklis.fadeIn("slow");
+			$(this).css("background","#2a9f8a");
+		}
+	});
+
+})
+$(".loading").show();
+$(".shoppage").hide();
+$("nav").hide();
+	var __min = 0;
+		var __max = 10;
+</script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/jquery.slideandswipe.js"></script>
+<link href="style/bootstrap.min.css" rel="stylesheet">
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

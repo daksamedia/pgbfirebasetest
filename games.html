@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haagen Daaz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="">
+<link rel="canonical" href="">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href="style/style.css" rel="stylesheet">
+<link href="style/products.css" rel="stylesheet">
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+
+</head>
+<body></div>
+<section class="loading">
+	<img src="img/loading.gif" width="20%" />
+</section>
+<section class="header">
+	<div class="col-xs-2">
+		<a href="#" class="ssm-toggle-nav" title="open nav">
+			<div class="burger">-</div>
+			<div class="burger">-</div>
+			<div class="burger">-</div>
+		</a>
+	</div>
+	<div class="col-xs-8 title">
+		<span>Games</span>
+	</div>
+	<div class="col-xs-2 cartbadge">
+			<div class="cart"><span class="cart-count">0</span></div>
+	</div>
+</section>
+<nav class="nav">
+	<div class="col-xs-6 no-padding">
+		<img src="logo-head.png" width="67px" alt="swipe image" />
+	</div>
+	<div class="col-xs-6 no-padding" style="text-align: right;">
+		<a href="inbox.html"><span class="inbox-count">0</span>
+		<img src="img/inbox.svg" width="28px" style="margin-right: 10px" alt="swipe image" /></a>
+	</div>
+	<div class="clearfix"></div>
+	<div class="current-user">
+		<div class="current-user-data">
+			<h3><a class="name_menu" data-href="profile.html">Loading...</a></h3>
+			<p class="points_menu">Your points: Loading...</p>
+		</div>
+		<div class="avatar"></div>
+		<div style="clear:both"></div>
+	</div>
+	
+	<div class="main-menu">
+		<a class="menu-hom" data-href="home.html"><p>Home</p></a>
+		<a class="menu-cat" data-href="shop.html"><p>Catalog</p></a>
+		<a class="menu-dir" data-href="outlet.html"><p>Directory</p></a>
+		<a class="menu-ner" data-href="nearme.html"><p>Near Me &trade;</p></a>
+		<a class="menu-gam" data-href="games.html"><p>Game</p></a>
+		<a class="menu-nws" data-href="news.html"><p>News</p></a>
+		<a class="menu-set" data-href="setting.html"><p>Setting</p></a>
+		<p class="logout">Log Out</p>
+	</div>
+	<div class="footer-nav">
+		<span><a href="termscondition.html">Term & Condition &nbsp;</a></span>
+		<span><a href="help.html">Help &nbsp;</a></span>
+		<span><a href="legal.html">Legal &nbsp;</a></span>
+		<span><a href="about.html">About &nbsp;</a></span>
+	</div>	
+</nav>
+<section class="shoppage">
+		
+		<section class="news">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 no-padding newsitem">
+						<div style="margin-top: 20px; margin-bottom: 20px; text-align: left;" class="col-xs-12 newscontent">
+							<div class="col-xs-12 no-padding" style="max-height: 30vh; overflow: hidden;">
+								<img src="img/game1.jpg" class="img-responsive" />
+							</div>
+							<div class="col-xs-8 no-padding">
+								<h3 style="margin-top: 5px !important;">House of H&#228;agen-Dazs</h3>
+							</div>
+							<div class="col-xs-4 no-padding align-right">
+								<h4>2 points</h4>
+							</div>
+							<div class="clearfix"></div>
+							<P style=" ">Manage your own House of H&#228;agen-Dazs. Get more points in every game.</P>
+							<button class="play_hod" style="background: #E3B75B; color: black; border: none; padding: 4px; width: 100%;">Play Games</button>
+						</div>						
+					</div>
+					<div class="col-xs-12 no-padding newsitem">
+						<div style="margin-top: 20px; margin-bottom: 20px; text-align: left;" class="col-xs-12 newscontent">
+							<div class="col-xs-12 no-padding" style="max-height: 30vh; overflow: hidden;">
+								<img src="img/cover_roullete.jpg" class="img-responsive" />
+							</div>
+							<div class="col-xs-6 no-padding">
+								<h3 style="margin-top: 5px !important;">Lucky Roll</h3>
+							</div>
+							<div class="col-xs-6 no-padding align-right">
+								<h4>Free 1 Spin Weekly</h4>
+							</div>
+							<div class="clearfix"></div>
+							<P>How lucky are You? Get some surprises and lucky of you by spin the wheel!</P>
+							<button class="play_roulette" style="background: #E3B75B; color: black; border: none; padding: 4px; width: 100%;">Play Games</button>
+						</div>						
+					</div>			
+				</div>
+			</div>
+		</section>
+      </section>
+      <div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-error.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Error</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body">
+	      	<p>Some changes failed to save.</p>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding closebtn" data-dismiss="modal">Close</button>
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<img src="img/modal-info.png" width="60" />
+			<h3 class="modal-title" id="exampleModalLongTitle">Sorry</h3>
+			<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>-->	
+		  </div>
+		  <div class="modal-body">
+			
+				<div class="row">
+					<div class="col-xs-12">
+					<p>Unable to play this game.<br>
+					You need to login or register first before play the game.
+					</p>
+					</div>
+				</div>
+			
+		  </div>
+		  <div class="clearfix"></div>
+		  <div class="modal-footer">
+			<button type="button" class="col-xs-6 no-padding gotoclose" data-dismiss="modal">Close</button>
+			<a href="index.html"><button type="button" class="gotocart col-xs-6 no-padding">Okay</button></a>
+			<!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="ssm-overlay ssm-toggle-nav"></div>
+<section class="transition" style="margin-top:100%; width: 100%; height: 90%; z-index: 100; display: none; position: relative;">
+	<img src="img/loading.gif" width="20%" />
+</section>
+<script src="js/6fac2730d4.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mycart.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<script>
+if(localStorage.hd_lang==="IDN"){
+
+	$(".title span").html("Permainan");
+	$(".newsitem a button").html("Mainkan");
+	$("#info .modal-body .row .col-xs-12 p").html("Tidak dapat memainkan permainan ini. Kamu perlu login atau daftar dahulu untuk bermain.");
+	$("#info .modal-title").html("Mohon maaf");
+	$("#info .modal-footer .gotoclose").html("Tutup");
+	$("#info .modal-footer .gotocart").html("Setuju");
+}
+$(".loading").show();
+$(".shoppage").hide();
+$(".nav").hide();
+
+$(document).ready(function(){
+	var sess_key = localStorage.hd_session_key;
+	var urlt = "http://api.haagendazsindonesia.co.id/v1/point_transaction?session_key="+ sess_key +"";
+	$("button.play_hod").click(function(){
+		if(localStorage.hd_session_key==undefined || localStorage.hd_session_key==""){
+			
+			$("#info").modal("show")
+			
+		}else{
+			
+			$.post(urlt)
+			.done(function(data){
+				var respon = jQuery.parseJSON(data)
+				if(!data.is_error){
+					setTimeout('window.location.href = "games/houseofhd/index.html"; ',800);
+				}else{
+					$("#error").modal("show");
+					if(localStorage.hd_lang=="IDN"){
+						$("#error .modal-body p").html("Poin tidak mencukupi");
+					}else{
+						$("#error .modal-body p").html("Your point is not eligible.");
+					}
+				}
+			})
+			
+		}
+	});
+	
+	$("button.play_roulette").click(function(){
+		
+		if(localStorage.hd_session_key==undefined || localStorage.hd_session_key==""){
+			
+			$("#info").modal("show")
+			
+		}else{
+		
+			window.location.href="roulette2.html";
+		
+		}
+		
+	});
+})
+</script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/jquery.slideandswipe.js"></script>
+<link href="style/bootstrap.min.css" rel="stylesheet" >
+<script src="js/bootstrap.min.js" ></script>
+</body>
+</html>

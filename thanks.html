@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haagen Daaz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="">
+<link rel="canonical" href="">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="style/style.css" rel="stylesheet">
+<script src="js/6fac2730d4.js"></script>
+<link href="style/products.css" rel="stylesheet">
+<link rel="stylesheet" href="style/slick.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+
+</head>
+<body></div>
+<section class="loading">
+	<img src="img/loading.gif" width="20%" />
+</section>
+<section class="header">
+	<div class="col-xs-2">
+		<a href="#" class="ssm-toggle-nav" title="open nav">
+			<div class="burger"></div>
+			<div class="burger"></div>
+			<div class="burger"></div>
+		</a>
+	</div>
+	<div class="col-xs-8 title">
+		<span>Thank you</span>
+	</div>
+	<div class="col-xs-2 cartbadge" style="display: none">
+			<div class="cart"><span class="cart-count">0</span></div>
+	</div>
+</section>
+<nav class="nav">
+	<img src="logo-head.png" width="23%" alt="swipe image" />
+	
+	<div class="current-user">
+		<div class="current-user-data">
+			<h3><a class="name_menu" data-href="profile.html">Loading...</a></h3>
+			<p class="points_menu">Your points: Loading...</p>
+		</div>
+		<div class="avatar"></div>
+		<div style="clear:both"></div>
+	</div>
+	
+	<div class="main-menu">
+		<a class="menu-hom" data-href="home.html"><p>Home</p></a>
+		<a class="menu-cat" data-href="shop.html"><p>Catalog</p></a>
+		<a class="menu-dir" data-href="outlet.html"><p>Directory</p></a>
+		<a class="menu-ner" data-href="nearme.html"><p>Near Me &trade;</p></a>
+		<a class="menu-gam" data-href="games.html"><p>Game</p></a>
+		<a class="menu-nws" data-href="news.html"><p>News</p></a>
+		<a class="menu-set" data-href="setting.html"><p>Setting</p></a>
+		<p class="logout">Log Out</p>
+	</div>
+
+	<div class="footer-nav">
+		<span><a href="termscondition.html">Term & Condition &nbsp;</a></span>
+		<span><a href="help.html">Help &nbsp;</a></span>
+		<span><a href="legal.html">Legal &nbsp;</a></span>
+		<span><a href="about.html">About &nbsp;</a></span>
+	</div>
+</nav>
+<section class="shoppage">
+	<div class="col-xs-12 no-padding" style="margin-top: 20px;">
+		<h3>Thank You</h3>
+		<p>Your payment has been complete.</p>
+	</div>
+	
+</section>
+	<div class="ssm-overlay ssm-toggle-nav"></div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mycart.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<!-- touchSwipe library -->
+<script>
+$(".loading").show();
+$(".shoppage").hide();
+if(localStorage.hd_lang==="IDN"){
+	$(".title span").html("Terima Kasih");
+	$(".shoppage").find("h3").html("Terima Kasih");
+	$(".shoppage").find("p").html("Pembayaranmu sukses dan transaksi sudah selesai.");
+	$(".done").html("Kembali ke Katalog");
+	
+}else{
+	$(".title span").html("Thank You");
+	$(".shoppage").find("h3").html("Thank You");
+	$(".shoppage").find("p").html("Your payment has been complete.");
+	$(".done").html("Back to Catalog");
+}
+$(document).ready(function() {
+	
+	$(".loading").hide();
+	$(".shoppage").show();
+});
+</script>
+<script>
+	$(document).ready(function() {
+		$(".continue").click(function(){
+			$(".asu").trigger( "click" );
+		});
+		$('.nav').slideAndSwipe();
+		
+		var buka=0;
+		
+		$(".ssm-toggle-nav").click(function(){
+			 //$( ".contenthome" ).fadeToggle( "fast", "linear");
+			//$(".header").slideToggle( "fast");
+		});
+		setTimeout('window.location.href = "home.html"; ',300);
+	});
+</script>
+
+ <script type="text/javascript" src="cordova.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="js/jquery.slideandswipe.js"></script>
+<link href="style/bootstrap.min.css" rel="stylesheet" >
+<script src="js/bootstrap.min.js" ></script>
+</body>
+</html>

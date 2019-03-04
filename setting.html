@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haagen Daaz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="">
+<link rel="canonical" href="">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="style/style.css" rel="stylesheet">
+<script src="js/6fac2730d4.js"></script>
+<link href="style/products.css" rel="stylesheet">
+<link rel="stylesheet" href="style/slick.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+<style>
+ #chgpassw .modal-body input::placeholder{
+	color:#a19898;
+ }
+
+ #chgpassw .modal-body .hd-visible{
+ 	background-image: url(img/view-rev.svg);
+ 	margin-top: 2px;
+ 	right: -4px;
+ 	width: 100px !important;
+ }
+</style>
+</head>
+<body></div>
+
+<section class="header">
+	<div class="col-xs-2">
+		<a href="#" class="ssm-toggle-nav" title="open nav">
+			<div class="burger"></div>
+			<div class="burger"></div>
+			<div class="burger"></div>
+		</a>
+	</div>
+	<div class="col-xs-8 title">
+		<span>Setting</span>
+	</div>
+	<div class="col-xs-2 cartbadge" style="display: none">
+			<div class="cart"><span class="cart-count">0</span></div>
+	</div>
+</section>
+<nav class="nav">
+	<div class="col-xs-6 no-padding">
+		<img src="logo-head.png" width="67px" alt="swipe image" />
+	</div>
+	<div class="col-xs-6 no-padding" style="text-align: right;">
+		<a href="inbox.html"><span class="inbox-count">0</span>
+		<img src="img/inbox.svg" width="28px" style="margin-right: 10px" alt="swipe image" /></a>
+	</div>
+	<div class="clearfix"></div>
+	<div class="current-user">
+		<div class="current-user-data">
+			<h3><a class="name_menu" data-href="profile.html">Loading...</a></h3>
+			<p class="points_menu">Your points: Loading...</p>
+		</div>
+		<div class="avatar"></div>
+		<div style="clear:both"></div>
+	</div>
+	
+	<div class="main-menu">
+		<a class="menu-hom" data-href="home.html"><p>Home</p></a>
+		<a class="menu-cat" data-href="shop.html"><p>Catalog</p></a>
+		<a class="menu-dir" data-href="outlet.html"><p>Directory</p></a>
+		<a class="menu-ner" data-href="nearme.html"><p>Near Me &trade;</p></a>
+		<a class="menu-gam" data-href="games.html"><p>Game</p></a>
+		<a class="menu-nws" data-href="news.html"><p>News</p></a>
+		<a class="menu-set" data-href="setting.html"><p>Setting</p></a>
+		<p class="logout">Log Out</p>
+	</div>
+	<div class="footer-nav">
+		<span><a href="termscondition.html">Term & Condition &nbsp;</a></span>
+		<span><a href="help.html">Help &nbsp;</a></span>
+		<span><a href="legal.html">Legal &nbsp;</a></span>
+		<span><a href="about.html">About &nbsp;</a></span>
+	</div>			
+</nav>
+<section class="loading">
+	<img src="img/loading.gif" width="20%" />
+</section>
+
+<section class="shoppage">
+		
+		<section class="contentshop slick-initialized">
+			<div class="col-xs-12 no-padding tab-fixed-group">
+				
+				<div class="tab-fixed ongoing col-xs-6 tab-click1">
+					Personal Info
+				</div>
+				<div class="tab-fixed col-xs-6 tab-click2">
+					Address
+				</div>
+				
+			</div>
+			<div class="sub-header " >
+			  <div class="swipe-tabs">
+
+				<div class="swipe-tab tab1" hidden>Delivery</div>
+				<div class="swipe-tab tab2" hidden>Delivery</div>
+				
+			  </div>
+			</div>
+			<div class="main-container "  >
+			  <div class="swipe-tabs-container col-xs-12 no-padding	" >
+				<div class="swipe-tab-content br1" style=" background: #F7F7F7">
+					<div class="col-xs-12 sect-1" style="padding-top: 18px !important; padding-bottom: 32px !important;">
+						<div class="clearfix"></div>
+						
+						<a style="color:#810D24; font-weight: bold;" data-toggle="modal" data-target="#chgimg"><div style="margin:0 auto;" class="avatar"></div>
+						<p>Change Image</p></a>
+						
+						<div class="col-xs-12" style="opacity: 0;">--------</div>
+						<div class="col-xs-4 chgbhslabel" style="padding-left: 0 !important; text-align: left; font-weight: bold;">
+							<h4><strong>Language</strong></h4>
+						</div>
+						<div class="col-xs-8" style="padding-top: 11px; text-align: right; font-size: 13pt; padding-right: 0;">
+							<a class="chgbhs" data-toggle="modal" data-target="#chglag" style="color: #810D24"><strong>Default</strong></a>
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-xs-8 chgpasslabel" style="padding-left: 0 !important; text-align: left; font-weight: bold;">
+							<h4><strong>Change Password</strong></h4>
+						</div>
+						<div class="col-xs-4" style="padding-top: 11px; text-align: right; font-size: 13pt; padding-right: 0;">
+							<a class="chgpass" data-toggle="modal" data-target="#chgpassw" style="color: #810D24"><strong>Click Here</strong></a>
+						</div>
+						<input name="full_name" type="text"  placeholder="Your Name.."  />
+						
+						<input name="username" type="text"  placeholder="Username.." />
+
+						<!--<input name="password" type="password"  placeholder="Your password.."  />-->
+
+						<input name="phone" type="text"  placeholder="Your Phone Number.."  />
+
+						<textarea name="story" style="height: 15vh;" placeholder="Share your story.."></textarea>
+
+								
+					</div>
+				</div>
+				<div class="swipe-tab-content br2" style="background: #f7f7f7">
+					<div class="col-xs-12 align-left sect-2">
+						<h3 class="sec-2-title">Set My Address</h3>
+						<input name="hd_address3" type="text" placeholder="Your Address"  />	
+						<select class="hd_prov3" name="Province">
+							<option value="">-- Choose Province --</option>
+						</select>
+						<select class="hd_city3">
+							
+						</select>
+						<select class="hd_dist3">
+							
+						</select>
+						<!--<div class="col-xs-12 no-padding align-left">
+							<span><input id="radio-5" class="radio-custom" name="radio-err" type="radio">
+							<label for="radio-5" class="radio-custom-label">Save as </label></span>
+						</div>
+						<input name="savename" type="text" style="width:100%; border: #e4e4e4 1px solid; padding:4px; padding:4px; background:none; margin-bottom:15px; margin-top:15px;" placeholder="Your Adress Name.."  />-->
+							
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="col-xs-12 no-padding details savenow" style="bottom: 0 !important; position: fixed; left: 0;">
+				<button>SAVE NOW</button>
+			</div>
+
+		</section>
+      </section>
+      <!-- Modal -->
+    <div class="modal fade" id="chglag" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-info.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Set Language</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body" style="text-align: center;">
+	        <div class="col-xs-6 language idn">
+				<input type="hidden" value="IDN">
+				<img alt="IDN" src="img/idn.svg" class="img-responsive" />
+			</div>
+			<div class="col-xs-6 language eng">
+				<input type="hidden" value="ENG">
+				<img alt="ENG" src="img/eng.svg" class="img-responsive" />
+			</div>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding" data-dismiss="modal">Close</button>
+	        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="chgpassw" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-info.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Change Password</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body" style="text-align: center;">
+	        <div class="col-xs-12">
+				<p>Please type your new & old password</p>
+				<input name="oldpassword" type="password" placeholder="Old Password..." style="width: 93%; padding:4px 6px; margin-bottom: 16px; border:#c1c1c1 1px solid" /><span class="hd-visible vis1"></span>
+				<input name="newpassword" type="password" placeholder="New Password..." style="width: 93%; padding:4px 6px; margin-bottom: 10px; border:#c1c1c1 1px solid" /><span class="hd-visible vis2"></span>
+			</div>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-6 no-padding" data-dismiss="modal">Close</button>
+	        <button type="button" class=" col-xs-6 no-padding savepass">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="chgimg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <img src="img/modal-info.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Choose Media</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body">
+	      	<div class="col-xs-6 cam">
+	        	<img src="img/cam.svg" width="40%" />
+	        	<br/>
+	        	<p>Camera</p>
+	        </div>
+	        <div class="col-xs-6 gal">
+	        	<img src="img/gal.svg" width="40%" />
+	        	<br/>
+	        	<p>Image Gallery</p>
+	        </div>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding" data-dismiss="modal">Close</button>
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-success.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Success</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body">
+	      	<p>Some changes has been saved!</p>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding closebtn" data-dismiss="modal">Close</button>
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-error.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Error</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body">
+	      	<p>Some changes failed to save.</p>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding closebtn" data-dismiss="modal">Close</button>
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="ssm-overlay ssm-toggle-nav"></div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mycart.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3&libraries=places&key=AIzaSyDWFUAMgabo0ElziEBEhjSnfDort_1cPGg" async defer></script> 
+<script src="http://ubilabs.github.io/geocomplete/jquery.geocomplete.js"></script>
+<!-- touchSwipe library -->
+<script>
+$(".loading").show();
+$(".shoppage").hide();
+$(".nav").hide();
+$(".header").hide();
+$(".sendmy").hide();
+$(".sendgift").hide();
+$(".codinfo").hide();
+
+$(document).ready(function(){
+	
+
+	$(".tab-click1").click(function(){
+		$(".tab1").trigger( "click" );
+		$(".tab-click1").addClass("ongoing");
+		$(".tab-click1").siblings().removeClass("ongoing");
+	});
+
+	$(".tab-click2").click(function(){
+		$(".tab2").trigger( "click" );
+		$(".tab-click2").addClass("ongoing");
+		$(".tab-click2").siblings().removeClass("ongoing");
+	});
+
+	var getID = getUrlParameter('sect');
+	function getUrlParameter(sParam) {
+		var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+			sURLVariables = sPageURL.split('&'),
+			sParameterName,
+			i;
+
+		for (i = 0; i < sURLVariables.length; i++) {
+			sParameterName = sURLVariables[i].split('=');
+
+			if (sParameterName[0] === sParam) {
+				return sParameterName[1] === undefined ? true : sParameterName[1];
+			}
+		}
+	};
+ 
+	var getID = getUrlParameter('sect');
+	if(getID=="address"){
+			$(".tab-click2").click();
+			$(".tab2").click();
+			//$swipeTabsContainer.slick('slickGoTo', "2");
+			$(".br2").addClass('slick-current')
+			$(".tab2").addClass('slick-active');
+	}
+
+	localStorage.hd_lang;
+	console.log(localStorage.hd_lang);
+	$(".header").show();
+	var sess_key = localStorage.hd_session_key;
+	var cust_id = localStorage.login_hd_id;
+
+	var urlx = "http://api.haagendazsindonesia.co.id/v1/customer?session_key="+ sess_key +"&customer_id="+ cust_id +"";
+	$.getJSON(urlx,function(data){
+		$(".sect-1").find("input[name='full_name']").val(data.payload[0].full_name);
+		$(".sect-1").find("input[name='username']").val(data.payload[0].username);
+		$(".sect-1").find("input[name='phone']").val(data.payload[0].default_phone);
+		//$(".sect-1").find("input[name='password']").val("");
+		$(".sect-1").find("textarea[name='story']").val(data.payload[0].biography);
+		$(".sect-2").find("input[name='hd_address3']").val(data.payload[0].default_address);
+		selectprov3.val(data.payload[0].province_id)
+		provinsiku = data.payload[0].province_id;
+		kotaku = data.payload[0].city_id;
+		kecamatanku = data.payload[0].sub_district_id;
+		//RESTORE PROVINSI
+		if(provinsiku!=null || provinsiku != "null" || provinsiku !=""){
+			 $.getJSON(getprov,function(provinsi){
+					//console.log(provinsi.payload[2].province_name);
+				$("input[name='hd_address3']").geocomplete({country: "ID", type: ['(regions)']});
+			  	
+				for (var i = 0, len = provinsi.payload.length; i < len; i++) {
+			        selectprov3.append(
+						"<option value='"+ provinsi.payload[i].province_id +"'>"+
+							provinsi.payload[i].province_name+
+						"</option>"
+					)
+					selectprov3.val(provinsiku);
+			    }
+			   // selectprov3.val(provinsiku);
+			 });
+		 }else{
+		 	$.getJSON(getprov,function(provinsi){
+					//console.log(provinsi.payload[2].province_name);
+				$("input[name='hd_address3']").geocomplete({country: "ID", type: ['(regions)']});
+			  	
+				for (var i = 0, len = provinsi.payload.length; i < len; i++) {
+			        selectprov3.append(
+						"<option value='"+ provinsi.payload[i].province_id +"'>"+
+							provinsi.payload[i].province_name+
+						"</option>"
+					)
+					
+			    }
+			   // selectprov3.val(provinsiku);
+			 });
+		 }
+
+
+		//RESTORE KOTA
+		if(data.payload[0].province_id === null || data.payload[0].province_id === "null" || data.payload[0].province_id === ""){
+			//kotaku = "4";
+			selectcity3.hide();
+		}else{
+			
+			selectcity3.show();
+		 	var getcity = "http://api.haagendazsindonesia.co.id/v1/city?session_key="+ sess_key +"&search_province_id="+ data.payload[0].province_id +"";
+		 	$.getJSON(getcity,function(kota){
+				//console.log(kota.payload[32].city_name);
+				if(localStorage.hd_lang==="IDN"){
+					selectcity3.append("<option value=''>-- Pilih Kota --</option>");
+				}else{
+					selectcity3.append("<option value=''>-- Select City --</option>");
+				}
+				selectcity3.css("background","none");
+				for (var i = 0, buset = kota.payload.length; i < buset; i++) {
+			        $(".hd_city3").append(
+						"<option value='"+ kota.payload[i].city_id +"' data-select='"+ kota.payload[i].city_name +"'>"+
+							kota.payload[i].city_name +
+						"</option>"
+					)
+				selectcity3.val(kotaku);
+			    }
+				
+				
+			 });
+
+
+		}
+
+		//RESTORE KECAMATAN
+		if(data.payload[0].city_id === null || data.payload[0].city_id === "null" || data.payload[0].city_id ===""){
+			
+			//kecamatanku = "4";
+			selectdist3.hide();
+
+
+		}else{
+			
+
+			selectdist3.show();
+		 	var getdist = "http://api.haagendazsindonesia.co.id/v1/sub_district?session_key="+ sess_key +"&search_city_id="+ data.payload[0].city_id +"";
+		 	$.getJSON(getdist,function(kecamatan){
+		 		//$("input[name='savename']").css("margin-bottom","63px");
+				//console.log(kecamatan.payload[32].sub_district_name);
+				if(localStorage.hd_lang==="IDN"){
+					selectdist3.append("<option value=''>-- Pilih Kecamatan --</option>");
+				}else{
+					selectdist3.append("<option value=''>-- Select Sub District --</option>");
+				}
+				selectdist3.css("background","none");
+
+				for (var i = 0, opo = kecamatan.payload.length; i < opo; i++) {
+			        selectdist3.append(
+						"<option value='"+ kecamatan.payload[i].sub_district_id +"' data-select='"+ kecamatan.payload[i].sub_district_name +"'>"+
+							kecamatan.payload[i].sub_district_name +
+						"</option>"
+					)
+			    }
+				
+				selectdist3.val(kecamatanku)
+			 });
+
+		}
+	});
+
+	var vispass1 = "false";
+	$("#chgpassw .modal-body .vis1").click(function(){
+		if(vispass1=="false"){
+			$(this).prev("input[name='oldpassword']").attr("type","text");
+			vispass1="true";
+			$(this).css("background-image","url(img/hide-rev.svg)");
+		}else{
+			$(this).prev("input[name='oldpassword']").attr("type","password");
+			vispass1="false";
+			$(this).css("background-image","url(img/view-rev.svg)");
+		}
+		/*},function(){
+			$(this).prev("input[name='password']").attr("type","password");*/
+	});
+
+	var vispass2 = "false";
+	$("#chgpassw .modal-body .vis2").click(function(){
+		if(vispass2=="false"){
+			$(this).prev("input[name='newpassword']").attr("type","text");
+			vispass2="true";
+			$(this).css("background-image","url(img/hide-rev.svg)");
+		}else{
+			$(this).prev("input[name='newpassword']").attr("type","password");
+			vispass2="false";
+			$(this).css("background-image","url(img/view-rev.svg)");
+		}
+		/*},function(){
+			$(this).prev("input[name='password']").attr("type","password");*/
+	});
+
+	var ulz = "http://api.haagendazsindonesia.co.id/v1/customer?session_key="+ sess_key +"";
+	var urx = "http://api.haagendazsindonesia.co.id/v1/password?session_key="+ sess_key +"";
+	//SAVE PASSWORD
+	$("#chgpassw .modal-footer .savepass").click(function(){
+		$("#chgpassw").modal("hide");
+		var old_password = $("#chgpassw .modal-body").find("input[name='oldpassword']").val();
+		var password = $("#chgpassw .modal-body").find("input[name='newpassword']").val();
+		
+		var param = {
+			old_password : old_password,
+			password : password
+		}
+		$.post(urx, param)
+	        .done(function(data){
+	        	console.log(data);
+	        	$("#chgpassw .modal-body").find("input[name='oldpassword']").val("");
+	        	$("#chgpassw .modal-body").find("input[name='newpassword']").val("");
+	        	var response = jQuery.parseJSON(data);
+				if(response.is_error==false || response.is_error=="false"){
+			   		//alert("Your Profile has been updated.");
+			   		$("#success").modal("show")
+			   		
+			   	}else{
+			   		$("#error").modal("show");
+			   		if(localStorage.hd_lang=="IDN"){
+			   			$("#error").find(".modal-title").html("Gagal");
+			   			if(response.status_code==502){
+			   				$("#error").find(".modal-body").html("<p>Terjadi sebuah kesalahan.<br> Kata kunci lama salah.</p>");
+			   			}
+			   		}else{
+			   			$("#error").find(".modal-body").html("<p>There's an error.<br> "+response.status_msg+"</p>");	
+			   		}
+			   		
+			   	}
+			})
+		return false;
+	});
+	
+	//SAVE SETTING
+	$(".savenow button").click(function(){
+		$(".savenow button").attr("disabled","true");
+		$(".savenow button").css("opacity","0.3");
+		var full_name = $(".sect-1").find("input[name='full_name']").val();
+		var username = $(".sect-1").find("input[name='username']").val();
+		var default_address = $(".sect-2").find("input[name='hd_address3']").val();
+		var default_phone = $(".sect-1").find("input[name='phone']").val();
+		var pass = $(".sect-1").find("input[name='password']").val();
+		var biography = $(".sect-1").find("textarea[name='story']").val();
+		var sub_district_id = $("select.hd_dist3").val();
+		var province_id = $("select.hd_prov3").val();
+		var city_id = $("select.hd_city3").val();
+		
+		if(province_id===null || city_id===null || sub_district_id===null || province_id==="" || city_id==="" || sub_district_id===""){
+
+			var param = {
+				full_name : full_name,
+				username : username,
+				default_address : default_address,
+				default_phone : default_phone,
+				biography : biography
+
+			}
+
+		}else{
+
+			var param = {
+				full_name : full_name,
+				username : username,
+				default_address : default_address,
+				default_phone : default_phone,
+				biography : biography,
+				sub_district_id : sub_district_id,
+				province_id : province_id,
+				city_id : city_id
+			}
+		}
+
+		$.post(ulz, param)
+	        .done(function(data){
+	        	if(!data.is_error){
+			   		//alert("Your Profile has been updated.");
+			   		$("#success").modal("show");
+			   		
+			   		location.reload();
+			   		//setTimeout('window.location.href = "thanks.html"; ',300);
+			   		//localStorage.products = "";
+			   		/*localStorage.hd_order_qty="";
+			   		localStorage.hd_order_address="";
+			   		localStorage.hd_delivery="";
+			   		localStorage.hd_order_total="";
+			   		localStorage.hd_payment="";*/
+			   	}else{
+			   		$("#error").modal("show");
+					$(".savenow button").attr("disabled",false);
+			   		$(".savenow button").css("opacity","1");
+			   	}
+		   	});   
+	      	return false;
+	  	
+	});
+	
+	
+		if(localStorage.hd_lang==="ENG" || localStorage.hd_lang == undefined || localStorage.hd_lang == ""){
+			$(".idn img").css("filter","grayscale(100%)");
+			$(".idn img").css("-webkit-filter","grayscale(100%)");
+			$(".eng img").css("filter","none");
+			$(".eng img").css("-webkit-filter","none");
+			$(".chgbhs strong").html("English");
+			localStorage.hd_lang="ENG"
+		}else{
+			$(".eng img").css("filter","grayscale(100%)");
+			$(".eng img").css("-webkit-filter","grayscale(100%)");
+			$(".idn img").css("filter","none");
+			$(".idn img").css("-webkit-filter","none");
+			$(".chgbhs strong").html("Bahasa Indonesia");
+			$("input[name='full_name']").attr("placeholder","Nama Lengkapmu..");
+			$("input[name='username']").attr("placeholder","Nama Pengguna kamu..");
+			//$("input[name='location']").attr("placeholder","Lokasimu..");
+			$("input[name='phone']").attr("placeholder","Nomor Ponselmu..");
+			$("textarea[name='story']").attr("placeholder","Bagikan ceritamu..");
+			$(".chgbhslabel h4 strong").html("Bahasa");
+			$(".avatar").next("p").html("Ganti gambar");
+			$(".title span").html("Pengaturan");
+			$(".details button").html("SIMPAN SEKARANG");
+			$(".menu-cat p").html("Katalog");
+			$(".menu-gam p").html("Permainan");
+			$(".menu-dir p").html("Daftar Tempat");
+			$(".menu-nws p").html("Berita & Promo");
+			$(".logout").html("Keluar");
+			$(".menu-set p").html("Pengaturan");
+			$(".tab-click1").html("Info Pribadi");
+			$(".tab-click2").html("Alamat");
+			$("input[name='hd_address3']").attr("placeholder","Alamat Kamu");
+			$("select.hd_prov3 option").html("-- Pilih Provinsi --");
+			$(".sec-2-title").html("Atur Alamatku");
+			$("#chglag").find(".modal-title").html("Pilih Bahasa");
+			$("#chglag .modal-footer button").html("Tutup");
+			$("#chgimg").find(".modal-title").html("Pilih Media");
+			$("#chgimg .modal-footer button").html("Tutup");
+			$("#chgimg .modal-body .cam").find("p").html("Kamera");
+			$("#chgimg .modal-body .gal").find("p").html("Galeri");
+			$("#success .modal-body p").html("Perubahan telah disimpan!");
+			$("#success .modal-footer button").html("Tutup");
+			$("#error .modal-body p").html("Perubahan gagal disimpan!");
+			$("#error .modal-footer button").html("Tutup");
+			$("#error .modal-title").html("Gagal");
+			$("#success .modal-title").html("Sukses");
+			$(".chgbhslabel h4 strong").html("Bahasa");
+			$(".chgpasslabel h4 strong").html("Ganti Kata kunci");
+			$(".chgpass").html("<strong>Klik Di sini</strong>");
+			$("#chgpassw .modal-header .modal-title").html("Ganti Kata kunci");
+			$("#chgpassw .modal-body p").html("Masukkan Kata kunci baru & lama");
+			$("#chgpassw .modal-footer button:first").html("Tutup");
+			$("#chgpassw .modal-footer button:last").html("Simpan");
+			$("#chgpassw .modal-body").find("input[name='oldpassword']").attr("placeholder","Kata kunci lama...");
+			$("#chgpassw .modal-body").find("input[name='newpassword']").attr("placeholder","Kata kunci baru...");
+		}
+	
+	
+
+
+	$(".language img").click(function(){
+		$(this).parent(".language").siblings(".language").find("img").css("filter","grayscale(100%)");
+		$(this).parent(".language").siblings(".language").find("img").css("-webkit-filter","grayscale(100%)");
+		$(this).css("filter","none");
+		localStorage.hd_lang = $(this).parent(".language").find("input").val();
+		console.log($(this).parent(".language").find("input").val());
+		$(".chgbhs strong").html(localStorage.hd_lang);
+		location.reload();
+		if(localStorage.hd_lang==="ENG"){
+			$(".idn img").css("filter","grayscale(100%)");
+			$(".idn img").css("-webkit-filter","grayscale(100%)");
+			$(".eng img").css("filter","none");
+			$(".eng img").css("-webkit-filter","none");
+			$("input[name='full_name']").attr("placeholder","Your Name..");
+			$(".chgbhslabel h4 strong").html("Language");
+			$(".chgbhs strong").html("Bahasa Indonesia");
+			$("input[name='full_name']").attr("placeholder","Your name...");
+			$("input[name='username']").attr("placeholder","Username...");
+			//$("input[name='location']").attr("placeholder","Your location...");
+			$("input[name='phone']").attr("placeholder","Your Phone Number..");
+			$("textarea[name='story']").attr("placeholder","Share story..");
+			$(".avatar").next("p").html("Change Image");
+			$(".title span").html("Setting");
+			$(".details button").html("SAVE NOW");
+			$(".menu-cat p").html("Catalog");
+			$(".menu-gam p").html("Games");
+			$(".menu-dir p").html("Directory");
+			$(".menu-nws p").html("News & Promo");
+			$(".logout").html("Log Out");
+			$(".menu-set p").html("Setting");
+			$(".tab-click1").html("Personal Info");
+			$(".tab-click2").html("Address");
+			$("input[name='hd_address3']").attr("placeholder","Your Address");
+			$("select.hd_prov3 option").html("-- Choose Province --");
+			$(".sec-2-title").html("Set My Address");
+			$("#chglag").find(".modal-title").html("Set Language");
+			$("#chglag").find(".closebhs").html("Close");
+			$("#chgimg").find(".modal-title").html("Choose Media");
+			$("#chgimg").find(".closeimg").html("Close");
+			$("#chgimg .modal-body .cam").find("p").html("Camera");
+			$("#chgimg .modal-body .gal").find("p").html("Image Gallery");
+		}else{
+			$(".eng img").css("filter","grayscale(100%)");
+			$(".eng img").css("-webkit-filter","grayscale(100%)");
+			$(".idn img").css("filter","none");
+			$(".idn img").css("-webkit-filter","none");
+			$(".chgbhs strong").html("Bahasa Indonesia");
+			$("input[name='full_name']").attr("placeholder","Nama Lengkapmu..");
+			$("input[name='username']").attr("placeholder","Username kamu..");
+			//$("input[name='location']").attr("placeholder","Lokasimu");
+			$("input[name='phone']").attr("placeholder","Nomor Ponselmu..");
+			$("textarea[name='story']").attr("placeholder","Bagikan ceritamu..");
+			$(".chgbhslabel h4 strong").html("Bahasa");
+			$(".chgpasslabel h4 strong").html("Ganti Kata kunci");
+			$(".chgpass").html("Klik Di sini")
+			$(".avatar").next("p").html("Ganti gambar");
+			$(".title span").html("Pengaturan");
+			$(".details button").html("SIMPAN SEKARANG");
+			$(".menu-cat p").html("Katalog");
+			$(".menu-gam p").html("Permainan");
+			$(".menu-dir p").html("Daftar Tempat");
+			$(".menu-nws p").html("Berita & Promo");
+			$(".logout").html("Keluar");
+			$(".menu-set p").html("Pengaturan");
+			$(".tab-click1").html("Info Pribadi");
+			$(".tab-click2").html("Alamat");
+			$("input[name='hd_address3']").attr("placeholder","Alamat Kamu");
+			$("select.hd_prov3 option").html("-- Pilih Provinsi --");
+			$(".sec-2-title").html("Atur Alamatku");
+			$("#chglag").find(".modal-title").html("Pilih Bahasa");
+			$("#chglag").find(".closebhs").html("Tutup");
+			$("#chgimg").find(".modal-title").html("Pilih Media");
+			$("#chgimg").find(".closeimg").html("Tutup");
+			$("#chgimg .modal-body .cam").find("p").html("Kamera");
+			$("#chgimg .modal-body .gal").find("p").html("Galeri");
+
+
+		}
+		
+	});
+
+	$(".closebhs").click(function(){
+		if(localStorage.hd_lang==="ENG"){
+			
+			$(".chgbhs strong").html("English");
+		}else{
+			
+			$(".chgbhs strong").html("Bahasa Indonesia");
+		}
+	});
+
+	function clearCache() {
+	    navigator.camera.cleanup();
+	}
+	function dataURItoBlob(dataURI) {
+	    // convert base64/URLEncoded data component to raw binary data held in a string
+	    var byteString;
+	    if (dataURI.split(',')[0].indexOf('base64') >= 0)
+	        byteString = atob(dataURI.split(',')[1]);
+	    else
+	        byteString = unescape(dataURI.split(',')[1]);
+
+	    // separate out the mime component
+	    var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
+
+	    // write the bytes of the string to a typed array
+	    var ia = new Uint8Array(byteString.length);
+	    for (var i = 0; i < byteString.length; i++) {
+	        ia[i] = byteString.charCodeAt(i);
+	    }
+
+	    return new Blob([ia], {type:mimeString});
+	}
+	function camSuccess(imageURI) {
+		var dataURI = "data:image/jpeg;base64,"+imageURI+"";
+		// Prepare Parameter
+		var fd = new FormData();
+		// Proses Konversi base64 ke Blob
+		var blob = dataURItoBlob(dataURI);
+
+		var fieldName = "avatar";
+		var fileName = "displaypict"
+
+		// Field File
+		fd.append(fieldName, blob, fileName);
+					
+		// Execute
+		$.ajax({
+			url: ulz,
+			data: fd,
+			timeout: 30000,
+			processData: false,
+			contentType: false,
+			type: 'POST',
+			dataType: 'json',
+			success: function (message){
+				$("#success").modal("show");
+				//setTimeout("location.reload()",300);
+				$(".loading").fadeOut("fast");
+				location.reload();
+			},
+			error: function (message){
+				$("#error").modal("show");
+				if(localStorage.hd_lang==="ENG" || localStorage.hd_lang==undefined){
+					$("#error .modal-body").html("Upload Failed!");
+				}else{
+					$("#error .modal-body").html("Gagal mengunggah!");
+				}
+				
+			},
+		});
+
+
+	}
+
+	
+	
+	function camFail(message) {
+		$("#error").modal("show");
+		if(localStorage.hd_lang==="ENG" || localStorage.hd_lang==undefined){
+			$("#error .modal-body").html("Camera closed");
+		}else{
+			$("#error .modal-body").html("Kamera ditutup");
+		}
+		$(".loading").fadeOut("fast");
+	}
+
+	$(".cam").click(function(){
+		navigator.camera.getPicture(camSuccess, camFail, { quality: 70,
+		destinationType: Camera.DestinationType.DATA_URL});
+		$('#chgimg').modal('hide');
+		$('.loading').fadeIn('slow');
+	});
+
+
+	$(".gal").click(function(){
+		navigator.camera.getPicture(galSuccess, galFail, { quality: 70,
+			destinationType: Camera.DestinationType.DATA_URL,
+			sourceType : Camera.PictureSourceType.SAVEDPHOTOALBUM
+		});
+		$('#chgimg').modal('hide');
+		$('.loading').fadeIn('slow');
+	});
+
+	function galSuccess(imageURI) {
+		var dataURI = "data:image/jpeg;base64,"+imageURI+"";
+		// Prepare Parameter
+		var fd = new FormData();
+		// Proses Konversi base64 ke Blob
+		var blob = dataURItoBlob(dataURI);
+
+		var fieldName = "avatar";
+		var fileName = "displaypict"
+
+		// Field File
+		fd.append(fieldName, blob, fileName);
+					
+		// Execute
+		$.ajax({
+			url: ulz,
+			data: fd,
+			timeout: 30000,
+			processData: false,
+			contentType: false,
+			type: 'POST',
+			dataType: 'json',
+			success: function (message){
+				//alert("Avatar image was updated");
+				$("#success").modal("show");
+
+				location.reload();
+				$(".loading").fadeOut("fast");
+			},
+			error: function (message){
+				$("#error").modal("show");
+				if(localStorage.hd_lang==="ENG" || localStorage.hd_lang==undefined){
+					$("#error .modal-body").html("Upload Failed!");
+				}else{
+					$("#error .modal-body").html("Gagal mengunggah!");
+				}
+			},
+		});
+	}
+
+	function galFail(message) {
+		$("#error").modal("show");
+		if(localStorage.hd_lang==="ENG" || localStorage.hd_lang==undefined){
+			$("#error .modal-body").html("Camera closed");
+		}else{
+			$("#error .modal-body").html("Kamera ditutup");
+		}
+		$(".loading").fadeOut("fast");
+	}
+
+
+})
+</script>
+<script type="text/javascript">
+ var sess_key = localStorage.hd_session_key;
+ var getprov = "http://api.haagendazsindonesia.co.id/v1/province?session_key="+ sess_key +"";
+ var selectprov3 = $("select.hd_prov3");
+ var selectcity3 = $("select.hd_city3");
+ var selectdist3 = $("select.hd_dist3");
+ selectcity3.hide();
+ selectdist3.hide();
+ var kecamatanku;
+ var kotaku;
+ var provinsiku;
+ var alamat=[];
+
+ 
+
+
+ $("select.hd_prov3").change(function(){
+
+	 	if($(this).val() != ""){
+	 		$(".btnfix .continue").css("opacity","0.3");
+	 		$(".btnfix .continue").attr("disabled",true);
+		 	selectcity3.show();
+		 	selectcity3.html("Choose City");
+		 	selectdist3.hide();
+		 	selectcity3.css("background","url(img/loading.gif) center center no-repeat");
+		 	selectcity3.css("background-size","contain");
+		 	
+		 	var getcity = "http://api.haagendazsindonesia.co.id/v1/city?session_key="+ sess_key +"&search_province_id="+ $(this).val()+"";
+		 	$.getJSON(getcity,function(kota){
+				//console.log(kota.payload[32].city_name);
+				if(localStorage.hd_lang==="IDN"){
+					selectcity3.append("<option value=''>-- Pilih Kota --</option>");
+				}else{
+					selectcity3.append("<option value=''>-- Select City --</option>");
+				}
+				selectcity3.css("background","none");
+				for (var i = 0, buset = kota.payload.length; i < buset; i++) {
+			        $(".hd_city3").append(
+						"<option value='"+ kota.payload[i].city_id +"' data-select='"+ kota.payload[i].city_name +"'>"+
+							kota.payload[i].city_name +
+						"</option>"
+					)
+			    }
+				
+			 });
+		 	//alamat.splice(3, 0, $(this).val());
+		 	provinsiku = $(this).val();
+	 	}else{
+	 		selectcity3.hide();
+	 		selectdist3.hide();
+	 		provinsiku = $(this).val("");
+	 		kotaku = null;
+	 		kecamatanku =null;
+	 	}
+	 });
+
+	 var alamat=[];
+
+ $("select.hd_city3").change(function(){
+ 	$(".btnfix .continue").css("opacity","0.3");
+ 	$(".btnfix .continue").attr("disabled",true);
+ 	if($(this).val() != ""){
+	 	selectdist3.show();
+	 	selectdist3.html("Choose District");
+	 	selectdist3.css("background","url(img/loading.gif) center center no-repeat");
+	 	selectdist3.css("background-size","contain");
+	 	var getdist = "http://api.haagendazsindonesia.co.id/v1/sub_district?session_key="+ sess_key +"&search_city_id="+ $(this).val()+"";
+	 	$.getJSON(getdist,function(kecamatan){
+	 		$("input[name='savename']").css("margin-bottom","63px");
+			//console.log(kecamatan.payload[32].sub_district_name);
+			if(localStorage.hd_lang==="IDN"){
+				selectdist3.append("<option value=''>-- Pilih Kecamatan --</option>");
+			}else{
+				selectdist3.append("<option value=''>-- Select Sub District --</option>");
+			}
+			selectdist3.css("background","none");
+
+			for (var i = 0, opo = kecamatan.payload.length; i < opo; i++) {
+		        selectdist3.append(
+					"<option value='"+ kecamatan.payload[i].sub_district_id +"' data-select='"+ kecamatan.payload[i].sub_district_name +"'>"+
+						kecamatan.payload[i].sub_district_name +
+					"</option>"
+				)
+		    }
+			
+		 });
+	 	//alamat.splice(2, 0, $(this).val());
+	 	kotaku = $(this).val();
+	}else{
+		selectdist3.hide();
+	}	
+ });
+
+$("input[name='hd_address3']").keydown(function(){
+	 	selectdist3.trigger("click");
+	 	alamat[0] = $(this).val();
+	 	console.log(alamat);
+	 });
+
+	 selectdist3.click(function(){
+	 	
+	 	if($(this).val() != "" && $(this).is(":visible") && $("input[name='hd_street2']").val()!=""){
+	 		console.log(alamat)
+	 		$(".btnfix .continue").css("opacity","1");
+	 		$(".btnfix .continue").attr("disabled",false);
+	 	}else{
+	 		$(".btnfix .continue").css("opacity","0.3");
+	 		$(".btnfix .continue").attr("disabled",true);
+	 	}	
+	 }) 
+
+	 selectdist3.change(function(){
+	 	if($(this).val() != "" && $("input[name='hd_street2']").val()!=""){
+	 		console.log($(this).val())
+	 		$(".btnfix .continue").css("opacity","1");
+	 		$(".btnfix .continue").attr("disabled",false);
+	 	}else{
+	 		$(".btnfix .continue").css("opacity","0.3");
+	 		$(".btnfix .continue").attr("disabled",true);
+	 	}
+	 	kecamatanku = $(this).val();
+	 	console.log(alamat);
+	 })
+
+
+
+$(document).ready(function() {
+  'use strict';
+  
+  var $swipeTabsContainer = $('.swipe-tabs'),
+    $swipeTabs = $('.swipe-tab'),
+    $swipeTabsContentContainer = $('.swipe-tabs-container'),
+    currentIndex = 0,
+    activeTabClassName = 'active-tab';
+
+  $swipeTabsContainer.on('init', function(event, slick) {
+    $swipeTabsContentContainer.removeClass('invisible');
+    $swipeTabsContainer.removeClass('invisible');
+
+    currentIndex = slick.getCurrent();
+    $swipeTabs.removeClass(activeTabClassName);
+        $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+  });
+
+  $swipeTabsContainer.slick({
+    //slidesToShow: 3.25,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    swipeToSlide: false,
+    touchMove: false,
+    swipe: false,
+    touchThreshold: 10,
+    animating: false,
+    focusOnSelect: true,
+    fade: false,
+
+  });
+
+   $swipeTabsContentContainer.slick({
+    asNavFor: $swipeTabsContainer,
+    adaptiveHeight: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    animating: false,
+    //vertical: false,
+    //verticalSwiping: false,
+    //speed:1,
+    fade: false,
+    lazyLoad: 'ondemand',
+   	swipeToSlide: false,
+    //touchMove: false,
+   	swipe: false,
+    draggable: false,
+    touchThreshold: 5,
+    variableWidth: false,
+    focusOnSelect: true,
+    centerMode: true,
+    centerPadding: '1px',
+  });
+
+
+  $swipeTabs.on('click', function(event) {
+        // gets index of clicked tab
+        currentIndex = $(this).data('slick-index');
+        $swipeTabs.removeClass(activeTabClassName);
+        $('.swipe-tab[data-slick-index=' + currentIndex +']').addClass(activeTabClassName);
+        $swipeTabsContainer.slick('slickGoTo', currentIndex);
+        $swipeTabsContentContainer.slick('slickGoTo', currentIndex);
+   
+    });
+
+    //initializes slick navigation tabs swipe handler
+    $swipeTabsContentContainer.on('swipe', function(event, slick, direction) {
+      currentIndex = $(this).slick('slickCurrentSlide');
+    $(".img-responsive")
+         
+    $swipeTabs.removeClass(activeTabClassName);
+    $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+  });
+ 
+ 
+ 
+ 
+});
+</script>
+ 
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="js/jquery.slideandswipe.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<link href="style/bootstrap.min.css" rel="stylesheet" >
+<script src="js/bootstrap.min.js" ></script>
+</body>
+</html>

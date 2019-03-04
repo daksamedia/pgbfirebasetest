@@ -1,0 +1,57 @@
+.slick-initialized .swipe-tab-content {
+  position: relative;
+  min-height:48vh;
+}
+@media screen and (min-width: 767px) {
+  .slick-initialized .swipe-tab-content {
+   min-height:90%;
+  }
+}
+.slick-initialized .swipe-tab {
+	font-family: 'Josefin Sans', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 41px;
+  background: #818181 !important;
+  border: 0;
+  color: #444;
+  cursor: pointer;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding-top:16px;
+  font-size:8pt;
+  text-transform:uppercase;
+  font-weight:bold;
+  letter-spacing:0.1pt;
+}
+.slick-initialized .swipe-tab:hover {
+  color: #6c6c6c;
+  text-decoration:underline;
+  font-weight: bold;
+  background: white !important;
+}
+.slick-initialized .swipe-tab.active-tab {
+  /* border-bottom-color: #000; */
+  color: #6c6c6c;
+  text-decoration:underline;
+  font-weight: bold;
+  background: white !important;
+}
+
+.main-container {
+  background: #f1f1f1;
+}
+
+.slick-list{
+	padding:0 !important;
+
+}

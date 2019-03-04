@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haagen Daaz</title>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="">
+<link rel="canonical" href="">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="style/style.css" rel="stylesheet">
+<script src="js/6fac2730d4.js"></script>
+<script src="cordova.js"></script>
+<link href="style/products.css" rel="stylesheet">
+<link rel="stylesheet" href="style/slick.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+<script type="text/javascript" src="phonegap.js"></script>
+<style type="text/css">
+	.slick-list{
+		height: inherit !important;
+	}
+
+	.header{
+		display: none;
+	}
+
+	.click_voucher{
+		font-size: 14px;
+		color: #810D24;
+		font-weight: bold;
+	}
+
+	.vouchersec{
+		margin-bottom: 15px !important
+	}
+</style>
+</head>
+<body></div>
+<section class="loading">
+	<img src="img/loading.gif" width="20%" />
+</section>
+<section class="header">
+	<div class="col-xs-2 back no-padding" style="display:none;">
+			<img src="img/last-track-left-arrow.png" width="100%" ">
+	</div>
+	<div class="col-xs-8 title">
+		<span>Checkout</span>
+	</div>
+	<div class="col-xs-2 cartbadge" style="display: none">
+			<div class="cart"><span class="cart-count">0</span></div>
+	</div>
+</section>
+<nav class="nav">
+	<img src="logo-head.png" width="23%" alt="swipe image" />
+	
+	<div class="current-user">
+		<div class="current-user-data">
+			<h3><a class="name_menu" data-href="profile.html">Loading...</a></h3>
+			<p class="points_menu">Your points: Loading...</p>
+		</div>
+		<div class="avatar"></div>
+		<div style="clear:both"></div>
+	</div>
+	
+	<div class="main-menu">
+		<a class="menu-hom" data-href="home.html"><p>Home</p></a>
+		<a class="menu-cat" data-href="shop.html"><p>Catalog</p></a>
+		<a class="menu-dir" data-href="outlet.html"><p>Directory</p></a>
+		<a class="menu-ner" data-href="nearme.html"><p>Near Me &trade;</p></a>
+		<a class="menu-gam" data-href="games.html"><p>Game</p></a>
+		<a class="menu-nws" data-href="news.html"><p>News</p></a>
+		<a class="menu-set" data-href="setting.html"><p>Setting</p></a>
+		<p class="logout">Log Out</p>
+	</div>
+	<div class="footer-nav">
+		<span><a href="termscondition.html">Term & Condition &nbsp;</a></span>
+		<span><a href="help.html">Help &nbsp;</a></span>
+		<span><a href="legal.html">Legal &nbsp;</a></span>
+		<span><a href="about.html">About &nbsp;</a></span>
+	</div>	
+</nav>
+<section class="shoppage">
+		
+		<section class="contentshop slick-initialized">
+			<div class="col-xs-12 no-padding tab-fixed-group">
+				<div class="btnfix" style="width: 100%; position: fixed; bottom: 0; background: white;">
+						<button class="continue" style="width: 100%; height: 40px; padding: 4px; color: #fff; background: #E3B75B; font-weight: bold; font-size: 9pt; text-transform: uppercase; border: none; opacity: 0.3" disabled>Complete Payment</button>
+				</div>
+				<div class="tab-fixed  col-xs-4 tab-click1">
+					Delivery
+				</div>
+				<div class="tab-fixed ongoing col-xs-4 tab-click2">
+					Payment
+				</div>
+				<div class="tab-fixed col-xs-4 tab-click3">
+					Confirmation
+				</div>
+			</div>
+			<div class="sub-header " >
+			  <div class="swipe-tabs">
+
+				
+				<div class="swipe-tab asu" hidden>Payment</div>
+				
+			  </div>
+			</div>
+			<div class="main-container ">
+			  <div class="swipe-tabs-container col-xs-12 no-padding	">
+				<div class="swipe-tab-content" style="background: #f7f7f7">
+					<div class="col-xs-12 align-left sect-2" style="margin-bottom:64px;">
+							
+							<!--<div class="col-xs-12 no-padding command" style="margin-bottom:  33px; text-align: left;">
+								<h3 style="font-size: 20px !important">Please select your payment method</h3>
+							</div>-->
+							
+							<div class="col-xs-12 no-padding vouchersec" style="margin-top: 20px;">
+								<h3>Use Coupon?</h3>
+								<p class="click_voucher">You can use your coupon here. Click here</p>
+								<input type="text" style="width:100%; border: #e4e4e4 1px solid; padding:4px; padding:4px; background:none; margin-bottom:10px; margin-top:15px;" placeholder="Enter Voucher here..."  class="voucherinp" />
+								<button class="usevoucher" style="width: 100%; padding: 4px; color: #000; background: #E3B75B; margin:15px auto !important; border: none;">Use coupon now</button>
+							</div>
+
+							<form class="col-xs-12 no-padding cardinfo" style="margin-bottom: 30px !important">
+								<!-- <h3>Card Information</h3> -->
+								<div class="col-xs-12 hd_info" style="background: #ffefb0; border: 1px solid #d6ba4a; padding:10px 0 10px 10px; text-align: left; margin-top:13px">
+									<p style="font-size: 14pt; text-align: center;">We accept these cards</p>
+									<img src="img/cc-logo.png" width="280" style="margin: 15px auto !important	; " />
+								</div>
+								
+								
+							</form>
+
+							<h3 class="sect-2-title">Payment Option</h3>
+							
+							<div class="col-xs-12 no-padding align-left">
+								<span><input id="radio-x" class="radio-custom" name="radio-2" type="radio">
+								<label for="radio-x" class="radio-custom-label">Credit Card / Online Debit</label></span>
+							</div>
+							<div class="col-xs-12 no-padding align-left">
+								<span><input id="radio-y" class="radio-custom" name="radio-2" type="radio">
+								<label for="radio-y" class="radio-custom-label">Transfer</label></span>
+							</div>
+							<div class="col-xs-12 no-padding align-left">
+								<span><input id="radio-z" class="radio-custom" name="radio-2" type="radio">
+								<label for="radio-z" class="radio-custom-label">Sakuku</label></span>
+							</div>
+							<div class="col-xs-12 no-padding transinfo" style="margin-top: 13px;">
+								<h3 style="margin-bottom: 30px">Account Number</h3>
+								
+								
+									
+							</div>
+							<div class="col-xs-12 no-padding uangku" style="margin-top: 13px;">
+							<h3 style="margin-bottom: 13px">About Sakuku</h3>
+
+								<div class="col-xs-12 hd_info" style="background: #ffefb0; border: 1px solid #d6ba4a; padding:10px 0 10px 10px; text-align: left; margin-top:13px">
+									<img src="img/sakuku.jpg" width="41%" style="margin-bottom: 10px;" />
+									<p>
+										<!--<strong>Attention!</strong><br> -->
+										Sakuku is an electronic wallet to do a transaction through mobile apps. It could use for shopping, reload mobile credit, and etc.<a style='color:#810D24; font-weight: bold;' href='https://www.bca.co.id/sakuku'> More info.</a>
+									</p>
+								</div>
+							</div>
+							
+							
+
+							<div class="col-xs-12 no-padding invoice" style="margin-top: 20px;">
+								<h3>Invoice</h3>
+							</div>
+							<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">
+								<div class="col-xs-6 th-inv-1" style="background:#fff; text-align: left; font-weight: bold; padding: 5px;">Product Name</div>
+	            				<div class="col-xs-2 th-inv-2" style="background:#e4e4e4; text-align: center; font-weight: bold;padding: 5px;">Qty</div>
+	            				<div class="col-xs-4 th-inv-3" style="background:#E3B75B; text-align: center; font-weight: bold;padding: 5px;">Price</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+		</section>
+      </section>
+	<div class="ssm-overlay ssm-toggle-nav"></div>
+
+<div class="modal fade" id="cvv" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" style="margin-top: 42% !important" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      	<img src="img/modal-info.png" width="60" />
+        <h3 class="modal-title" id="exampleModalLongTitle">Where is Security Code?</h3>
+        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>-->	
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <div class="col-xs-12">
+			<img style="margin-bottom: 10px" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSO2275Xqs5IxcHUjrN_5Rkh9KRatSCT2uBHPLjKQ9gMm-tVetngg" width="173" />
+			<p>Find last 3 digits on behind your card</p>
+		</div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="modal-footer">
+        <button type="button" class="col-xs-12" data-dismiss="modal">Close</button>
+        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="commands" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" style="margin-top: 42% !important" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      	<img src="img/modal-info.png" width="60" />
+        <h3 class="modal-title" id="exampleModalLongTitle">CHOOSE PAYMENT</h3>
+        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>-->	
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <div class="col-xs-12">
+			<p>Please choose your payment method</p>
+		</div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="modal-footer">
+        <button type="button" class="col-xs-12" data-dismiss="modal">Close</button>
+        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-success.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Success</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body">
+	      	<p>Some changes has been saved!</p>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding closebtn" data-dismiss="modal">Close</button>
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<div class="modal fade" id="coupon_success" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-success.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Success</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body">
+	      	<p>Some changes has been saved!</p>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding closebtn" data-dismiss="modal">Close</button>
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-error.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Error</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body">
+	      	<p>Some changes failed to save.</p>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding closebtn" data-dismiss="modal">Close</button>
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<div class="modal fade" id="sprintasia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document" style="margin: 0 !important;height: 96.5%;">
+	    <div class="modal-content" style="width: 100% !important;margin: 0 !important;height: 96% !important;">
+	      <div class="modal-body" style="padding: 0 !important;">
+	      	<div class="container">
+	      		<div class="row">
+	      			<iframe src="" style="width: 100%;height: 93vh; border: none !important;"></iframe>
+	      		</div>
+	      	</div>	      	
+	      </div>
+	      <div class="modal-footer">
+	        <div class="container">
+	      		<div class="row">
+	        		<button type="button" class="col-xs-12 no-padding closebtn" style="transform: translate3d(0,0,0); position: fixed; left: 0; margin-top: 67vh !important;" data-dismiss="modal">Close</button>
+	        	</div>
+	        </div>
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.creditCardValidator.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/validation.min.js"></script>
+<script type="text/javascript" src="js/additional-methods.min.js"></script>
+<script type="text/javascript" src="js/jquery.mycart.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="js/jquery.slideandswipe.js"></script>
+<!-- touchSwipe library -->
+<script>
+$(".loading").show();
+$(".shoppage").hide();
+$(".nav").hide();
+$(".sendmy").hide();
+$(".sendgift").hide();
+$(".codinfo").hide();
+$(".transinfo").hide();
+$(".uangku").hide();
+//$(".cardinfo").hide();
+$(".back").hide();
+/* CALLBACK IFRAME */
+
+var order_id = getUrlParameter('id');
+
+function addAnEventListener(obj,evt,func){
+	if ('addEventListener' in obj){
+		obj.addEventListener(evt,func, false);
+	} else if ('attachEvent' in obj){//IE
+		obj.attachEvent('on'+evt,func);
+	}
+}
+
+function iFrameListener(event){
+	 //alert('Received from child: ' + event.data);
+	 setTimeout('PaySuccess()',1000);
+
+}
+
+function PaySuccess(){
+	window.location.href="order.html?id=" + order_id+ "";
+}
+
+addAnEventListener(window,'message',iFrameListener);
+
+
+if(localStorage.hd_lang==="IDN"){
+
+	/* SECTION 1 */
+	$(".title span").html("Transaksi");
+	$(".tab-click1").html("Pengiriman");
+	$(".tab-click2").html("Pembayaran");
+	$(".tab-click3").html("Konfirmasi");
+	$("input[name='card_number']").attr("placeholder","Masukkan 16 digit nomor kartu");
+	$(".continue").html("Selesaikan Pembayaran");
+	//$(".modal-body").find("p").html("Temukan 3 angka di balik kartumu");
+	//$(".modal-title").html("Kode Keamanan");
+	$(".click_voucher").html("Kamu dapat menggunakan kupon belanja dengan klik di sini.")
+	/* SECTION 2 */
+	$(".sect-2-title").html("Pilihan Pembayaran");
+	$("label[for='radio-x']").html("Kartu Kredit / Debit Online");
+	$("label[for='radio-y']").html("Transfer");
+	$("#commands .modal-title").html("Pilih Pembayaran")
+	$("#commands .modal-body p").html("Silahkan pilih metode pembayaranmu.");
+	$("#commands .modal-footer button").html("Tutup");
+	$("#success .modal-title, #coupon_success .modal-title").html("Sukses")
+	$("#success .modal-body p, #coupon_success .modal-body p").html("Pembayaran telah disimpan");
+	$("#success .modal-footer button, #coupon_success .modal-footer button").html("Tutup");
+	$("#error .modal-title").html("Gagal")
+	$("#error .modal-body p").html("Pembayaran gagal disimpan");
+	$("#error .modal-footer button").html("Tutup");
+	$(".vouchersec h3").html("Gunakan Kupon?");
+	$(".transinfo h3").html("Nomor Rekening");
+	$(".cardinfo h3").html("Informasi Kartu");
+	$(".cardinfo p").html("Kami menerima pembayaran")
+	$(".uangku h3").html("Seputar SAKUKU");
+	$(".uangku p").html("Sakuku adalah uang dompet elektronik yang dapat digunakan bertransaksi melalui aplikasi smartphone dalam melakukan bayar belanja, isi pulsa, dan transaksi perbankan lainnya. <a style='color:#810D24; font-weight: bold;' href='https://www.bca.co.id/sakuku'> Info Selengkapnya.</a> ");
+	$("input[name='card number']").attr("placeholder","16 Digit Nomor Kartu");
+	$(".voucherinp").attr("placeholder","Masukkan kode kupon...");
+	$(".invoice h3").html("Faktur");
+	$(".usevoucher").html("Gunakan Kupon sekarang");
+	$(".th-inv-1").html("Nama produk");
+	$(".th-inv-2").html("Jml");
+	$(".th-inv-3").html("Harga");
+	$(".complete").html("Selesaikan Pembayaran");
+	$("#sprintasia .modal-footer button").html("Tutup")
+	//$("label[for='radio-z']").html("Kirim sebagai hadiah");
+
+}
+
+$(document).ready(function() {
+	$(".vouchersec input").hide();
+	$(".vouchersec button").hide();
+	$(".back").show("fast");
+	$(".back").click(function(){
+		//history.back();
+		window.location.href="order.html?id=" + order_id+ "";
+	})	
+	$(".click_voucher").click(function(){
+		$(this).fadeOut("fast");
+		$(".vouchersec input").fadeIn("fast");
+		$(".vouchersec button").fadeIn("fast");
+	})
+	$("#commands").modal("show");
+	var sess_key = localStorage.hd_session_key;
+	var order_id = getUrlParameter('id');
+	var nilai_voucher = 0;
+	var totalharga;
+	var urlx;
+	var vouchertype;
+	$(".usevoucher").attr("disabled",false);
+	$(".usevoucher").css("opacity","1");
+	var get_payment = "http://api.haagendazsindonesia.co.id/v1/payment_channel?session_key="+ sess_key +""
+	
+	/* ACTION VALIDATION COUPON */
+	$('.xxx').keyup(function(){
+			$('.voucherinp').css("background","url(img/loading.gif) no-repeat 98% center");
+			$('.voucherinp').css("background-size","contain");
+			urlx = "http://api.haagendazsindonesia.co.id/v1/coupon?session_key="+  sess_key +"&coupon_code="+ $(this).val() +"";
+			$.getJSON(urlx,function(vocer){
+		   		
+		   		//for(var i = 0, len = vocer.payload.length; i < len; i++){
+					if(vocer.is_error===false || vocer.is_error==="false"){
+						$('.voucherinp').css("background","url(img/valid.svg) no-repeat 98% center");
+						$('.voucherinp').css("background-size","6%");
+						$(".usevoucher").attr("disabled",false);
+						$(".usevoucher").css("opacity","1");
+						if(vocer.payload[0].value_type!="FIXED"){
+							nilai_voucher = vocer.payload[0].value / 100;
+						}else{
+							nilai_voucher = vocer.payload[0].value;
+						}
+						
+						vouchertype = vocer.payload[0].value_type
+
+					}else{
+						$(".usevoucher").attr("disabled","true");
+						$(".usevoucher").css("opacity","0.4");
+						if($('.voucherinp').val() !=""){
+							$('.voucherinp').css("background","url(img/invalid.svg) no-repeat 98% center");
+							$('.voucherinp').css("background-size","6%");
+							
+						}else{
+							$('.voucherinp').css("background","");
+							
+						}
+					}
+				//}
+			});
+	});
+	
+
+
+	/* ACTION FOR USE VOUCHER FUNCTION */
+	var payByVoucherInProgress = false;
+	function usevoucher(){
+		// Just reject when this function in progress
+		if(payByVoucherInProgress){
+			return;
+		}
+		
+		// Set In Progress
+		payByVoucherInProgress = true;
+		
+		var coupon_code = $('.voucherinp').val();
+
+		var param = {
+			coupon_code : coupon_code
+		}
+
+		//GET VOUCHER VALUE
+		/* urlx = "http://api.haagendazsindonesia.co.id/v1/coupon?session_key="+  sess_key +"&coupon_code="+ coupon_code +"";
+		$.getJSON(urlx,function(vocer){
+			nilai_voucher = vocer.payload[0].value;
+		}) */
+
+		//APPLY VOUCHER VALUE
+		var urs = "http://api.haagendazsindonesia.co.id/v1/coupon_payment?session_key="+ sess_key +"&order_id="+ getUrlParameter('id') +"&coupon_code="+ coupon_code +"";
+
+		$.post(urs, param)
+	        .done(function(data){
+	        	var response = jQuery.parseJSON(data);
+	        	if(response.is_error==false || response.is_error=="false"){
+			   		//alert("Your Profile has been updated.");
+			   		//$("#success").modal("show");
+			   		$("#coupon_success").modal("hide")
+			   		if(localStorage.hd_lang=="IDN"){
+			   			$("#coupon_success modal-body p").html("Voucher sudah diterapkan");
+			   		}else{
+			   			$("#coupon_success modal-body p").html("Voucher has been applied!");	
+			   		}
+
+			   		$('.vouchersec').fadeOut("fast");
+			   		
+			   		var newprice = totalharga - nilai_voucher;
+					$(".totalprice").html('Rp. '+addCommas(newprice));
+					$(".order-list").append(
+						'<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">'+
+			            '<div class="col-xs-6" style="background:#96dd6b; text-align: left; padding: 5px;">Voucher : <strong>'+ $('.voucherinp').val()  +'</strong></div>'+
+			            '<div class="col-xs-2" style="background:#96dd6b; text-align: center; padding: 5px;">1</div>'+
+			            '<div class="col-xs-4" style="background:#96dd6b; text-align: center; padding: 5px;"> - Rp. '+ addCommas(nilai_voucher)+'</div>'+
+			          '</div>'
+					);
+			   		
+			   	}else{
+			   		$(this).addClass("col-xs-12");
+					$(this).removeClass("col-xs-6");
+					$("#coupon_success .modal-footer .apply_coupon").remove();					
+					$(".usevoucher").attr("disabled",false);
+					$(".usevoucher").css("opacity","1");
+			   		$("#error").modal("show");
+			   		$("#coupon_success").modal("hide");
+			   		if(localStorage.hd_lang=="IDN"){
+			   			$("#error .modal-title").html("Gagal");
+			   			if(response.status_code==500){
+			   				$("#error .modal-body p").html("Kamu sudah melampaui batas maksimum penggunaan kupon.");
+			   			}else if(response.status_code==502){
+			   				$("#error .modal-body p").html("Kupon sudah tidak berlaku.");
+			   			}
+			   		}else{
+			   			$("#error .modal-title").html("Gagal");
+			   			$("#error .modal-body p").html("Error! "+ response.status_msg);
+			   		}			   		
+			   	}
+				
+				// Kembalikan flag in progress
+				payByVoucherInProgress = false;
+	        })
+
+		
+		/*
+		if(vouchertype!="FIXED"){
+			var newprice = totalharga - (totalharga * nilai_voucher);
+			$(".totalprice").html('Rp. '+addCommas(newprice));
+			$(".order-list").append(
+				'<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">'+
+	            '<div class="col-xs-6" style="background:#96dd6b; text-align: left; padding: 5px;">Voucher : <strong>'+ $('.voucherinp').val()  +'</strong></div>'+
+	            '<div class="col-xs-2" style="background:#96dd6b; text-align: center; padding: 5px;">1</div>'+
+	            '<div class="col-xs-4" style="background:#96dd6b; text-align: center; padding: 5px;"> -'+ nilai_voucher*100 +'%</div>'+
+	          '</div>'
+			);
+		}else{
+			var newprice = totalharga - nilai_voucher;
+			$(".totalprice").html('Rp. '+addCommas(newprice));
+			$(".order-list").append(
+				'<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">'+
+	            '<div class="col-xs-6" style="background:#96dd6b; text-align: left; padding: 5px;">Voucher : <strong>'+ $('.voucherinp').val()  +'</strong></div>'+
+	            '<div class="col-xs-2" style="background:#96dd6b; text-align: center; padding: 5px;">1</div>'+
+	            '<div class="col-xs-4" style="background:#96dd6b; text-align: center; padding: 5px;"> - Rp. '+ addCommas(nilai_voucher)+'</div>'+
+	          '</div>'
+			);
+		}
+		*/
+		
+	}
+
+	function validatevoucher(){
+		var coupon_code = $(".vouchersec input").val();
+		//var order_id = order_id;
+		$(".usevoucher").attr("disabled","true");
+		$(".usevoucher").css("opacity","0.3");
+		
+		var param = {
+			coupon_code : coupon_code,
+			order_id : order_id
+		}
+
+		if(coupon_code!=""){
+			var post_voucher = "http://api.haagendazsindonesia.co.id/v1/calculate_order?session_key="+ sess_key +"";
+
+			$.post(post_voucher, param)
+		        .done(function(data){
+		        	var respon = $.parseJSON(data);
+		        	if(respon.is_error=="false" || respon.is_error==false){
+		        		$("#coupon_success").modal("show")
+		        		$("#coupon_success .modal-footer .closebtn").removeClass("col-xs-12");
+		        		$("#coupon_success .modal-footer .closebtn").addClass("col-xs-6");
+		        		nilai_voucher = respon.payload.coupon_discount
+		        		if(localStorage.hd_lang=="IDN"){
+		        			$("#coupon_success .modal-title").html("Kupon Benar");
+		        			$("#coupon_success .modal-body p").html("Kupon akan memotong harga <strong>Rp. "+ addCommas(nilai_voucher) +"</strong> dari total harga. Klik 'Gunakan Kupon' untuk menggunakan kupon.");	        			
+		        			$("#coupon_success .modal-footer").append("<button class='col-xs-6 apply_coupon'>Gunakan Kupon</button>");
+		        		}else{
+		        			$("#coupon_success .modal-title").html("Coupon is Valid!");
+		        			$("#coupon_success .modal-body p").html("Coupon will discount <strong>Rp. "+ addCommas(nilai_voucher) +"</strong> from total price. Click 'Use Coupon' to apply coupon.");
+		        			$("#coupon_success .modal-footer").append("<button class='col-xs-6 apply_coupon'>Use Coupon</button>");
+		        		}
+						
+		        		$("#coupon_success .modal-footer .closebtn").click(function(){
+		        			$(this).addClass("col-xs-12");
+		        			$(this).removeClass("col-xs-6");
+		        			$("#coupon_success .modal-footer .apply_coupon").remove()
+		        		});
+		        		$(".apply_coupon").click(usevoucher);
+		        	}else{
+						$(".usevoucher").attr("disabled",false);
+						$(".usevoucher").css("opacity","1");
+		        		$("#error").modal("show");
+		        		if(localStorage.hd_lang=="IDN"){
+		        			$("#error .modal-title").html("Kupon Salah");
+		        			$("#error .modal-body p").html("Kupon tidak berlaku.");
+		        			$("#error .modal-footer button").html("Tutup")
+		        		}else{
+		        			$("#error .modal-title").html("Invalid Coupon");
+		        			$("#error .modal-body p").html("Coupon is invalid.");
+		        		}
+		        	}
+		        })
+		}else{
+			$("#error").modal("show");
+			$(".usevoucher").attr("disabled",false);
+			$(".usevoucher").css("opacity","1");
+    		if(localStorage.hd_lang=="IDN"){
+    			$("#error .modal-title").html("Kupon Kosong");
+    			$("#error .modal-body p").html("Kolom isian kosong.");
+    			$("#error .modal-footer button").html("Tutup")
+    		}else{
+    			$("#error .modal-title").html("Blank Input");
+    			$("#error .modal-body p").html("Coupon was not written.");
+    		}
+		}
+		
+	}
+
+	/* CONDITION IF ORDER ID IS AVAILABLE OR NOT */
+	if(order_id){
+		var hd_current_order = order_id;
+		var urln = "http://api.haagendazsindonesia.co.id/v1/order?session_key="+ sess_key +"&order_id="+ order_id +"&detail_mode=1";
+		$(".sect-2").append('<div class="col-xs-12 no-padding order-list" style="margin-bottom:13px !important">'+
+						
+			'</div>'+
+			'<div class="col-xs-12 no-padding order-total" style="margin-top: 20px;   text-align: center;">'+
+			
+		'</div>');
+		$.getJSON(urln,function(pesanan){
+			if(pesanan.payload[0].order_status=="PAID"){
+				location.href="order.html?id="+ order_id +"";
+			}
+			//var pesanan = jQuery.parseJSON(order);
+			for (var i = 0, len = pesanan.payload[0].detail.length; i < len; i++) {
+
+				$(".order-list").append(
+					'<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">'+
+			            '<div class="col-xs-6" style="background:#fff; text-align: left; padding: 5px; font-size:10pt">' + pesanan.payload[0].detail[i].product_name + '</div>'+
+			            '<div class="col-xs-2" style="background:#e4e4e4; text-align: center; padding: 5px;">' + pesanan.payload[0].detail[i].qty + '</div>'+
+			            '<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px;">Rp. '+ addCommas(pesanan.payload[0].detail[i].qty * (pesanan.payload[0].detail[i].price - pesanan.payload[0].detail[i].discount)) +'</div>'+
+			         '</div>'
+				)
+
+
+
+			}
+			
+			if(pesanan.payload[0].shipping_cost == 0 || pesanan.payload[0].shipping_cost == "0" || pesanan.payload[0].shipping_cost == null || pesanan.payload[0].shipping_cost == "null"){
+				$(".order-list").append(
+						'<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">'+
+				            '<div class="col-xs-6 label-sc" style="background:#fff; text-align: left; padding: 5px; font-size:10pt; font-weight:bold">Service charge</div>'+
+				            '<div class="col-xs-2" style="background:#e4e4e4; text-align: center; padding: 5px;"> - </div>'+
+				            '<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px;">Rp. '+ addCommas(pesanan.payload[0].service_charge) +'</div>'+
+				         '</div>'
+					)
+			}else{
+				$(".order-list").append(
+						'<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">'+
+				            '<div class="col-xs-6 label-deliv" style="background:#fff; text-align: left; padding: 5px; font-size:10pt; font-weight:bold">Delivery fee</div>'+
+				            '<div class="col-xs-2" style="background:#e4e4e4; text-align: center; padding: 5px;"> - </div>'+
+				            '<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px;">Rp. '+ addCommas(pesanan.payload[0].shipping_cost) +'</div>'+
+				         '</div>'
+					)
+				
+			}
+			$(".order-list").append(
+					'<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">'+
+			            '<div class="col-xs-6 label-tax" style="background:#fff; text-align: left; padding: 5px; font-size:10pt; font-weight:bold">Tax</div>'+
+			            '<div class="col-xs-2" style="background:#e4e4e4; text-align: center; padding: 5px;"> - </div>'+
+			            '<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px;">Rp. '+ addCommas(pesanan.payload[0].tax) +'</div>'+
+			         '</div>'
+			)
+
+			if(localStorage.hd_lang=="IDN"){
+				$(".label-tax").html("PPN 10%");
+				$(".label-sc").html("Biaya layanan");
+				$(".label-deliv").html("Ongkos Kirim");
+			}
+
+			if(pesanan.payload[0].transaction.length > 0){
+				var gt = (pesanan.payload[0].total_value - pesanan.payload[0].transaction[0].value)
+				if(pesanan.payload[0].transaction[0].channel_type=="COUPON"){
+					if(localStorage.hd_lang=="IDN"){
+						$(".order-list").append('<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">'+
+					'<div class="col-xs-6 th-inv-1" style="background:#96dd6b; text-align: left; padding: 5px; font-size:10pt">Kode Kupon : <strong>'+ pesanan.payload[0].transaction[0].remarks +'</strong></div>'+
+					'<div class="col-xs-2 th-inv-2" style="background:#96dd6b; text-align: center;padding: 5px;">1</div>'+
+					'<div class="col-xs-4 th-inv-3" style="background:#96dd6b; text-align: center; padding: 5px;"> - Rp. '+ addCommas(pesanan.payload[0].transaction[0].value) +'</div></div>');	
+					}else{
+						$(".order-list").append('<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">'+
+					'<div class="col-xs-6 th-inv-1" style="background:#96dd6b; text-align: left; padding: 5px; font-size:10pt">Coupon code : <strong>'+ pesanan.payload[0].transaction[0].remarks +'</strong></div>'+
+					'<div class="col-xs-2 th-inv-2" style="background:#96dd6b; text-align: center;padding: 5px;">1</div>'+
+					'<div class="col-xs-4 th-inv-3" style="background:#96dd6b; text-align: center; padding: 5px;"> - Rp. '+ addCommas(pesanan.payload[0].transaction[0].value) +'</div></div>');	
+					}									
+				}else{
+					$(".order-list").append('<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">'+
+					'<div class="col-xs-6 th-inv-1" style="background:#96dd6b; text-align: left; padding: 5px; font-size:10pt">'+ pesanan.payload[0].transaction[0].remarks +'</div>'+
+					'<div class="col-xs-2 th-inv-2" style="background:#96dd6b; text-align: center;padding: 5px;">1</div>'+
+					'<div class="col-xs-4 th-inv-3" style="background:#96dd6b; text-align: center; padding: 5px;"> - Rp. '+ addCommas(pesanan.payload[0].transaction[0].value) +'</div></div>');
+				}
+				$(".vouchersec").hide();
+				
+				$(".order-total").append('<p class="no-padding" id="total2">Total</p>' +
+	        	'<h3 class="no-padding totalprice" style="font-weight:bold" id="">Rp. '+ addCommas(gt)+'</h3>');
+			}else{
+
+				
+				totalharga = pesanan.payload[0].total_value
+				//totalharga = pesanan.payload[0].total_value ;
+				
+				$(".order-total").append('<p class="no-padding" id="total2">Total</p>' +
+	        	'<h3 class="no-padding totalprice" style="font-weight:bold" id="">Rp. '+ addCommas(totalharga)+'</h3>');
+				
+				
+			}
+
+
+			
+	       
+
+		});
+
+		$(".usevoucher").click(validatevoucher);
+
+	}else{
+		var hd_current_order = localStorage.current_order_id;
+		$(".sect-2").append('<div class="col-xs-12 no-padding product-checkout" style="margin-bottom:13px !important">'+						
+			'</div>'+
+			'<div class="col-xs-12 no-padding grandTotal" style="margin-top: 20px;   text-align: center;">'+		
+		'</div>');
+
+		$(".usevoucher").click(function(){
+
+		 	$("#total1").fadeOut("slow");
+		 	$("#my-cart-grand-total").fadeOut("slow");
+		 	var vouchercode = $('.voucherinp').val();
+		 	$('.vouchersec').fadeOut("fast");
+		 	localStorage.hd_order_vouchername = vouchercode;
+		 	localStorage.hd_order_voucherdisc = (nilai_voucher*100)+" %";
+		 	
+		 	$('.addcart').myCart({
+		      currencySymbol: 'Rp. ',
+		      classCartIcon: 'cart',
+		      classCartBadge: 'cart-count',
+		      classProductQuantity: 'cartqty',
+		      classProductRemove: 'my-product-remove',
+		      classCheckoutCart: 'my-cart-checkout',
+		      affixCartIcon: true,
+		      showCheckoutModal: true,
+		      
+		      clickOnAddToCart: function($addTocart){
+		        goToCartIcon($addTocart);
+		      },
+		      clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+		        console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+		      },
+		      checkoutCart: function(products, totalPrice, totalQuantity) {
+		        var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+		        checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+		        $.each(products, function(){
+		          checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+		        });
+		        alert(checkoutString)
+		        console.log("checking out", products, totalPrice, totalQuantity);
+		      },
+		      getDiscountPrice: function(products, totalPrice, totalQuantity) {
+		        console.log("calculating discount", products, totalPrice, totalQuantity);
+		        return totalPrice - (totalPrice * nilai_voucher);
+		      }
+		    });
+
+		 });
+
+	}
+		
+	$.getJSON(get_payment, function(channel){
+		if(channel.is_error==false || channel.is_error==="false"){
+			for(var i = 0, payment_length = channel.payload.length; i < payment_length; i++){
+				$(".transinfo").append('<div class="col-xs-12 no-padding '+ channel.payload[i].bank_name +'">'+
+				'<div class="col-xs-2 no-padding logo">'+
+					'<img src="img/banks/'+ channel.payload[i].bank_name +'.png" width="80" />'+
+				'</div>'+
+				'<div class="col-xs-10 no-padding accnumber align-right">'+
+					'<h4>'+ channel.payload[i].bank_account_number +'</h4>'+
+					'<P style="font-size:13px;"><STRONG>a/n '+ channel.payload[i].bank_account_holder +'</STRONG></P>'+
+				'</div>'+
+			'</div>');
+			}
+			$(".transinfo img").css("background-image","none")
+		}
+	});
+	
+	$(".header").show("fast");
+
+	/* $("input[name='card number']").keydown(function(){
+		$("input[name='validation']").trigger("click")
+	}) */
+	 
+		 
+	 var empty = 0;
+	 
+	 var alamat=[];
+	
+	 var ordername = localStorage.hd_name;
+	 var orderfood = localStorage.hd_order_food;
+	 var orderqty = localStorage.hd_order_qty;
+	 var orderaddress = alamat.toString();
+	 var orderdlv = localStorage.hd_delivery;
+	 var ordercontact = localStorage.hd_contact;
+	 var orderextra ="";
+	 var ordertotal = localStorage.hd_order_total;
+	 var orderstatus = "Sent";
+	 var orderpayment = localStorage.hd_payment;
+
+	 console.log(orderaddress)
+
+	 $(".continue").click(function(){
+
+
+	 	localStorage.hd_order_address = alamat.toString();
+	 	console.log(localStorage.hd_order_address);
+
+	 });
+
+	 $(".btnfix .continue").on('click', function() {
+		
+		$(this).attr("disabled",true);
+		$(this).attr("disabled","true");
+		setTimeout('window.location.href = "confirmation.html"; ',300);
+			   		
+		  
+	  });
+
+	// OPEN CC FORM
+	function opencc(){
+	 	/* var url = "http://sprintasia.h2h.haagendazsindonesia.co.id/v1/create_va?session_key="+ sess_key +"&order_id="+ hd_current_order +"&payment_channel_id=3";
+		var target = '_blank';
+		var options = "location=no,hardwareback=yes"
+		var ref = cordova.InAppBrowser.open(url, target, options); */
+		var url = "https://sprintasia.haagendazsindonesia.co.id/create_va?session_key="+ sess_key +"&order_id="+ hd_current_order +"&payment_channel_id=3";
+		$("#sprintasia").modal("show");
+		$("#sprintasia .modal-body iframe").attr("src",url);
+	}
+	
+	function opensakuku(){
+	 	/* var url = "http://haagendazs.echoscript.net/h2h/sprintasia/create_va?session_key="+ sess_key +"&order_id="+ hd_current_order +"&payment_channel_id=3";
+		var target = '_blank';
+		var options = "location=no,hardwareback=yes"
+		var ref = cordova.InAppBrowser.open(url, target, options); */
+		var url = "https://sprintasia.haagendazsindonesia.co.id/create_va?session_key="+ sess_key +"&order_id="+ hd_current_order +"&payment_channel_id=4";
+		$("#sprintasia").modal("show");
+		$("#sprintasia .modal-body iframe").attr("src",url);
+	}
+	
+	$("#coupon_success .modal-footer .closebtn").click(function(){
+		
+		$(".usevoucher").attr("disabled",false);
+		$(".usevoucher").css("opacity","1");
+		
+	})
+	
+	$("#sprintasia .modal-footer button").click(function(){
+		$("#sprintasia .modal-body iframe").attr("src","");
+	})
+
+	// CHOOSE PAYMENT
+	$("#radio-x").click(function(){
+		opencc();
+		$(".cardinfo").show();
+		$(".uangku").hide();
+		$(".transinfo").hide();
+		$(".command").hide();
+		payment = "Credit Card";
+		localStorage.hd_payment = "Credit Card";
+		console.log(localStorage.hd_payment);
+		$(".btnfix .continue").css("opacity","0.3");
+	 	$(".btnfix .continue").attr("disabled",true);
+	});
+
+	$("#radio-y").click(function(){		
+		//$(".cardinfo").hide();
+		$(".transinfo").show();
+		$(".uangku").hide();
+		$(".command").hide();
+		payment = "Bank Transfer";
+		localStorage.hd_payment = "Bank Transfer";
+		console.log(localStorage.hd_payment);
+		$(".btnfix .continue").css("opacity","1");
+	 	$(".btnfix .continue").attr("disabled",false);
+				
+	});
+
+	$("#radio-z").click(function(){		
+		//$(".cardinfo").hide();
+		$(".uangku").show();
+		$(".transinfo").hide();
+		$(".command").hide();
+		opensakuku();
+		payment = "Sakuku";
+		localStorage.hd_payment = "Sakuku";
+		console.log(localStorage.hd_payment)
+	});
+
+	/* NAVTAB FIXED */
+	$(".continue").click(function(){
+		$(".asu").trigger( "click" );
+		$(".tab-click2").addClass("ongoing");
+		$(".tab-click2").siblings().removeClass("ongoing");
+	});
+	
+	
+	
+});
+</script>
+
+<script type="text/javascript">
+
+
+$(document).ready(function() {
+  'use strict';
+  
+  var $swipeTabsContainer = $('.swipe-tabs'),
+    $swipeTabs = $('.swipe-tab'),
+    $swipeTabsContentContainer = $('.swipe-tabs-container'),
+    currentIndex = 0,
+    activeTabClassName = 'active-tab';
+
+  $swipeTabsContainer.on('init', function(event, slick) {
+    $swipeTabsContentContainer.removeClass('invisible');
+    $swipeTabsContainer.removeClass('invisible');
+
+    currentIndex = slick.getCurrent();
+    $swipeTabs.removeClass(activeTabClassName);
+        $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+  });
+
+  $swipeTabsContainer.slick({
+    //slidesToShow: 3.25,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    swipeToSlide: false,
+    touchMove: false,
+    swipe: false,
+    touchThreshold: 10,
+    animating: false,
+    focusOnSelect: true,
+    fade: false,
+
+  });
+
+   $swipeTabsContentContainer.slick({
+    asNavFor: $swipeTabsContainer,
+    adaptiveHeight: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    animating: false,
+    //vertical: false,
+    //verticalSwiping: false,
+    //speed:1,
+    fade: false,
+    lazyLoad: 'ondemand',
+   	swipeToSlide: false,
+    //touchMove: false,
+   	swipe: false,
+    draggable: false,
+    touchThreshold: 5,
+    variableWidth: false,
+    focusOnSelect: true,
+    centerMode: true,
+    centerPadding: '1px',
+  });
+
+
+  $swipeTabs.on('click', function(event) {
+        // gets index of clicked tab
+        currentIndex = $(this).data('slick-index');
+        $swipeTabs.removeClass(activeTabClassName);
+        $('.swipe-tab[data-slick-index=' + currentIndex +']').addClass(activeTabClassName);
+        $swipeTabsContainer.slick('slickGoTo', currentIndex);
+        $swipeTabsContentContainer.slick('slickGoTo', currentIndex);
+   
+    });
+
+    //initializes slick navigation tabs swipe handler
+    $swipeTabsContentContainer.on('swipe', function(event, slick, direction) {
+      currentIndex = $(this).slick('slickCurrentSlide');
+    $(".img-responsive")
+         
+    $swipeTabs.removeClass(activeTabClassName);
+    $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+  });
+  
+  
+});
+</script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<link href="style/bootstrap.min.css" rel="stylesheet" >
+<script src="js/bootstrap.min.js" ></script>
+</body>
+</html>

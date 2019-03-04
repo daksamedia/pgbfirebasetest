@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haagen Daaz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="">
+<link rel="canonical" href="">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="style/style.css" rel="stylesheet">
+<script src="js/6fac2730d4.js"></script>
+<link href="style/products.css" rel="stylesheet">
+<link rel="stylesheet" href="style/slick.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+<style type="text/css">
+.slick-list{
+	height: auto !important;			
+}
+
+.sect-1{
+	padding-bottom: 65px
+}
+
+.hd_suggestion {
+	position: fixed;
+	max-height: 180px;
+	z-index: 10;
+	background: white;
+	width: 91%;
+	overflow: scroll;
+	margin-top: -15px;
+	display: none;
+	border:2px solid #ccc;
+}
+
+.hd_suggestion div{
+	width: 100%;
+	margin:0;
+	padding:10px 6px 5px;
+}
+
+.hd_suggestion div p{
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.hd_suggestion div:hover {
+	background: #f4f4f4;
+}
+</style>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+</head>
+<body></div>
+<section class="loading">
+	<img src="img/loading.gif" width="20%" />
+</section>
+<section class="header">
+	<div class="col-xs-2">
+		<a href="#" class="ssm-toggle-nav" title="open nav">
+			<div class="burger">-</div>
+			<div class="burger">-</div>
+			<div class="burger">-</div>
+		</a>
+	</div>
+	<div class="col-xs-8 title">
+		<span>Checkout</span>
+	</div>
+	<div class="col-xs-2 cartbadge" style="display: none">
+			<div class="cart"><span class="cart-count">0</span></div>
+	</div>
+</section>
+<nav class="nav">
+	<div class="col-xs-6 no-padding">
+		<img src="logo-head.png" width="67px" alt="swipe image" />
+	</div>
+	<div class="col-xs-6 no-padding" style="text-align: right;">
+		<a href="inbox.html"><span class="inbox-count">0</span>
+		<img src="img/inbox.svg" width="28px" style="margin-right: 10px" alt="swipe image" /></a>
+	</div>
+	<div class="clearfix"></div>
+	<div class="current-user">
+		<div class="current-user-data">
+			<h3><a class="name_menu" data-href="profile.html">Loading...</a></h3>
+			<p class="points_menu">Your points: Loading...</p>
+		</div>
+		<div class="avatar"></div>
+		<div style="clear:both"></div>
+	</div>
+	
+	<div class="main-menu">
+		<a class="menu-hom" data-href="home.html"><p>Home</p></a>
+		<a class="menu-cat" data-href="shop.html"><p>Catalog</p></a>
+		<a class="menu-dir" data-href="outlet.html"><p>Directory</p></a>
+		<a class="menu-ner" data-href="nearme.html"><p>Near Me &trade;</p></a>
+		<a class="menu-gam" data-href="games.html"><p>Game</p></a>
+		<a class="menu-nws" data-href="news.html"><p>News</p></a>
+		<a class="menu-set" data-href="setting.html"><p>Setting</p></a>
+		<p class="logout">Log Out</p>
+	</div>
+	<div class="footer-nav">
+		<span><a href="termscondition.html">Term & Condition &nbsp;</a></span>
+		<span><a href="help.html">Help &nbsp;</a></span>
+		<span><a href="legal.html">Legal &nbsp;</a></span>
+		<span><a href="about.html">About &nbsp;</a></span>
+	</div>			
+</nav>
+<section class="shoppage">
+		
+		<section class="contentshop slick-initialized">
+			<div class="col-xs-12 no-padding tab-fixed-group">
+				<div class="btnfix" style="width: 100%; position: fixed; bottom: 0; background: white;">
+						<button class="continue" style="width: 100%; height: 40px; padding: 4px; color: #fff; background: #E3B75B; font-weight: bold; font-size: 9pt; text-transform: uppercase; border: none; opacity: .3" disabled>Continue Payment</button>
+				</div>
+				<div class="tab-fixed ongoing col-xs-4 tab-click1">
+					Delivery
+				</div>
+				<div class="tab-fixed col-xs-4 tab-click2">
+					Payment
+				</div>
+				<div class="tab-fixed col-xs-4 tab-click3">
+					Confirmation
+				</div>
+			</div>
+			<div class="sub-header " >
+			  <div class="swipe-tabs">
+
+				<div class="swipe-tab sue" hidden>Delivery</div>
+				
+				
+			  </div>
+			</div>
+			<div class="main-container ">
+			  <div class="swipe-tabs-container col-xs-12 no-padding	">
+				<div class="swipe-tab-content" style="background: #f7f7f7">
+					<div class="col-xs-12 align-left sect-1">
+						<h3 class="sec-1-title">Delivery Option</h3>
+						
+						<div class="col-xs-12 no-padding align-left radio_a">
+							<span><input id="radio-1" class="radio-custom" name="radio-group" type="radio">
+							<label for="radio-1" class="radio-custom-label">Store Pick Up</label></span>
+						</div>
+						<div class="col-xs-12 no-padding align-left radio_b">
+							<span><input id="radio-2" class="radio-custom" name="radio-group" type="radio">
+							<label for="radio-2" class="radio-custom-label">Send to an Address</label></span>
+						</div>
+						<div class="col-xs-12 no-padding align-left radio_c">
+							<span><input id="radio-3" class="radio-custom" name="radio-group" type="radio">
+							<label for="radio-3" class="radio-custom-label">Send as Gift</label></span>
+						</div>
+						<div class="col-xs-12 no-padding" style="margin-top: 15px;">
+							<h3 class="sec-1-title2">Delivery Address</h3>
+						</div>
+						<div class="pickstore">
+
+							<select class="hd_prov1" name="prov" >
+								<option value="">-- Choose Province --</option>
+							</select>
+							<select class="hd_city1" name="city" >
+								
+							</select>
+							<select class="hd_dist1" name="dist" >
+								
+							</select>
+							<select class="hd_store1" name="store" >
+							</select>
+							<div class="col-xs-12 no-padding info" style="margin-top: 33px !important; text-align: center;">
+								<p class="hd_alert" style="font-size: 13pt;">Get your order on Our closest Store</p>			
+								<div class="col-xs-12 hd_info" style="background: #ffefb0; border: 1px solid #d6ba4a; padding:4px; text-align: center; margin-top:13px">
+									<p>
+										<strong>Attention!</strong><br>
+										You will get charge if you added some items.<br />
+									 	Waiter will give you all of your order.
+									</p>
+								</div>
+
+							</div>
+							
+						</div>
+						<div class="sendgift">
+							<div class="ui-widget">
+							<input class="hd_recipient2" name="hd_recipient2" type="text" placeholder="Name of recipient.."  />
+							<div class="hd_suggestion"></div>
+							</div>
+							<div class="col-xs-12 hd_recipient_info" style="background: #ffefb0; border: 1px solid #d6ba4a; padding:17px; margin-top:13px">
+								
+							</div>
+							<!--<div class="col-xs-12 no-padding align-left">
+								<span><input id="radio-4" class="radio-custom" name="radio-err" type="radio">
+								<label for="radio-4" class="radio-custom-label">Save</label></span>
+							</div>
+							<input type="text" class="hd_street2" name="hd_street2" placeholder="Address of recipient.."   />	
+							<select class="hd_prov2" >
+								<option value="">-- Choose Province --</option>
+								
+							</select>
+							<select class="hd_city2" >
+								
+							</select>
+							<select class="hd_dist2" >
+								
+							</select>-->		
+							
+						</div>
+						<div class="sendmy">
+							<div class="col-xs-12 no-padding " style="margin-top: 14px !important; text-align: center;">
+									<p class="hd_alert2" style="font-size: 16px;background: #f6e4c9;padding: 8px 8px 12px;border: 1px solid #e3b75b;">This order will be processed whithin 3 working days.</p>		
+
+							</div>
+							<select name="address" >
+								<option value="">-- Choose Address --</option>
+								<option value="home">My Address</option>
+								<option value="work">Input Address...</option>
+							</select>
+							<div class="col-xs-12 hd_myaddress">
+								<!--<p>
+									<strong>Attention!</strong><br>
+									Please check your address.<br />
+								 	If it's not set properly, we will call you.
+								</p>-->
+							</div>
+							<div class="col-xs-12 no-padding hd_newaddress">
+								<input name="hd_name3" type="text" style="width:100%; border: #e4e4e4 1px solid; padding:4px; padding:4px; background:none; margin-bottom:15px; margin-top:15px;" placeholder="Input recipient name..."  />
+								<input name="hd_phone3" type="text" style="width:100%; border: #e4e4e4 1px solid; padding:4px; padding:4px; background:none; margin-bottom:15px; margin-top:15px;" placeholder="Recipient phone number..."  />
+								<input name="hd_address3" type="text" style="width:100%; border: #e4e4e4 1px solid; padding:4px; padding:4px; background:none; margin-bottom:15px; margin-top:15px;" placeholder="Input Address..."  />	
+								<select class="hd_prov3" name="Province" >
+									<option value="">-- Choose Province --</option>
+								</select>
+								<select class="hd_city3" >
+									
+								</select>
+								<select class="hd_dist3" >
+									
+								</select>
+							</div>
+							
+						</div>
+						<div class="col-xs-12 no-padding table_inv">
+							<div class="col-xs-12 no-padding invoice" style="margin-top: 20px;">
+								<h3>Invoice</h3>
+							</div>
+							<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">
+								<div class="col-xs-6 th-inv-1" style="background:#fff; text-align: left; font-weight: bold; padding: 5px;">Product Name</div>
+	            				<div class="col-xs-2 th-inv-2" style="background:#e4e4e4; text-align: center; font-weight: bold;padding: 5px;">Qty</div>
+	            				<div class="col-xs-4 th-inv-3" style="background:#E3B75B; text-align: center; font-weight: bold;padding: 5px;">Price</div>
+							</div>
+							<div class="col-xs-12 no-padding product-checkout" style="margin-bottom:13px !important">
+
+							</div>
+							<div class="col-xs-12 no-padding grandTotal" style="margin-top: 20px;   text-align: center;">
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+			  </div>
+			</div>
+		</section>
+      </section>
+
+
+	<div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-error.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Error</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body">
+	      	<p>Some changes failed to save.</p>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding closebtn" data-dismiss="modal">Close</button>
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+    <div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-success.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Success</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body">
+	      	<p>Your order has been sent!</p>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding" data-dismiss="modal">Close</button>
+	        <!--<a href="creditcard.html"><button type="button" class="btnact col-xs-6 no-padding">Payment</button></a>-->
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="ssm-overlay ssm-toggle-nav"></div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.mycart.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3&libraries=places&key=AIzaSyDWFUAMgabo0ElziEBEhjSnfDort_1cPGg" async defer></script> 
+<script src="http://ubilabs.github.io/geocomplete/jquery.geocomplete.js"></script>
+<!-- touchSwipe library -->
+<script>
+$(".loading").show();
+$(".shoppage").hide();
+$(".nav").hide();
+$(".sendmy").hide();
+$(".sendgift").hide();
+//$(".codinfo").hide();
+$(".transinfo").hide();
+
+if(localStorage.hd_lang==="IDN"){
+
+	/* SECTION 1 */
+	$(".title span").html("Transaksi");
+	$(".tab-click1").html("Pengiriman");
+	$(".tab-click2").html("Pembayaran");
+	$(".tab-click3").html("Konfirmasi");
+	$(".sec-1-title").html("Pilihan Pengiriman");
+	$(".sec-1-title2").html("Alamat Pengiriman	");
+	$("label[for='radio-1']").html("Pengambilan di Gerai");
+	$("label[for='radio-2']").html("Kirim ke sebuah Alamat");
+	$("label[for='radio-3']").html("Kirim sebagai hadiah");
+	$("label[for='radio-4']").html("Simpan");
+	$("label[for='radio-5']").html("Simpan sebagai");
+	$("input.hd_recipient2").attr("placeholder","Nama penerima");
+	$("input.hd_street2").attr("placeholder","Alamat penerima");
+	$("input[name='savename']").attr("placeholder","Nama alamat");
+	$("input[name='hd_phone3']").attr("placeholder","No. telpon penerima");
+	$("input[name='hd_name3']").attr("placeholder","Nama penerima");
+	$("input[name='hd_address3']").attr("placeholder","Alamat penerima");
+	$("select[name='address'] option:first-child").html("-- Pilih Alamat --");
+	$("select[name='address'] option[value='home']").html("Alamatku");
+	$("select[name='address'] option[value='work']").html("Alamat baru...");
+	$("select.hd_prov1 option").html("-- Pilih Provinsi --");
+	$("select.hd_prov3 option").html("-- Pilih Provinsi --");
+	$(".continue").html("Lanjutkan ke Pembayaran");
+	$(".hd_alert").html("Pesanan akan diambil di gerai terdekat");
+	$(".hd_alert2").html("Pesanan akan diproses dalam 3 hari kerja");
+	$(".hd_info").html("<p><strong>Perhatian!</strong><br>Kamu akan dikenakan biaya tambahan jika menambah pesanan.<br />Pelayan kami akan memberikan semua pesananmu.</p>");
+	/* SECTION 2 */
+	$(".sect-2-title").html("Pilihan Pembayaran");
+	$("label[for='radio-x']").html("Kartu Kredit");
+	$("label[for='radio-y']").html("Transfer");
+	$(".vouchersec h3").html("Gunakan Voucher?");
+	$(".transinfo h3").html("Nomor Rekening");
+	$(".cardinfo h3").html("Informasi Kartu");
+	$("input[name='card number']").attr("placeholder","16 Digit Nomor Kartu");
+	$(".voucherinp").attr("placeholder","Masukkan kode voucher...");
+	$(".invoice h3").html("Faktur");
+	$(".usevoucher").html("Gunakan Voucher sekarang");
+	$(".th-inv-1").html("Nama produk");
+	$(".th-inv-2").html("Jml");
+	$(".th-inv-3").html("Harga satuan");
+	$(".complete").html("Selesaikan Pembayaran");
+	$("#success .modal-body").html("Pesanan telah sukses dikirim!");
+	$("#success .modal-title").html("Sukses");
+	$("#success .modal-footer button").html("Tutup")
+	//$("label[for='radio-z']").html("Kirim sebagai hadiah");
+
+}
+
+$(document).ready(function() {
+	 if(localStorage.hd_kirim_on > 0){
+	 	$(".radio_b").hide();
+	 }else{
+	 	$(".radio_b").show();
+	 }
+
+	
+	 $("select[name='address'] option:first-child").attr("selected",true);
+	 var sess_key = localStorage.hd_session_key;
+	 
+	 if(localStorage.hd_areaprice=="java"){
+	 	var hd_region_id = 1
+	 }else{
+	 	var hd_region_id = 2
+	 }
+
+
+	 var getprov = "http://api.haagendazsindonesia.co.id/v1/province?session_key="+ sess_key +"&search_region_id="+ hd_region_id +"&delivery_available=1";
+	 var calculate_order = "http://api.haagendazsindonesia.co.id/v1/calculate_order?session_key="+ sess_key +"";
+	 var selectprov3 = $("select.hd_prov3");
+	 var selectcity3 = $("select.hd_city3");
+	 var selectdist3 = $("select.hd_dist3");
+	/* var selectprov2 = $("select.hd_prov2");
+	 var selectcity2 = $("select.hd_city2");
+	 var selectdist2 = $("select.hd_dist2"); */
+	 var selectprov1 = $("select.hd_prov1");
+	 var selectcity1 = $("select.hd_city1");
+	 var selectdist1 = $("select.hd_dist1");
+	 var selectstore1 = $("select.hd_store1");
+	 selectcity3.hide();
+	 selectdist3.hide();
+	 /* selectcity2.hide();
+	 selectdist2.hide(); */
+	 selectcity1.hide();
+	 selectdist1.hide();
+	 selectstore1.hide();
+	 selectprov1.hide();
+	 var penerima="";
+	 $(".sec-1-title2").hide();
+	 $(".hd_info").hide();
+	 $(".hd_alert").hide();
+	 //$(".btnfix .continue").css("opacity","1");
+	 //$(".btnfix .continue").attr("disabled",false);
+	 var semua_user;
+	 
+	 //DISPLAY MY ADDRESS
+	 if(localStorage.hd_address==="null" || localStorage.hd_address===null || localStorage.hd_address==="" || localStorage.hd_address===undefined){
+	 	//alert("Your address does not set yet");
+	 	if(localStorage.hd_lang==="IDN"){
+	 		$(".hd_myaddress").append("Alamat tidak tersedia<br><p style='margin-top:20px;'>Tambahkan alamat <a style='color:#810D24; font-weight:bold' href='setting.html'>di sini</a></p>");
+	 	}else{
+	 		$(".hd_myaddress").append("Address is not available<br><p style='margin-top:20px;'>Add your address <a style='color:#810D24; font-weight:bold' href='setting.html'>here</a></p>");
+	 	}
+	 }else{
+	 	if(localStorage.hd_lang==="IDN"){
+		 	$(".hd_myaddress").append("<strong>Alamatku : </strong><br>"+localStorage.hd_address);
+		 	$(".hd_myaddress").append("<p style='margin-top:20px;'>Bukan ini? <a style='color:#810D24; font-weight:bold' href='setting.html'>sunting di sini</a></p>")
+		}else{
+			$(".hd_myaddress").append("<strong>My address : </strong><br>"+localStorage.hd_address);
+		 	$(".hd_myaddress").append("<p style='margin-top:20px;'>Not this one? <a style='color:#810D24; font-weight:bold' href='setting.html'>edit here</a></p>")
+		}
+	 }
+	 
+
+	 $(".hd_recipient_info").hide();
+
+	// SEARCH USER
+	$("input.hd_recipient2").keydown(function(){
+		var isian = $(this).val();
+		var rep_name;
+		var rep_avatar;
+		var rep_username;
+		$(".hd_suggestion").html("")
+      	var search_user = "http://api.haagendazsindonesia.co.id/v1/customer?session_key="+ sess_key +"&q="+ isian +"";
+		 $.getJSON(search_user,function(alluser){
+		 	$(".hd_suggestion").show();
+		 	for (var i = 0, len = alluser.payload.length; i < len; i++) {
+		        $(".hd_suggestion").append("<div>"+
+						"<p data-username='"+ alluser.payload[i].username +"' data-avatar='" + alluser.payload[i].avatar + "' data-name='" + alluser.payload[i].full_name + "' data-val='" + alluser.payload[i].customer_id + "'>"+ alluser.payload[i].full_name +" ( @"+
+							alluser.payload[i].username +") "+
+						"</p>"+
+					"</div>"
+				);
+				
+		    }
+		    
+		 }).done(function() {
+		    //console.log( "second success" );
+		   
+				$(".hd_suggestion div p").click(function(){
+					$(".hd_recipient_info").show()
+					isian = $(this).data("val");
+					$("input.hd_recipient2").val( $(this).data("val"));
+					//return $(this).data("val");
+					console.log($(this).data("val"))
+					$(".hd_suggestion").hide();
+					penerima = "true";
+					$(".btnfix .continue").css("opacity","1");
+	 				$(".btnfix .continue").attr("disabled",false);
+	 				if(localStorage.hd_lang==="IDN"){
+	 					if($(this).data("avatar") ==null || $(this).data("avatar")=="null"){
+					 		
+					 		$(".hd_recipient_info").html("<strong>Dikirim ke : </strong><br /><br /><div class='col-xs-2'><span><img src='img/default_avatar.png' style='background:none; width:60px !important; height:60px !important' class='avatar'></span></div><div class='col-xs-10'><h3 style='margin-left: 21px; font-weight:bold; margin-top: 4px; font-size: 13pt;'>"+ $(this).data("name")+"</h3><p style='margin-left: 21px; margin-top: 4px; font-size: 11pt;'>@" + $(this).data("username")+ "</p></div>");
+					 	}else{
+					 		$(".hd_recipient_info").html("<strong>Dikirim ke : </strong><br /><br /><div class='col-xs-2'><span><img src='"+ $(this).data("avatar") +"' style='background:none;width:60px !important; height:60px !important' class='avatar'></span></div><div class='col-xs-10'><h3 style='margin-left: 21px; margin-top: 4px; font-size: 13pt; font-weight:bold'>"+ $(this).data("name")+"</h3><p style='margin-left: 21px; margin-top: 4px; font-size: 11pt;'>@" + $(this).data("username")+ "</p></div>");
+
+					 	}
+					}else{
+						if($(this).data("avatar") ==null || $(this).data("avatar")=="null"){
+					 		
+					 		$(".hd_recipient_info").html("<strong>Send to : </strong><br /><br /><div class='col-xs-2'><span><img src='img/default_avatar.png' style='background:none; width:60px !important; height:60px !important' class='avatar'></span></div><div class='col-xs-10'><h3 style='margin-left: 21px; font-weight:bold; margin-top: 4px; font-size: 13pt;'>"+ $(this).data("name")+"</h3><p style='margin-left: 21px; margin-top: 4px; font-size: 11pt;'>@" + $(this).data("username")+ "</p></div>");
+					 	}else{
+					 		$(".hd_recipient_info").html("<strong>Send to : </strong><br /><br /><div class='col-xs-2'><span><img src='"+ $(this).data("avatar") +"' style='background:none;width:60px !important; height:60px !important' class='avatar'></span></div><div class='col-xs-10'><h3 style='margin-left: 21px; margin-top: 4px; font-size: 13pt; font-weight:bold'>"+ $(this).data("name")+"</h3><p style='margin-left: 21px; margin-top: 4px; font-size: 11pt;'>@" + $(this).data("username")+ "</p></div>");
+
+					 	}
+					}
+
+				});
+			
+		 });
+    });
+
+	 $("input.hd_recipient2").mouseleave(function(){
+	 	if(penerima!="true"){
+    		penerima = "";
+    	}
+	 })
+
+
+    $(".hd_suggestion").mouseleave(function(){
+    	$(".hd_suggestion").hide();
+    	
+    	//$(".hd_suggestion").html("")
+    })
+
+
+
+	 $.getJSON(getprov,function(provinsi){
+		//console.log(provinsi.payload[2].province_name);
+		$("input[name='hd_address3']").geocomplete({country: "ID", type: ['(regions)']});
+      	
+		for (var i = 0, len = provinsi.payload.length; i < len; i++) {
+	        selectprov3.append(
+				"<option value='"+ provinsi.payload[i].province_id +"'>"+
+					provinsi.payload[i].province_name+
+				"</option>"
+			)
+	       /* selectprov2.append(
+				"<option value='"+ provinsi.payload[i].province_id +"'>"+
+					provinsi.payload[i].province_name+
+				"</option>"
+			) */
+
+	    }
+
+	  
+	 });
+
+	 $.getJSON(getprov,function(provinsi){
+		//console.log(provinsi.payload[2].province_name);
+		$("input[name='hd_street2']").geocomplete({country: "ID", type: ['(regions)']});
+		for (var i = 0, len = provinsi.payload.length; i < len; i++) {
+	        selectprov1.append(
+				"<option value='"+ provinsi.payload[i].province_id +"'>"+
+					provinsi.payload[i].province_name +
+				"</option>"
+			)
+	    }
+
+	  
+		
+	 });
+
+	 $(".hd_myaddress").hide();
+	 $(".hd_newaddress").hide();
+	 $("select[name='address']").change(function(){
+	 	if($(this).val()!=""){
+		 	if($(this).val()=="home"){
+		 		$(".hd_myaddress").show();
+		 		$(".hd_newaddress").hide();
+		 		if(localStorage.hd_name!="" || localStorage.hd_name!=undefined){
+		 			$(".btnfix .continue").css("opacity","1");
+	 				$(".btnfix .continue").attr("disabled",false);
+		 		}else{
+		 			$(".btnfix .continue").css("opacity","0.3");
+	 				$(".btnfix .continue").attr("disabled",true);
+		 		}
+
+		 	}else{
+		 		$(".hd_myaddress").hide();
+		 		$(".hd_newaddress").show();
+		 		$(".btnfix .continue").css("opacity","0.3");
+	 			$(".btnfix .continue").attr("disabled",true);
+		 		
+		 	}
+	 	}else{
+	 		$(".hd_myaddress").hide();
+	 		$(".hd_newaddress").hide();
+	 	}
+	 })
+
+	 /*
+	 $("select.hd_prov1").change(function(){
+	 	$(".btnfix .continue").css("opacity","0.3");
+	 	$(".btnfix .continue").attr("disabled",true);
+	 	if($(this).val() != ""){
+		 	selectcity1.show();
+		 	selectcity1.html("Choose City");
+		 	selectdist1.hide();
+	 		selectstore1.hide();
+		 	selectcity1.css("background","url(img/loading.gif) center center no-repeat");
+		 	selectcity1.css("background-size","contain");
+		 	
+		 	var getcity = "http://api.haagendazsindonesia.co.id/v1/city?session_key="+ sess_key +"&search_province_id="+ $(this).val()+"";
+		 	$.getJSON(getcity,function(kota){
+		 		if(localStorage.hd_lang==="IDN"){
+		 			selectcity1.append("<option value=''>-- Pilih Kota --</option>");
+		 		}else{
+		 			selectcity1.append("<option value=''>-- Select City --</option>");
+		 		}
+				//console.log(kota.payload[32].city_name);
+				selectcity1.css("background","none");
+				for (var i = 0, buset = kota.payload.length; i < buset; i++) {
+			        $(".hd_city1").append(
+						"<option value='"+ kota.payload[i].city_id +"'>"+
+							kota.payload[i].city_name +
+						"</option>"
+					)
+			    }
+				
+			 });
+	 	}else{
+	 		selectcity1.hide();
+	 		selectdist1.hide();
+	 		selectstore1.hide();
+	 	}
+	 });
+
+
+
+	 $("select.hd_city1").change(function(){
+	 	$(".btnfix .continue").css("opacity","0.3");
+	 	$(".btnfix .continue").attr("disabled",true);
+	 	if($(this).val() != ""){
+		 	selectdist1.show();
+		 	selectdist1.html("Choose District");
+		 	selectdist1.css("background","url(img/loading.gif) center center no-repeat");
+		 	selectdist1.css("background-size","contain");
+		 	selectstore1.hide();
+		 	
+		 	var getdist = "http://api.haagendazsindonesia.co.id/v1/sub_district?session_key="+ sess_key +"&search_city_id="+ $(this).val()+"";
+		 	$.getJSON(getdist,function(kecamatan){
+				//console.log(kecamatan.payload[32].sub_district_name);
+				selectdist1.css("background","none");
+				if(localStorage.hd_lang==="IDN"){
+					selectdist1.append("<option value=''>-- Pilih Kecamatan --</option>");
+				}else{
+					selectdist1.append("<option value=''>-- Select Sub District --</option>");
+				}
+				for (var i = 0, opo = kecamatan.payload.length; i < opo; i++) {
+			        selectdist1.append(
+						"<option value='"+ kecamatan.payload[i].sub_district_id +"'>"+
+							kecamatan.payload[i].sub_district_name +
+						"</option>"
+					)
+			    }
+				
+			 });
+		}else{
+			selectdist1.hide();
+			selectstore1.hide();
+		}	
+	 });
+
+	 
+	 console.log(localStorage.products)
+	 $("select.hd_dist1").change(function(){
+	 	$(".btnfix .continue").css("opacity","0.3");
+	 	$(".btnfix .continue").attr("disabled",true);
+	 	if($(this).val() != "" || $(this).val() != undefined){
+		 	selectstore1.show();
+		 	selectstore1.html("Choose Store");
+		 	selectstore1.css("background","url(img/loading.gif) center center no-repeat");
+		 	selectstore1.css("background-size","contain");
+		 	var getdist = "http://api.haagendazsindonesia.co.id/v1/store?session_key="+ sess_key +"&search_sub_district_id="+ $(this).val()+"";
+		 	$.getJSON(getdist,function(kecamatan){
+				//console.log(kecamatan.payload[32].sub_district_name);
+				
+				
+				if(kecamatan.payload==undefined){
+					if(localStorage.hd_lang==="IDN"){
+						alert("Gerai tidak tersedia. Silahkan pilih area lain. Terima kasih");
+					}else{
+						alert("Store is not available here. Please select another District. Thank you");
+					}
+					selectstore1.hide();
+
+				}else{
+					selectstore1.css("background","none");
+					if(localStorage.hd_lang==="IDN"){
+						selectstore1.append("<option value=''>-- Pilih gerai kami --</option>");
+					}else{
+						selectstore1.append("<option value=''>-- Select our Store --</option>");
+					}
+					for (var i = 0, opo = kecamatan.payload.length; i < opo; i++) {
+				        selectstore1.append(
+							"<option value='"+ kecamatan.payload[i].store_name +"'>"+
+								"Haagen Dazs "+ kecamatan.payload[i].store_name +""+
+							"</option>"
+						)
+				    }
+				}
+				
+			 });
+		}else{
+			
+			selectstore1.hide();
+		}	
+	 });
+
+	 //$(".btnfix .continue").css("opacity","0.3");
+	 //$(".btnfix .continue").attr("disabled",true);
+
+	 selectstore1.change(function(){
+	 	if($(this).val() != ""){
+	 		console.log($(this).val())
+	 		$(".btnfix .continue").css("opacity","1");
+	 		$(".btnfix .continue").attr("disabled",false);
+	 	}else{
+	 		$(".btnfix .continue").css("opacity","0.3");
+	 		$(".btnfix .continue").attr("disabled",true);
+	 	}	
+	 })
+	
+	 /* END SELECT STORE  */
+
+	 /* START SELECT AS GIFT */
+	  /* START SELECT ADDRESS */
+	  
+	/* $("select.hd_prov2").change(function(){
+
+	 	if($(this).val() != ""){
+	 		$(".btnfix .continue").css("opacity","0.3");
+	 		$(".btnfix .continue").attr("disabled",true);
+		 	selectcity2.show();
+		 	selectcity2.html("Choose City");
+		 	selectdist2.hide();
+		 	selectcity2.css("background","url(img/loading.gif) center center no-repeat");
+		 	selectcity2.css("background-size","contain");
+		 	
+		 	var getcity = "http://api.haagendazsindonesia.co.id/v1/city?session_key="+ sess_key +"&search_province_id="+ $(this).val()+"";
+		 	$.getJSON(getcity,function(kota){
+				//console.log(kota.payload[32].city_name);
+				if(localStorage.hd_lang==="IDN"){
+					selectcity2.append("<option value=''>-- Pilih Kota --</option>");
+				}else{
+					selectcity2.append("<option value=''>-- Select City --</option>");
+				}
+				selectcity2.css("background","none");
+				for (var i = 0, buset = kota.payload.length; i < buset; i++) {
+			        $(".hd_city2").append(
+						"<option value='"+ kota.payload[i].city_id +"' data-select='"+ kota.payload[i].city_name +"'>"+
+							kota.payload[i].city_name +
+						"</option>"
+					)
+			    }
+				
+			 });
+		 	alamat[3]= $(this).val();
+	 	}else{
+	 		selectcity2.hide();
+	 		selectdist2.hide();
+	 		$(".btnfix .continue").css("opacity","0.3");
+	 		$(".btnfix .continue").attr("disabled",true);
+	 	}
+	 });
+
+	 var alamat=[];
+
+	 $("select.hd_city2").change(function(){
+	 	$(".btnfix .continue").css("opacity","0.3");
+	 	$(".btnfix .continue").attr("disabled",true);
+	 	if($(this).val() != ""){
+		 	selectdist2.show();
+		 	selectdist2.html("Choose District");
+		 	selectdist2.css("background","url(img/loading.gif) center center no-repeat");
+		 	selectdist2.css("background-size","contain");
+		 	var getdist = "http://api.haagendazsindonesia.co.id/v1/sub_district?session_key="+ sess_key +"&search_city_id="+ $(this).val()+"";
+		 	$.getJSON(getdist,function(kecamatan){
+		 		$("input[name='savename']").css("margin-bottom","63px");
+				//console.log(kecamatan.payload[32].sub_district_name);
+				if(localStorage.hd_lang==="IDN"){
+					selectdist2.append("<option value=''>-- Pilih Kecamatan --</option>");
+				}else{
+					selectdist2.append("<option value=''>-- Select Sub District --</option>");
+				}
+				selectdist2.css("background","none");
+
+				for (var i = 0, opo = kecamatan.payload.length; i < opo; i++) {
+			        selectdist2.append(
+						"<option value='"+ kecamatan.payload[i].sub_district_id +"' data-select='"+ kecamatan.payload[i].sub_district_name +"'>"+
+							kecamatan.payload[i].sub_district_name +
+						"</option>"
+					)
+			    }
+				
+			 });
+		 	alamat[2] = $(this).val();
+		}else{
+			selectdist2.hide();
+		}	
+	 });
+
+
+
+	 $("input[name='hd_street2']").focusout(function(){
+	 	selectdist2.trigger("click");
+	 	alamat[0] = $(this).val();
+	 	console.log(alamat);
+	 });
+
+	 selectdist2.click(function(){
+	 	
+	 	if($(this).val() != "" && $(this).is(":visible") && $("input[name='hd_street2']").val()!=""){
+	 		console.log(alamat)
+	 		$(".btnfix .continue").css("opacity","1");
+	 		$(".btnfix .continue").attr("disabled",false);
+	 	}else{
+	 		$(".btnfix .continue").css("opacity","0.3");
+	 		$(".btnfix .continue").attr("disabled",true);
+	 	}	
+	 }) 
+
+	 selectdist2.change(function(){
+	 	if($(this).val() != "" && $("input[name='hd_street2']").val()!="" && penerima!=""){
+	 		console.log($(this).val())
+	 		$(".btnfix .continue").css("opacity","1");
+	 		$(".btnfix .continue").attr("disabled",false);
+	 	}else{
+	 		$(".btnfix .continue").css("opacity","0.3");
+	 		$(".btnfix .continue").attr("disabled",true);
+	 	}
+	 	alamat[1] = $(this).val();
+	 	kecamatan_ku = $(this).val();
+	 	console.log(alamat);
+	 })
+	 /* END SELECT ADDRESS */
+	
+
+	 /* START SELECT ADDRESS */
+	 $("select.hd_prov3").change(function(){
+
+	 	if($(this).val() != ""){
+	 		$(".btnfix .continue").css("opacity","0.3");
+	 		$(".btnfix .continue").attr("disabled",true);
+		 	selectcity3.show();
+		 	selectcity3.html("Choose City");
+		 	selectdist3.hide();
+		 	selectcity3.css("background","url(img/loading.gif) center center no-repeat");
+		 	selectcity3.css("background-size","contain");
+		 	
+		 	var getcity = "http://api.haagendazsindonesia.co.id/v1/city?session_key="+ sess_key +"&search_province_id="+ $(this).val()+"&delivery_available=1";
+		 	$.getJSON(getcity,function(kota){
+				//console.log(kota.payload[32].city_name);
+				if(localStorage.hd_lang==="IDN"){
+					selectcity3.append("<option value=''>-- Pilih Kota --</option>");
+				}else{
+					selectcity3.append("<option value=''>-- Select City --</option>");
+				}
+				selectcity3.css("background","none");
+				for (var i = 0, buset = kota.payload.length; i < buset; i++) {
+			        $(".hd_city3").append(
+						"<option value='"+ kota.payload[i].city_id +"' data-select='"+ kota.payload[i].city_name +"'>"+
+							kota.payload[i].city_name +
+						"</option>"
+					)
+			    }
+				
+			 });
+		 	alamat[3]= $(this).val();
+	 	}else{
+	 		selectcity3.hide();
+	 		selectdist3.hide();
+	 		$(".btnfix .continue").css("opacity","0.3");
+	 		$(".btnfix .continue").attr("disabled",true);
+	 	}
+	 });
+
+	 var alamat=[];
+
+	 $("select.hd_city3").change(function(){
+	 	$(".btnfix .continue").css("opacity","0.3");
+	 	$(".btnfix .continue").attr("disabled",true);
+	 	if($(this).val() != ""){
+		 	selectdist3.show();
+		 	selectdist3.html("Choose District");
+		 	selectdist3.css("background","url(img/loading.gif) center center no-repeat");
+		 	selectdist3.css("background-size","contain");
+		 	var getdist = "http://api.haagendazsindonesia.co.id/v1/sub_district?session_key="+ sess_key +"&search_city_id="+ $(this).val()+"&delivery_available=1";
+		 	$.getJSON(getdist,function(kecamatan){
+		 		$("input[name='savename']").css("margin-bottom","63px");
+				//console.log(kecamatan.payload[32].sub_district_name);
+				if(localStorage.hd_lang==="IDN"){
+					selectdist3.append("<option value=''>-- Pilih Kecamatan --</option>");
+				}else{
+					selectdist3.append("<option value=''>-- Select Sub District --</option>");
+				}
+				selectdist3.css("background","none");
+
+				for (var i = 0, opo = kecamatan.payload.length; i < opo; i++) {
+			        selectdist3.append(
+						"<option value='"+ kecamatan.payload[i].sub_district_id +"' data-select='"+ kecamatan.payload[i].sub_district_name +"'>"+
+							kecamatan.payload[i].sub_district_name +
+						"</option>"
+					)
+			    }
+				
+			 });
+		 	alamat[2] = $(this).val();
+		}else{
+			selectdist3.hide();
+		}	
+	 });
+
+
+
+	 $("input[name='hd_address3']").focusout(function(){
+	 	selectdist3.trigger("click");
+	 	alamat[0] = $(this).val();
+	 	console.log(alamat);
+	 });
+
+	 selectdist3.click(function(){
+	 	
+	 	if($(this).val() != "" && $(this).is(":visible") && $("input[name='hd_address3']").val()!=""){
+	 		console.log(alamat)
+	 		$(".btnfix .continue").css("opacity","1");
+	 		$(".btnfix .continue").attr("disabled",false);
+	 	}else{
+	 		$(".btnfix .continue").css("opacity","0.3");
+	 		$(".btnfix .continue").attr("disabled",true);
+	 	}	
+	 }) 
+
+	 selectdist3.change(function(){
+	 	if($(this).val() != "" && $("input[name='hd_address3']").val()!=""){
+	 		console.log($(this).val())
+	 		$(".btnfix .continue").css("opacity","1");
+	 		$(".btnfix .continue").attr("disabled",false);
+	 	}else{
+	 		$(".btnfix .continue").css("opacity","0.3");
+	 		$(".btnfix .continue").attr("disabled",true);
+	 	}
+	 	alamat[1] = $(this).val();
+	 	kecamatan_ku = $(this).val();
+	 	console.log(alamat);
+	 })
+
+	
+
+	 var empty = 0;
+	 
+	 
+	
+	 
+	 var kecamatan_ku;
+	 console.log(localStorage.hd_order_detail)
+
+	
+	 $(".continue").on('click', function() {
+		$(".btnfix .continue").css("opacity","0.3");
+	 	$(".btnfix .continue").attr("disabled",true);
+		$(".loading").fadeIn("show");
+		if(localStorage.hd_areaprice ==="java"){
+	 		var region_id = "1"
+	 	}else{
+	 		var region_id = "2"
+	 	}
+		if(localStorage.hd_delivery==="DELIVERY"){
+		 	var order_detail = localStorage.hd_order_detail;
+			var gift_customer_id = "";			
+			var delivery_method = "DELIVERY";
+
+			if($("select[name='address']").val()=="home"){
+				var consignee_name = localStorage.hd_name;
+				var sub_district_id = localStorage.hd_subdist;
+				var consignee_address = localStorage.hd_address;
+				var consignee_phone = localStorage.hd_contact;
+			}else{
+				var consignee_name = $("input[name='hd_name3']").val();
+				var consignee_address = $("input[name='hd_address3']").val();
+				var consignee_phone = $("input[name='hd_phone3']").val();
+				var sub_district_id = $(".hd_dist3").val();				
+			}
+			
+			var consignee_phone = localStorage.hd_contact;
+			var param = {
+				order_detail : order_detail,
+				gift_customer_id : gift_customer_id,
+				sub_district_id : sub_district_id,
+				consignee_name : consignee_name,
+				consignee_address : consignee_address,
+				consignee_phone : consignee_phone,
+				region_id : region_id,
+				delivery_method : "DELIVERY"
+			}
+
+			var postorder = "http://api.haagendazsindonesia.co.id/v1/order?session_key="+ sess_key +"";
+
+		    $.post(postorder, param)
+		        .done(function(data){
+		        	var orderan = jQuery.parseJSON(data)
+		        	if(orderan.is_error=="false"|| orderan.is_error==false){
+				   		//alert("Order has been successfully sent.");
+				   		//var orderan = jQuery.parseJSON(data)
+				   		$("#success").modal('show');
+				   		if(localStorage.hd_lang=="IDN"){
+				   			$("#success .modal-body p").html('Pesanan terkirim!');	
+				   		}else{
+				   			$("#success .modal-body p").html('Order has been sent!');
+				   		}
+				   		
+				   		setTimeout('window.location.href = "creditcard.html?id='+ orderan.payload.order_id+'"',300);
+					   	localStorage.current_order_id = orderan.payload.order_id;
+				   		localStorage.products = "";
+				   		localStorage.hd_kirim_on = 0;
+				   		/*localStorage.hd_order_qty="";
+				   		localStorage.hd_order_address="";
+				   		localStorage.hd_delivery="";
+				   		localStorage.hd_order_total="";
+				   		localStorage.hd_payment="";*/
+				   	}else{
+				   		$(".btnfix .continue").css("opacity","1");
+						$(".btnfix .continue").attr("disabled",false);
+						$(".loading").fadeOut();
+						$("#error").modal("show");
+				   		//alert("order tidak terkirim");
+				   		if(localStorage.hd_lang==="IDN"){
+				   			$("#error .modal-body p").html('Pesanan tidak terkirim!');	
+				   		}else{
+				   			$("#error .modal-body p").html('Order has not sent yet!');
+				   		}
+				   	}
+			   	});   
+		      	return false;
+		}else if(localStorage.hd_delivery==="STORE_PICKUP"){
+			 var delivery_method = "STORE_PICKUP"
+		 	 var order_detail = localStorage.hd_order_detail;
+			 var gift_customer_id = "";
+			 
+			 var consignee_name = localStorage.hd_name;
+			 var consignee_address = "";
+			 var consignee_phone = localStorage.hd_contact;
+			 var param = {
+				order_detail : order_detail,
+				gift_customer_id : gift_customer_id,
+				region_id : region_id,
+				consignee_name : consignee_name,
+				consignee_address : consignee_address,
+				consignee_phone : consignee_phone,
+				delivery_method : delivery_method
+			 }
+			 var postorder = "http://api.haagendazsindonesia.co.id/v1/order?session_key="+ sess_key +"";
+
+		    $.post(postorder, param)
+		        .done(function(data){
+		        	var orderan = jQuery.parseJSON(data)
+		        	if(orderan.is_error=="false"|| orderan.is_error==false){
+				   		//alert("Order has been successfully sent.");
+				   		$("#success").modal('show');
+				   		if(localStorage.hd_lang=="IDN"){
+				   			$("#success .modal-body p").html('Pesanan terkirim!');	
+				   		}else{
+				   			$("#success .modal-body p").html('Order has been sent!');
+				   		}
+				   		setTimeout('window.location.href = "creditcard.html?id='+ orderan.payload.order_id+'"',300);
+				   		localStorage.current_order_id = orderan.payload.order_id;
+				   		localStorage.products = "";
+				   		localStorage.hd_kirim_on = 0;
+				   		/*localStorage.hd_order_qty="";
+				   		localStorage.hd_order_address="";
+				   		localStorage.hd_delivery="";
+				   		localStorage.hd_order_total="";
+				   		localStorage.hd_payment="";*/
+				   	}else{
+						$(".btnfix .continue").css("opacity","1");
+						$(".btnfix .continue").attr("disabled",false);
+						$(".loading").fadeOut();
+				   		$("#error").modal("show");
+				   		if(localStorage.hd_lang=="IDN"){
+				   			$("#error .modal-body p").html('Pesanan tidak terkirim!');	
+				   		}else{
+				   			$("#error .modal-body p").html('Order has not sent yet!');
+				   		}
+				   	}
+			   	});   
+		      	return false;
+		}else{
+			 orderaddress = alamat.toString();
+		 	 var order_detail = localStorage.hd_order_detail;
+			 var gift_customer_id = $(".hd_recipient2").val();
+			 if(localStorage.hd_areaprice ==="java"){
+		 		var region_id = "1"
+		 	 }else{
+		 		var region_id = "2"
+		 	 }
+			 var consignee_name = $(".hd_recipient_info h3").html();
+			 var consignee_address =  "";
+			 var consignee_phone = "";
+			 var delivery_method = "GIFT"
+			 var param = {
+				order_detail : order_detail,
+				gift_customer_id : gift_customer_id,
+				sub_district_id : sub_district_id,
+				consignee_name : consignee_name,
+				consignee_address : consignee_address,
+				consignee_phone : consignee_phone,
+				delivery_method : delivery_method,
+				region_id : region_id
+			 }
+			 var postorder = "http://api.haagendazsindonesia.co.id/v1/order?session_key="+ sess_key +"";
+
+		    $.post(postorder, param)
+		        .done(function(data){
+		        	var orderan = jQuery.parseJSON(data)
+		        	if(orderan.is_error=="false"|| orderan.is_error==false){
+				   		//alert("Order has been successfully sent.");
+				   		$("#success").modal('show');
+				   		if(localStorage.hd_lang=="IDN"){
+				   			$("#success .modal-body p").html('Pesanan terkirim!');	
+				   		}else{
+				   			$("#success .modal-body p").html('Order has been sent!');
+				   		}
+				   		var orderan = jQuery.parseJSON(data)
+				   		setTimeout('window.location.href = "home.html"',300);
+				   		localStorage.current_order_id = orderan.payload.order_id;
+				   		localStorage.products = "";
+				   		localStorage.hd_kirim_on = 0;
+				   		/*localStorage.hd_order_qty="";
+				   		localStorage.hd_order_address="";
+				   		localStorage.hd_delivery="";
+				   		localStorage.hd_order_total="";
+				   		localStorage.hd_payment="";*/
+				   	}else{
+						$(".btnfix .continue").css("opacity","1");
+						$(".btnfix .continue").attr("disabled",false);
+						$(".loading").fadeOut();
+				   		$("#error").modal("show");
+				   		if(localStorage.hd_lang=="IDN"){
+				   			$("#error .modal-body p").html('Pesanan tidak terkirim!');	
+				   		}else{
+				   			$("#error .modal-body p").html('Order has not sent yet!');
+				   		}
+				   	}
+			   	});   
+		      	return false;
+		}
+
+		 
+
+		
+		
+	});
+
+
+	localStorage.calculate_order = "";
+	localStorage.hd_delivery ="";	
+
+
+	// STORE PICK UP
+	$("#radio-1").click(function(){
+		$(".pickstore").show();
+		$(".sendmy").hide();
+		$(".sendgift").hide();
+		delivery = "STORE_PICKUP";
+		localStorage.hd_delivery = "STORE_PICKUP";
+		alamat=[];
+		console.log(localStorage.hd_delivery);
+		selectcity3.hide();
+	 	selectdist3.hide();
+	 	//selectprov1.hide();
+		 $(".sec-1-title2").hide();
+		 $(".btnfix .continue").css("opacity","1");
+		 $(".btnfix .continue").attr("disabled",false);
+		 $(".codinfo").show();
+		 $(".hd_info").show();
+	 	 $(".hd_alert").show();
+
+	 	$(".add_sc2").hide("fast");
+		$(".add_tax2").hide("fast");
+		$(".add_sc3").hide("fast");
+		$(".add_tax3").hide("fast");
+
+	 	var delivery_method = delivery;
+	 	if(localStorage.hd_areaprice ==="java"){
+	 		var region_id = "1"
+	 	}else{
+	 		var region_id = "2"
+	 	}
+		
+	 	var order_detail = localStorage.hd_order_detail;
+	 	//var order_detail =localStorage.hd_order_detail;
+
+		var param = {
+			delivery_method : delivery_method,
+			region_id : region_id,
+			order_detail : order_detail
+		}
+
+		//CALCULATE USER ORDER
+		$.post(calculate_order, param)
+	        .done(function(data){
+
+	        	var respon = jQuery.parseJSON(data);
+	        	if(localStorage.calculate_order != "pickstore"){
+
+	        		localStorage.calculate_order = "pickstore";
+		        	if(localStorage.hd_lang=="IDN"){
+		        		$(".product-checkout").append('<div class="col-xs-12 no-padding add_sc1"><div class="col-xs-6" style="background:#fff; text-align: left; padding: 5px; border-top:2px solid #ccc; border-left:2px solid #ccc; border-bottom:2px solid #ccc; font-weight:bold;">Biaya layanan</div>'+
+		        		'<div class="col-xs-2" style="border-top:2px solid #ccc; border-bottom:2px solid #ccc; background:#e4e4e4; text-align: center; padding: 5px;">-</div>'+
+		        		'<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px; border-top:2px solid #ccc; border-bottom:2px solid #ccc; border-right:2px solid #ccc;">Rp.'+ addCommas(respon.payload.service_charge) +'</div></div>');
+		        	$(".product-checkout").append('<div class="col-xs-12 no-padding add_tax1"><div class="col-xs-6" style="background:#fff; text-align: left; padding: 5px; border-top:2px solid #ccc; border-left:2px solid #ccc; border-bottom:2px solid #ccc; font-weight:bold;">PPN 10%</div>'+
+		        		'<div class="col-xs-2" style="border-top:2px solid #ccc; border-bottom:2px solid #ccc; background:#e4e4e4; text-align: center; padding: 5px; ">-</div>'+
+		        		'<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px; border-top:2px solid #ccc; border-bottom:2px solid #ccc; border-right:2px solid #ccc; ">Rp.'+ addCommas(respon.payload.tax) +'</div></div>');
+		        	}else{
+		        		$(".product-checkout").append('<div class="col-xs-12 no-padding add_sc1"><div class="col-xs-6" style="background:#fff; text-align: left; padding: 5px; border-top:2px solid #ccc; border-left:2px solid #ccc; border-bottom:2px solid #ccc; font-weight:bold;">Service charge</div>'+
+		        		'<div class="col-xs-2" style="border-top:2px solid #ccc; border-bottom:2px solid #ccc; background:#e4e4e4; text-align: center; padding: 5px;">-</div>'+
+		        		'<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px; border-top:2px solid #ccc; border-bottom:2px solid #ccc; border-right:2px solid #ccc;">Rp.'+ addCommas(respon.payload.service_charge) +'</div></div>');
+		        	$(".product-checkout").append('<div class="col-xs-12 no-padding add_tax1"><div class="col-xs-6" style="background:#fff; text-align: left; padding: 5px; border-top:2px solid #ccc; border-left:2px solid #ccc; border-bottom:2px solid #ccc; font-weight:bold;">Tax</div>'+
+		        		'<div class="col-xs-2" style="border-top:2px solid #ccc; border-bottom:2px solid #ccc; background:#e4e4e4; text-align: center; padding: 5px; ">-</div>'+
+		        		'<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px; border-top:2px solid #ccc; border-bottom:2px solid #ccc; border-right:2px solid #ccc; ">Rp.'+ addCommas(respon.payload.tax) +'</div></div>');
+		        	}
+		        	
+		        	var all_total = Number(respon.payload.grand_total)
+		        	$("#my-cart-grand-total").html('Rp. '+addCommas(all_total));
+		        	//alert(respon.status_msg);
+	        	}
+		});
+	});
+
+	// DELIVERY TO ADDRESS
+	$("#radio-2").click(function(){
+		$(".pickstore").hide();
+		$(".sendmy").show();
+		$(".sendgift").hide();
+		delivery = "DELIVERY";
+		localStorage.hd_delivery = "DELIVERY";
+		console.log(localStorage.hd_delivery)
+		alamat=[];
+		selectcity1.hide();
+	 	selectdist1.hide();
+	 	selectstore1.hide();
+	 	$(".sec-1-title2").show();
+	 	$(".btnfix .continue").css("opacity","0.3");
+	 	$(".btnfix .continue").attr("disabled",true);
+	 	$(".codinfo").hide();
+	 	$("select.hd_city3").hide();
+		 $("select.hd_dist3").hide();
+
+		 $(".add_sc1").hide("fast");
+		$(".add_tax1").hide("fast");
+		$(".add_sc2").hide("fast");
+		$(".add_tax2").hide("fast");
+
+	 	var delivery_method = delivery;
+	 	if(localStorage.hd_areaprice ==="java"){
+	 		var region_id = "1"
+	 	}else{
+	 		var region_id = "2"
+	 	}
+		
+	 	var order_detail = localStorage.hd_order_detail;
+	 	//var order_detail =localStorage.hd_order_detail;
+
+		var param = {
+			delivery_method : delivery_method,
+			region_id : region_id,
+			order_detail : order_detail
+		}
+
+		//CALCULATE USER ORDER
+		$.post(calculate_order, param)
+	        .done(function(data){
+
+	        	var respon = jQuery.parseJSON(data);
+	        	if(localStorage.calculate_order != "delivery"){
+
+	        		localStorage.calculate_order = "delivery";
+		        	if(localStorage.hd_lang=="IDN"){
+		        		$(".product-checkout").append('<div class="col-xs-12 no-padding add_sc3"><div class="col-xs-6" style="background:#fff; text-align: left; padding: 5px; border-top:2px solid #ccc; border-left:2px solid #ccc; border-bottom:2px solid #ccc; font-weight:bold;">Ongkos kirim</div>'+
+		        		'<div class="col-xs-2" style="border-top:2px solid #ccc; border-bottom:2px solid #ccc; background:#e4e4e4; text-align: center; padding: 5px;">-</div>'+
+		        		'<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px; border-top:2px solid #ccc; border-bottom:2px solid #ccc; border-right:2px solid #ccc;">Rp.'+ addCommas(respon.payload.delivery_cost) +'</div></div>');
+		        	$(".product-checkout").append('<div class="col-xs-12 no-padding add_tax3"><div class="col-xs-6" style="background:#fff; text-align: left; padding: 5px; border-top:2px solid #ccc; border-left:2px solid #ccc; border-bottom:2px solid #ccc;"><strong>PPN 10%</strong></div>'+
+		        		'<div class="col-xs-2" style="border-top:2px solid #ccc; border-bottom:2px solid #ccc; background:#e4e4e4; text-align: center; padding: 5px; ">-</div>'+
+		        		'<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px; border-top:2px solid #ccc; border-bottom:2px solid #ccc; border-right:2px solid #ccc; ">Rp.'+ addCommas(respon.payload.tax) +'</div></div>');
+		        	}else{
+		        		$(".product-checkout").append('<div class="col-xs-12 no-padding add_sc3"><div class="col-xs-6" style="background:#fff; text-align: left; padding: 5px; border-top:2px solid #ccc; border-left:2px solid #ccc; border-bottom:2px solid #ccc;">Delivery Cost</div>'+
+		        		'<div class="col-xs-2" style="border-top:2px solid #ccc; border-bottom:2px solid #ccc; background:#e4e4e4; text-align: center; padding: 5px;">-</div>'+
+		        		'<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px; border-top:2px solid #ccc; border-bottom:2px solid #ccc; border-right:2px solid #ccc;">Rp.'+ addCommas(respon.payload.delivery_cost) +'</div></div>');
+		        	$(".product-checkout").append('<div class="col-xs-12 no-padding add_tax3"><div class="col-xs-6" style="background:#fff; text-align: left; padding: 5px; border-top:2px solid #ccc; border-left:2px solid #ccc; border-bottom:2px solid #ccc;">Tax</div>'+
+		        		'<div class="col-xs-2" style="border-top:2px solid #ccc; border-bottom:2px solid #ccc; background:#e4e4e4; text-align: center; padding: 5px; ">-</div>'+
+		        		'<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px; border-top:2px solid #ccc; border-bottom:2px solid #ccc; border-right:2px solid #ccc; ">Rp.'+ addCommas(respon.payload.tax) +'</div></div>');
+		        	}
+
+		        	var all_total = Number(respon.payload.grand_total)       	
+		        	$("#my-cart-grand-total").html('Rp. '+addCommas(all_total));
+		        	//alert(respon.status_msg);
+	        	}
+		});
+	});
+
+	// SEND AS GIFT TO OTHER USER
+	$("#radio-3").click(function(){
+		$(".pickstore").hide();
+		$(".sendmy").hide();
+		$(".sendgift").show();
+		delivery = "GIFT";
+		localStorage.hd_delivery = "GIFT";
+		console.log(localStorage.hd_delivery);
+		alamat=[];
+		$("input.hd_recipient2").val("");
+		$(".hd_recipient_info").hide();
+		/* selectprov1.show();
+		selectcity3.hide();
+	 	selectdist3.hide(); */
+	 	$(".sec-1-title2").show();
+	 	$(".btnfix .continue").css("opacity","0.3");
+	 	$(".btnfix .continue").attr("disabled",true);
+	 	$(".codinfo").hide();
+
+	 	var delivery_method = delivery;
+	 	if(localStorage.hd_areaprice ==="java"){
+	 		var region_id = "1"
+	 	}else{
+	 		var region_id = "2"
+	 	}
+		
+	 	var order_detail = localStorage.hd_order_detail;
+	 	//var order_detail =localStorage.hd_order_detail;
+
+		var param = {
+			delivery_method : delivery_method,
+			region_id : region_id,
+			order_detail : order_detail
+		}
+
+		$(".add_sc1").hide("fast");
+		$(".add_tax1").hide("fast");
+		$(".add_sc3").hide("fast");
+		$(".add_tax3").hide("fast");
+
+
+		//CALCULATE USER ORDER
+		$.post(calculate_order, param)
+	        .done(function(data){
+
+	        	var respon = jQuery.parseJSON(data);
+	        	if(localStorage.calculate_order != "gift"){
+
+	        		localStorage.calculate_order = "gift";
+
+	        		if(localStorage.hd_lang=="IDN"){
+	        			$(".product-checkout").append('<div class="col-xs-12 no-padding add_sc2"><div class="col-xs-6" style="background:#fff; text-align: left; padding: 5px; border-top:2px solid #ccc; border-left:2px solid #ccc; border-bottom:2px solid #ccc; font-weight:bold">Biaya layanan</div>'+
+		        		'<div class="col-xs-2" style="border-top:2px solid #ccc; border-bottom:2px solid #ccc; background:#e4e4e4; text-align: center; padding: 5px;">-</div>'+
+		        		'<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px; border-top:2px solid #ccc; border-bottom:2px solid #ccc; border-right:2px solid #ccc;">Rp.'+ addCommas(respon.payload.service_charge) +'</div></div>');
+		        	$(".product-checkout").append('<div class="col-xs-12 no-padding add_tax2"><div class="col-xs-6" style="background:#fff; text-align: left; padding: 5px; border-top:2px solid #ccc; border-left:2px solid #ccc; border-bottom:2px solid #ccc; font-weight:bold">PPN 10%</div>'+
+		        		'<div class="col-xs-2" style="border-top:2px solid #ccc; border-bottom:2px solid #ccc; background:#e4e4e4; text-align: center; padding: 5px; ">-</div>'+
+		        		'<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px; border-top:2px solid #ccc; border-bottom:2px solid #ccc; border-right:2px solid #ccc; ">Rp.'+ addCommas(respon.payload.tax) +'</div></div>');
+	        		}else{
+	        			$(".product-checkout").append('<div class="col-xs-12 no-padding add_sc2"><div class="col-xs-6" style="background:#fff; text-align: left; padding: 5px; border-top:2px solid #ccc; border-left:2px solid #ccc; border-bottom:2px solid #ccc;">Service charge</div>'+
+		        		'<div class="col-xs-2" style="border-top:2px solid #ccc; border-bottom:2px solid #ccc; background:#e4e4e4; text-align: center; padding: 5px;">-</div>'+
+		        		'<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px; border-top:2px solid #ccc; border-bottom:2px solid #ccc; border-right:2px solid #ccc;">Rp.'+ addCommas(respon.payload.service_charge) +'</div></div>');
+		        	$(".product-checkout").append('<div class="col-xs-12 no-padding add_tax2"><div class="col-xs-6" style="background:#fff; text-align: left; padding: 5px; border-top:2px solid #ccc; border-left:2px solid #ccc; border-bottom:2px solid #ccc;">Tax</div>'+
+		        		'<div class="col-xs-2" style="border-top:2px solid #ccc; border-bottom:2px solid #ccc; background:#e4e4e4; text-align: center; padding: 5px; ">-</div>'+
+		        		'<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px; border-top:2px solid #ccc; border-bottom:2px solid #ccc; border-right:2px solid #ccc; ">Rp.'+ addCommas(respon.payload.tax) +'</div></div>');	        			
+	        		}
+		        	
+		        	var all_total = Number(respon.payload.grand_total)	
+		        	$("#my-cart-grand-total").html('Rp. '+addCommas(all_total));
+		        	//alert(respon.status_msg);
+	        	}
+		});
+
+	});
+
+
+	
+
+	/* NAVTAB FIXED */
+	/* $(".continue").click(function(){
+		/* $(".asu").trigger( "click" );
+		$(".tab-click2").addClass("ongoing");
+		$(".tab-click2").siblings().removeClass("ongoing"); 
+		window.location = "creditcard.html";
+	});*/
+	
+	$(".tab-click1").click(function(){
+		$(".sue").trigger( "click" );
+		$(".tab-click1").addClass("ongoing");
+		$(".tab-click1").siblings().removeClass("ongoing");
+	});
+	
+	
+});
+</script>
+
+<script type="text/javascript">
+
+
+$(document).ready(function() {
+  'use strict';
+  
+  var $swipeTabsContainer = $('.swipe-tabs'),
+    $swipeTabs = $('.swipe-tab'),
+    $swipeTabsContentContainer = $('.swipe-tabs-container'),
+    currentIndex = 0,
+    activeTabClassName = 'active-tab';
+
+  $swipeTabsContainer.on('init', function(event, slick) {
+    $swipeTabsContentContainer.removeClass('invisible');
+    $swipeTabsContainer.removeClass('invisible');
+
+    currentIndex = slick.getCurrent();
+    $swipeTabs.removeClass(activeTabClassName);
+        $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+  });
+
+  $swipeTabsContainer.slick({
+    //slidesToShow: 3.25,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    swipeToSlide: false,
+    touchMove: false,
+    swipe: false,
+    touchThreshold: 10,
+    animating: false,
+    focusOnSelect: true,
+    fade: false,
+
+  });
+
+   $swipeTabsContentContainer.slick({
+    asNavFor: $swipeTabsContainer,
+    adaptiveHeight: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    animating: false,
+    //vertical: false,
+    //verticalSwiping: false,
+    //speed:1,
+    fade: false,
+    lazyLoad: 'ondemand',
+   	swipeToSlide: false,
+    //touchMove: false,
+   	swipe: true,
+    draggable: false,
+    touchThreshold: 5,
+    variableWidth: false,
+    focusOnSelect: true,
+    centerMode: true,
+    centerPadding: '1px',
+  });
+
+
+  $swipeTabs.on('click', function(event) {
+        // gets index of clicked tab
+        currentIndex = $(this).data('slick-index');
+        $swipeTabs.removeClass(activeTabClassName);
+        $('.swipe-tab[data-slick-index=' + currentIndex +']').addClass(activeTabClassName);
+        $swipeTabsContainer.slick('slickGoTo', currentIndex);
+        $swipeTabsContentContainer.slick('slickGoTo', currentIndex);
+   
+    });
+
+    //initializes slick navigation tabs swipe handler
+    $swipeTabsContentContainer.on('swipe', function(event, slick, direction) {
+      currentIndex = $(this).slick('slickCurrentSlide');
+    $(".img-responsive")
+         
+    $swipeTabs.removeClass(activeTabClassName);
+    $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+  });
+  
+  
+});
+</script>
+ <script type="text/javascript" src="cordova.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="js/jquery.slideandswipe.js"></script>
+<link href="style/bootstrap.min.css" rel="stylesheet" >
+<script src="js/bootstrap.min.js" ></script>
+</body>
+</html>

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haagen Daaz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="">
+<link rel="canonical" href="">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="style/style.css" rel="stylesheet">
+<link href="style/products.css" rel="stylesheet">
+<link rel="stylesheet" href="style/slick2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+<style type="text/css">
+	.buttons button {
+		width: 100%;
+		padding: 10px;
+		background: #DFB866;
+		border: none;
+		font-size: 9pt;
+		font-weight: bold;
+		margin-top: 20px;
+		color: white;
+		text-transform: uppercase;
+		bottom: 0;
+	}
+
+	@media screen and (min-width: 540px) && (max-width: 649px) {
+	  .main-container .swipe-tabs-container{
+	   	height:634px !important;
+	  }
+	  .main-container  .slick-list{
+	  	height: 634px !important;
+	  }
+	  
+	  .main-container .slick-list .slick-track .swipe-tab-content:first-child{
+	  	min-height: 64.7vh !important;
+	  }
+}
+</style>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+</head>
+<body></div>
+<section class="loading">
+	<img src="img/loading.gif" width="20%" />
+</section>
+<section class="header">
+	<div class="col-xs-2">
+		<a href="#" class="ssm-toggle-nav" title="open nav">
+			<div class="burger">-</div>
+			<div class="burger">-</div>
+			<div class="burger">-</div>
+		</a>
+	</div>
+	<div class="col-xs-8 title">
+		<span>profile</span>
+	</div>
+	<div class="col-xs-2 gotosetting" style="text-align: right;">
+		<a href="setting.html">
+			<img style="max-width: 100%; width: 26px; margin-top: 4px;" src="img/setting.svg" width="26">
+		</a>
+	</div>
+	<div class="col-xs-2 cartbadge hidden">
+			<div class="cart"><span class="cart-count">0</span></div>
+	</div>
+</section>
+<nav class="nav">
+	<div class="col-xs-6 no-padding">
+		<img src="logo-head.png" width="67px" alt="swipe image" />
+	</div>
+	<div class="col-xs-6 no-padding" style="text-align: right;">
+		<a href="inbox.html"><span class="inbox-count">0</span>
+		<img src="img/inbox.svg" width="28px" style="margin-right: 10px" alt="swipe image" /></a>
+	</div>
+	<div class="clearfix"></div>
+	<div class="current-user">
+		<div class="current-user-data">
+			<h3><a class="name_menu" data-href="profile.html">Loading...</a></h3>
+			<p class="points_menu">Your points: Loading...</p>
+		</div>
+		<div class="avatar"></div>
+		<div style="clear:both"></div>
+	</div>
+	
+	<div class="main-menu">
+		<a class="menu-hom" data-href="home.html"><p>Home</p></a>
+		<a class="menu-cat" data-href="shop.html"><p>Catalog</p></a>
+		<a class="menu-dir" data-href="outlet.html"><p>Directory</p></a>
+		<a class="menu-ner" data-href="nearme.html"><p>Near Me &trade;</p></a>
+		<a class="menu-gam" data-href="games.html"><p>Game</p></a>
+		<a class="menu-nws" data-href="news.html"><p>News</p></a>
+		<a class="menu-set" data-href="setting.html"><p>Setting</p></a>
+		<p class="logout">Log Out</p>
+	</div>
+	<div class="footer-nav">
+		<span><a href="termscondition.html">Term & Condition &nbsp;</a></span>
+		<span><a href="help.html">Help &nbsp;</a></span>
+		<span><a href="legal.html">Legal &nbsp;</a></span>
+		<span><a href="about.html">About &nbsp;</a></span>
+	</div>	
+</nav>
+<section class="shoppage">
+		
+		
+		<section class="profile">			
+			<div class="avatar"></div>
+			<div class="brief">
+				<p class="username">loading...</p>
+				<div class="poin">loading.. pts</div>
+			</div>
+			<a class="redeemnow">
+				<button>Redeem</button>
+			</a>
+		</section>
+		<section class="contentprofile slick-initialized">
+			<div class="sub-header ">
+			  <div class="swipe-tabs">
+				<div class="swipe-tab tab1">About</div>
+				<div class="swipe-tab tab2">History</div>
+			  </div>
+			</div>
+			<div class="main-container ">
+			  <div class="swipe-tabs-container col-xs-12 no-padding	">
+				<div class="swipe-tab-content">
+					<div class="col-xs-12 about" style="text-align:left; margin-top:10px">
+					
+						<div class="col-xs-6 user_contact">
+							
+						</div>
+						<div class="col-xs-6 user_date">
+									
+						</div>
+						<hr style="background:#ccc;">
+						<div class="col-xs-12 user_detail">
+							
+						</div>
+					</div>
+				</div>
+				<div class="swipe-tab-content">
+					<div class="swipe-tab-content history" style="margin-top: -19px !important;">
+						
+						<div class='col-xs-12 no-order' style="padding-top:25%; font-size: 14pt; opacity: .6;">
+							<img src='img/no-order.png' width="80" style="margin: 0 auto 12px;" />
+							<p>You haven't order yet.</p>
+						</div>
+		           		
+					</div>
+				</div>
+				
+			  </div>
+			</div>
+		</section>
+		<div class="modal fade" id="redeem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-info.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Redeem Products</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body" style="text-align: center;">
+	        <div class="col-xs-12">
+				<p>Please insert your code below</p>
+				<input name="redeem_code" type="text" placeholder="Redeem Code..." style="width: 93%; padding:4px 6px; margin-bottom: 16px; border:#c1c1c1 1px solid" />
+			</div>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-6 no-padding" data-dismiss="modal">Close</button>
+	        <button type="button" class=" col-xs-6 no-padding sendredeem">Redeem</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+    <div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-success.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Success</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body">
+	      	<p>Redeem code has been saved!</p>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding closebtn" data-dismiss="modal">Close</button>
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-error.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Error</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body">
+	      	<p>Some changes failed to save.</p>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding closebtn" data-dismiss="modal">Close</button>
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </section>
+	<div class="ssm-overlay ssm-toggle-nav"></div>
+<section class="transition" style="margin-top:100%; width: 100%; height: 90%; z-index: 100; display: none; position: relative;">
+	<img src="img/loading.gif" width="20%" />
+</section>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mycart.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<!-- touchSwipe library -->
+<script>
+if(localStorage.hd_lang==="IDN"){
+
+	/* SECTION 1 */
+	$(".title span").html("Profil");
+	$(".no-order p").html("Kamu belum pernah melakukan pesanan.");
+	$(".no-order p").css("font-size","12pt");
+	$(".tab1").html("Tentang Kamu");
+	$(".tab2").html("Riwayat");
+	$(".user_edit a button").html("Sunting Akun");
+	$("#redeem .modal-header .modal-title").html("Penukaran Produk");
+	$("#redeem .modal-body p").html("Masukkan kode penukaran");
+	$("#redeem .modal-footer button:first").html("Tutup");
+	$("#redeem .modal-footer button:last").html("Tukar");
+    $("#redeem .modal-body").find("input[name='redeem_code']").attr("placeholder","Kode Penukaran..");
+    $(".redeemnow button").html("Tukar Produk")
+}
+$(".loading").show();
+$(".shoppage").hide();
+$(".gotosetting").hide();
+$(".nav").hide();
+
+
+$(document).ready(function() {
+
+	$(".gotosetting").show("fast");	
+
+  function addCommas(nStr)
+	{
+		nStr += '';
+		x = nStr.split('.');
+		x1 = x[0];
+		x2 = x.length > 1 ? '.' + x[1] : '';
+		var rgx = /(\d+)(\d{3})/;
+		while (rgx.test(x1)) {
+			x1 = x1.replace(rgx, '$1' + '.' + '$2');
+		}
+		return x1 + x2;
+	}
+  var cust_id = localStorage.login_hd_id;
+  var sess_key = localStorage.hd_session_key;
+  var urlx = "http://api.haagendazsindonesia.co.id/v1/order?session_key="+  sess_key +"&customer_id="+  cust_id +"";
+  var urlz = "http://api.haagendazsindonesia.co.id/v1/customer?session_key="+  sess_key +"&customer_id="+  cust_id +"";
+  var claim_redeem = "http://api.haagendazsindonesia.co.id/v1/claim_order?session_key="+ sess_key +"";
+  var fondues = $(".swipe-tab-content .history");
+
+  $(".redeemnow button").click(function(){
+  	$("#redeem").modal("show");
+  });
+
+
+  $("#redeem .modal-footer .sendredeem").click(function(){
+  	var redeem_code = $("input[name='redeem_code']").val();
+  	var param = {
+  		redeem_code : redeem_code
+  	}
+  	$.post(claim_redeem, param)
+  	 	.done(function(claim){
+  	 		$("#redeem").modal("hide");
+  	 		var respon = jQuery.parseJSON(claim)
+  	 		if(respon.is_error==false || respon.is_error=="false"){
+  	 			if(localStorage.hd_lang==="IDN"){
+  	 				$("#success").modal("show");
+  	 				$("#success .modal-body p").html("Kode penukaran berhasil disimpan.");
+  	 				$("#success .modal-body p").css("padding","10px")
+  	 				$("#success .modal-title").html("Sukses");
+  	 				$("#success .modal-footer button").html("Tutup");
+  	 			}
+	  	 		var id = claim.payload[0].order_id;
+	  	 		setTimeout('window.location.href = "order.html?id='+ claim.payload[0].order_id +'"; ',300);
+  	 		}else{
+  	 			$("#error").modal("show");
+  	 			if(localStorage.hd_lang==="IDN"){  	 				
+  	 				var pesan;
+  	 				if(respon.status_code===404 || respon.status_code==="404"){
+  	 					pesan = "pesanan tidak ditemukan"
+  	 				}else if (respon.status_code===502 || respon.status_code==="502"){
+			  	 		pesan = "Kamu menukarkan pesanan kamu sendiri"		
+  	 				}else{
+  	 					pesan = "pesanan sudah pernah ditukarkan"
+  	 				}
+  	 				$("#error .modal-body p").html("Kode penukaran gagal disimpan. Karena "+ pesan +"");
+  	 				$("#error .modal-body p").css("margin","10px")
+  	 				$("#error .modal-title").html("Gagal");
+  	 				$("#error .modal-footer button").html("Tutup");
+  	 			}
+  	 		}
+  	});
+  })
+
+  $(".swipe-tab-content .history").find("a").css("color","black !important");
+
+  localStorage.hd_kirim=""
+  /* User Info */
+    $.getJSON(urlz,function(info){
+    if(localStorage.hd_lang==="IDN"){
+    		if(info.payload[0].default_phone==="0" || info.payload[0].default_phone===null || info.payload[0].default_phone=="null" || info.payload[0].default_phone=="" || info.payload[0].default_phone==undefined){
+    			$(".user_contact").append("<p><strong>Telepon</strong><br> (Belum tersedia)</p>");
+    		}else{
+    			$(".user_contact").append("<p><strong>Telepon</strong><br> "+ info.payload[0].default_phone +"</p>");
+    		}
+	    	$(".user_contact").append("<p><strong>Surel</strong><br> "+ info.payload[0].email +"</p>");
+	    	/* if(info.payload[0].birthday===null || info.payload[0].birthday=="null" || info.payload[0].birthday=="" || info.payload[0].birthday==undefined){
+	    		$(".user_date").append("<p><strong>Ulang Tahun</strong><br>(Belum tersedia)</p>");
+	    	}else{
+	    		$(".user_date").append("<p><strong>Ulang Tahun</strong><br>"+ info.payload[0].birthday +"</p>");
+	    	} */
+	    	$(".user_date").append("<p><strong>Tgl Bergabung</strong><br> "+ info.payload[0].join_time +"</p>");
+	    	if(info.payload[0].default_address===null || info.payload[0].default_address=="null" || info.payload[0].default_address=="" || info.payload[0].default_address==undefined){
+	    		$(".user_detail").append("<p><strong>Alamat</strong><br> (Belum tersedia)</p>");
+	    	}else{
+	    		$(".user_detail").append("<p><strong>Alamat</strong><br> "+ info.payload[0].default_address +"</p>");
+	    	}
+	    	if(info.payload[0].biography==null || info.payload[0].biography=="null" || info.payload[0].biography=="" || info.payload[0].biography==undefined){
+	    		$(".user_detail").append("<p><strong>Tentang Saya</strong><br> (Belum tersedia)</p>");
+    		}else{
+    			$(".user_detail").append("<p><strong>Tentang Saya</strong><br> "+ info.payload[0].biography +"</p>");
+    			
+    		}
+	}else{
+			if(info.payload[0].default_phone==="0" || info.payload[0].default_phone===null || info.payload[0].default_phone=="null" || info.payload[0].default_phone=="" || info.payload[0].default_phone==undefined){
+	    		$(".user_contact").append("<p><strong>Phone</strong><br> (Not available)</p>");
+	    	}else{
+	    		$(".user_contact").append("<p><strong>Phone</strong><br> "+ info.payload[0].default_phone +"</p>");
+	    	}
+	    	$(".user_contact").append("<p><strong>Email</strong><br> "+ info.payload[0].email +"</p>");
+	    	/* if(info.payload[0].birthday===null || info.payload[0].birthday=="null" || info.payload[0].birthday=="" || info.payload[0].birthday==undefined){
+	    		$(".user_date").append("<p><strong>Birthday</strong><br>(Not available)</p>");
+	    	}else{
+	    		$(".user_date").append("<p><strong>Birthday</strong><br>"+ info.payload[0].birthday +"</p>");
+	    	} */
+	    	$(".user_date").append("<p><strong>Join Date</strong><br> "+ info.payload[0].join_time +"</p>");
+	    	if(info.payload[0].default_address===null || info.payload[0].default_address=="null" || info.payload[0].default_address=="" || info.payload[0].default_address==undefined){
+	    		$(".user_detail").append("<p><strong>Address</strong><br> (Not available)</p>");
+	    	}else{
+	    		$(".user_detail").append("<p><strong>Address</strong><br> "+ info.payload[0].default_address +"</p>");
+	    	}
+	    	if(info.payload[0].biography==null || info.payload[0].biography=="null" || info.payload[0].biography=="" || info.payload[0].biography==undefined){
+	    		$(".user_detail").append("<p><strong>About</strong><br> (Not Available)</p>");
+    		}else{
+    			$(".user_detail").append("<p><strong>About</strong><br> "+ info.payload[0].biography +"</p>");
+    		}
+    	}
+    })
+
+
+  /* Order History */
+  $.getJSON(urlx,function(menu){
+  	if(menu.is_error==false || menu.is_error=="false"){
+  			
+  			for (var i = 0, len = menu.payload.length; i < len; i++) {
+  				// PICK STORE OR SEND TO MY AdDRESS
+  				
+  				
+  				$(".no-order").hide();
+	  			if(menu.payload[i].delivery_method==="STORE_PICKUP"){
+						
+					 if(localStorage.hd_lang=="IDN"){	
+						fondues.append('<a style="color:black" href="order.html?id='+ menu.payload[i].order_id +'"><div class="col-xs-12 no-padding historyitem" style="text-align:left !important; margin-top:20px; margin-bottom:12px !important; border-bottom:1px solid #e4e4e4">'+
+			              '<div class="col-xs-12">'+
+			                '<div class="col-xs-8 no-padding align-left">'+
+			                	'<p class="name" style="font-size:12pt; font-weight: bold">ID : '+ menu.payload[i].order_id +'</p>'+
+			                '</div>'+
+			                '<div class="col-xs-4 no-padding align-right">'+
+			                  	
+			                  	'<p title="Total" class="order_status" style="color:#02991e">'+ menu.payload[i].order_status +'</p>'+
+			                 
+			              	'</div>'+
+			               '<div class="clearfix"></div>'+
+			                '<div class="col-xs-12 no-padding align-left delivery_method" >'+
+			                    '<span>Ambil di Gerai</span>'+
+			                '</div>'+
+			                '<div class="clearfix"></div>'+
+			                '<div class="col-xs-8 no-padding align-left" >'+
+			                   '<span>Rp. '+ addCommas(menu.payload[i].total_value) +'</span>'+
+			                '</div>'+
+			                '<div class="col-xs-4 no-padding align-right" style="font-size:9pt">'+
+			                	'<p>'+ menu.payload[i].__created +'</p>'+
+			                '</div>'+
+			               '</div>'+
+			            '</div></a>'+
+		           		'<hr/>');
+							
+						}else{
+							//PICK STORE
+						fondues.append('<a style="color:black" href="order.html?id='+ menu.payload[i].order_id +'"><div class="col-xs-12 no-padding historyitem" style="text-align:left !important; margin-top:20px; margin-bottom:12px !important; border-bottom:1px solid #e4e4e4">'+
+			              '<div class="col-xs-12">'+
+			                '<div class="col-xs-8 no-padding align-left">'+
+			                	'<p class="name" style="font-size:12pt; font-weight: bold">ID : '+ menu.payload[i].order_id +'</p>'+
+			                '</div>'+
+			                '<div class="col-xs-4 no-padding align-right">'+
+			                  	
+			                  	'<p title="Total" class="order_status" style="color:#02991e">'+ menu.payload[i].order_status +'</p>'+
+			                 
+			              	'</div>'+
+			               '<div class="clearfix"></div>'+
+			                '<div class="col-xs-12 no-padding align-left delivery_method" >'+
+			                    '<span>Pick Store</span>'+
+			                '</div>'+
+			                '<div class="clearfix"></div>'+
+			                '<div class="col-xs-8 no-padding align-left" >'+
+			                   '<span>Rp. '+ addCommas(menu.payload[i].total_value) +'</span>'+
+			                '</div>'+
+			                '<div class="col-xs-4 no-padding align-right" style="font-size:9pt">'+
+			                	'<p>'+ menu.payload[i].__created +'</p>'+
+			                '</div>'+
+			               '</div>'+
+			            '</div></a>'+
+		           		'<hr/>');
+						}
+
+					}else if(menu.payload[i].delivery_method==="DELIVERY"){
+						
+						 if(localStorage.hd_lang=="IDN"){
+							// SEND TO MY ADDRESS
+						 fondues.append('<a style="color:black" href="order.html?id='+ menu.payload[i].order_id +'"><div class="col-xs-12 no-padding historyitem" style="text-align:left !important; margin-top:20px; margin-bottom:12px !important; border-bottom:1px solid #e4e4e4">'+
+			              '<div class="col-xs-12">'+
+			                '<div class="col-xs-8 no-padding align-left">'+
+			                	'<p class="name" style="font-size:12pt; font-weight: bold">ID : '+ menu.payload[i].order_id +'</p>'+
+			                '</div>'+
+			                '<div class="col-xs-4 no-padding align-right">'+
+			                  		                  
+			                  '<p title="Total" class="order_status" style="color:#02991e">'+ menu.payload[i].order_status +'</p>'+
+			                  
+			              	'</div>'+
+			               '<div class="clearfix"></div>'+
+			                '<div class="col-xs-12 no-padding align-left delivery_method" >'+
+			                    '<span>Kirim ke Alamat</span>'+
+			                '</div>'+
+			                '<div class="clearfix"></div>'+
+			                '<div class="col-xs-8 no-padding align-left" >'+
+			                   '<span>Rp. '+ addCommas(menu.payload[i].total_value) +'</span>'+
+			                '</div>'+
+			                '<div class="col-xs-4 no-padding align-right" style="font-size:9pt">'+
+			                	'<p>'+ menu.payload[i].__created +'</p>'+
+			                '</div>'+
+			              '</div>'+
+			            '</div></a>'+
+		           		'<hr/>');
+						}else{
+							// SEND TO MY ADDRESS
+						 fondues.append('<a style="color:black" href="order.html?id='+ menu.payload[i].order_id +'"><div class="col-xs-12 no-padding historyitem" style="text-align:left !important; margin-top:20px; margin-bottom:12px !important; border-bottom:1px solid #e4e4e4">'+
+			              '<div class="col-xs-12">'+
+			                '<div class="col-xs-8 no-padding align-left">'+
+			                	'<p class="name" style="font-size:12pt; font-weight: bold">ID : '+ menu.payload[i].order_id +'</p>'+
+			                '</div>'+
+			                '<div class="col-xs-4 no-padding align-right">'+
+			                  		                  
+			                  '<p title="Total" class="order_status" style="color:#02991e">'+ menu.payload[i].order_status +'</p>'+			                  
+			              	'</div>'+
+			               '<div class="clearfix"></div>'+
+			                '<div class="col-xs-12 no-padding align-left delivery_method" >'+
+			                    '<span>Send to an Address</span>'+
+			                '</div>'+
+			                '<div class="clearfix"></div>'+
+			                '<div class="col-xs-8 no-padding align-left" >'+
+			                   '<span>Rp. '+ addCommas(menu.payload[i].total_value) +'</span>'+
+			                '</div>'+
+			                '<div class="col-xs-4 no-padding align-right" style="font-size:9pt">'+
+			                	'<p>'+ menu.payload[i].__created +'</p>'+
+			                '</div>'+
+			              '</div>'+
+			            '</div></a>'+
+		           		'<hr/>');
+						}			
+				}else{
+					
+					if(localStorage.hd_lang=="IDN"){
+						fondues.append('<a style="color:black" href="order.html?id='+ menu.payload[i].order_id +'"><div class="col-xs-12 no-padding historyitem" style="text-align:left !important; margin-top:20px; margin-bottom:12px !important; border-bottom:1px solid #e4e4e4">'+
+			              '<div class="col-xs-12">'+
+			                '<div class="col-xs-8 no-padding align-left">'+
+			                	'<p class="name" style="font-size:12pt; font-weight: bold">ID : '+ menu.payload[i].order_id +'</p>'+
+			                '</div>'+
+			                '<div class="col-xs-4 no-padding align-right">'+
+			                  		                  
+			                  '<p title="Total" class="order_status" style="color:#02991e">'+ menu.payload[i].order_status +'</p>'+
+			                  
+			              	'</div>'+
+			                '<div class="clearfix"></div>'+
+			                '<div class="col-xs-12 no-padding align-left delivery_method" >'+
+			                    '<span>Hadiah</span>'+
+			                '</div>'+
+			                '<div class="clearfix"></div>'+
+			                '<div class="col-xs-8 no-padding align-left" >'+
+			                   '<span>Rp. '+ addCommas(menu.payload[i].total_value) +'</span>'+
+			                '</div>'+
+			                '<div class="col-xs-4 no-padding align-right" style="font-size:9pt">'+
+			                	'<p>'+ menu.payload[i].__created +'</p>'+
+			                '</div>'+
+			                
+			              '</div>'+
+			            '</div></a>'+
+		           	'<hr/>');
+					}else{
+						fondues.append('<a style="color:black" href="order.html?id='+ menu.payload[i].order_id +'"><div class="col-xs-12 no-padding historyitem" style="text-align:left !important; margin-top:20px; margin-bottom:12px !important; border-bottom:1px solid #e4e4e4">'+
+			              '<div class="col-xs-12">'+
+			                '<div class="col-xs-8 no-padding align-left">'+
+			                	'<p class="name" style="font-size:12pt; font-weight: bold">ID : '+ menu.payload[i].order_id +'</p>'+
+			                '</div>'+
+			                '<div class="col-xs-4 no-padding align-right">'+
+			                  		                  
+			                  '<p title="Total" class="order_status" style="color:#02991e">'+ menu.payload[i].order_status +'</p>'+
+			                  
+			              	'</div>'+
+			                '<div class="clearfix"></div>'+
+			                '<div class="col-xs-12 no-padding align-left delivery_method" >'+
+			                    '<span>Send as Gift</span>'+
+			                '</div>'+
+			                '<div class="clearfix"></div>'+
+			                '<div class="col-xs-8 no-padding align-left" >'+
+			                   '<span>Rp. '+ addCommas(menu.payload[i].total_value) +'</span>'+
+			                '</div>'+
+			                '<div class="col-xs-4 no-padding align-right" style="font-size:9pt">'+
+			                	'<p>'+ menu.payload[i].__created +'</p>'+
+			                '</div>'+
+			                
+			              '</div>'+
+			            '</div></a>'+
+		           	'<hr/>');
+					}
+				}
+	      	  	
+	      	  	/*
+				if(menu.payload[i].order_status==="PAID"){
+					if(localStorage.hd_lang=="IDN"){
+						//PICK STORE
+						$(".order_status").html("LUNAS")
+					}
+				}else{
+					if(localStorage.hd_lang=="IDN"){
+						//PICK STORE
+						$(".order_status").html("BELUM LUNAS")
+					}
+				}
+				*/
+		   }
+		}
+  	});
+
+
+  'use strict';
+  
+  var $swipeTabsContainer = $('.swipe-tabs'),
+    $swipeTabs = $('.swipe-tab'),
+    $swipeTabsContentContainer = $('.swipe-tabs-container'),
+    currentIndex = 0,
+    activeTabClassName = 'active-tab';
+
+  $swipeTabsContainer.on('init', function(event, slick) {
+    $swipeTabsContentContainer.removeClass('invisible');
+    $swipeTabsContainer.removeClass('invisible');
+
+     currentIndex = slick.getCurrent();
+    $swipeTabs.removeClass(activeTabClassName);
+        $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+  });
+
+  $swipeTabsContainer.slick({
+    //slidesToShow: 3.25,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    swipeToSlide: false,
+    touchMove: false,
+    swipe: false,
+    touchThreshold: 10,
+    animating: false,
+    focusOnSelect: true,
+    fade: false,
+
+  });
+
+   $swipeTabsContentContainer.slick({
+    asNavFor: $swipeTabsContainer,
+    adaptiveHeight: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    animating: false,
+    //vertical: false,
+    //verticalSwiping: false,
+    //speed:1,
+    fade: false,
+    lazyLoad: 'ondemand',
+    swipeToSlide: false,
+    touchMove: false,
+    swipe: false,
+    draggable: false,
+    touchThreshold: 5,
+    variableWidth: false,
+    focusOnSelect: true,
+    centerMode: true,
+    centerPadding: '1px',
+  });
+
+
+  $swipeTabs.on('click', function(event) {
+        // gets index of clicked tab
+        currentIndex = $(this).data('slick-index');
+        $swipeTabs.removeClass(activeTabClassName);
+        $('.swipe-tab[data-slick-index=' + currentIndex +']').addClass(activeTabClassName);
+        $swipeTabsContainer.slick('slickGoTo', currentIndex);
+        $swipeTabsContentContainer.slick('slickGoTo', currentIndex);
+   
+    });
+
+    //initializes slick navigation tabs swipe handler
+    $swipeTabsContentContainer.on('swipe', function(event, slick, direction) {
+      currentIndex = $(this).slick('slickCurrentSlide');
+    $(".img-responsive")
+         
+    $swipeTabs.removeClass(activeTabClassName);
+    $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+  });
+  
+  
+});
+</script>
+ <script type="text/javascript" src="cordova.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="js/jquery.slideandswipe.js"></script>
+<link href="style/bootstrap.min.css" rel="stylesheet" >
+<script src="js/bootstrap.min.js" ></script>
+</body>
+</html>

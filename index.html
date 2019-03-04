@@ -1,0 +1,403 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Haagen Daaz</title>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+<meta name="description" content="">
+<link href="style/style.css" rel="stylesheet">
+<link rel="canonical" href="">
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+<style>
+body{
+	/* background:url(img/bg.jpg) no-repeat center #000; */
+	background: black !important;
+}
+
+.loads {
+	display: none;
+}
+.modal-body {
+	max-height: 180px;
+}
+
+.regisform .hd-visible{
+	top:0;
+}
+
+.regisform .hd-visible2{
+	top:0;
+}
+
+.error{
+	width: 100%;
+}
+
+input {
+	font-size: 16px !important;
+}
+
+footer{
+	position: absolute;
+}
+
+.skip button{
+	width: 40%;
+	font-weight: thin;
+	background: none;
+	padding: 4px 4px;
+	border: 1px white solid;
+	text-transform: normal;
+	font-size:10pt
+}
+</style>
+</head>
+<body>
+</div>
+<section class="loading"> <img src="img/loading.gif" width="20%" /> </section>
+<section class="homepage" style=""> <img class="logoimg" src="logo-head.png" width="40%" />
+  <div class="clearfix"></div>
+  <div class="col-xs-12 loads"> Loading... </div>
+  <div class="col-xs-6 no-padding signup" style="text-align:right">
+    <button style="margin-right:4px;">Sign up</button>
+  </div>
+  <div class="col-xs-6 no-padding login" style="text-align:left">
+    <button style="margin-left:4px;">Login</button>
+  </div>
+  
+  <div class="col-xs-12 no-padding signfb">
+  	<p>or</p>
+    <img src="img/loginfb.jpg" width="40%"> </div>
+  <div class="col-xs-12 no-padding skip" style="text-align:center">
+    <a style="color:white" href="home.html"><button>Skip this session &gt;</button></a>
+  </div>
+  <form class="col-xs-12 no-padding forgotform" method="POST">
+    <input type="text" name="email" class="email" placeholder="Email address..."  />
+    <input type="submit" value="Reset Password" />
+    <!--<input type="submit" name="btn-login" value="Login" />-->
+    <p class="log">Back to<span class="login2" style="color:#f2bf0e"> Login</span></p>
+  </form>
+  <form class="col-xs-12 no-padding loginform" method="POST">
+    <input type="text" name="email" class="email" placeholder="Email address..."  />
+    <div class="col-xs-12 no-padding">
+    	<input type="password" name="password" class="pass" placeholder="Password..."  /><span class="hd-visible"></span>
+    </div>
+    <input type="hidden" name="login_type" class="email" value="EMAIL"  />
+    <input type="submit" value="Login" />
+    <!--<input type="submit" name="btn-login" value="Login" />-->
+    <p>Not registered yet? <a class="regis" style="color:#f2bf0e"> Sign Up Here</a></p>
+    <p>Forgot Password?<a class="forgot1" style="color:#f2bf0e"> Click Here</a></p>
+  </form>
+  <form class="col-xs-12 no-padding regisform" method="POST">
+    <input type="text"  name="full_name"   placeholder="Name..."  />
+    <input type="text"  name="username"   placeholder="Username..."  />
+    <input type="text" class="user_email"  name="email"   placeholder="Email address..."  />
+    <div class="col-xs-12 no-padding pass_field">
+    		<input type="password" name="password" id="password" placeholder="Password..."  /><span style="height: " class="hd-visible"></span>
+    </div>
+    <div class="col-xs-12 no-padding">
+    		<input type="password" name="cpassword"  placeholder="Retype Password..."  /><span style="height: " class="hd-visible2"></span>
+    </div>
+	<select name="sex">
+		<option value="">-- Select a Gender --</option>
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+	</select>
+    <div class="col-xs-6 no-padding miniform" >
+      <input type="text" name="default_phone" placeholder="No. Handphone..."  />
+    </div>
+    <div class="col-xs-6 no-padding miniform birthday_field">
+      <input type="text" name="birthday" placeholder="e.g. YYYY-MM-DD" data-toggle="modal" data-target="#setdate" />
+    </div>
+    <input type="hidden" name="login_type" class="email" value="EMAIL"  />
+	<input type="button" value="Register" />
+    <p class="log">Already registered? <span class="login2" style="color:#f2bf0e"> Login Here</span></p>
+  </form>
+  <footer>&copy; 2017 H&#228;agen-Dazs Coorporation all right reserved.</footer>
+</section>
+<div class="modal fade" id="setdate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header"> <img src="img/modal-info.png" width="60" />
+        <h3 class="modal-title" id="exampleModalLongTitle">Set Birthday</h3>
+        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>--> 
+      </div>
+      <div class="modal-body">
+        <div class="datepicker">
+          <div id="title" class="labels">1st May 2015</div>
+          <div class="block action" onClick="addDay(1)">+</div>
+          <div class="block action" onClick="addMonth(1)">+</div>
+          <div class="block action" onClick="addYear(1)">+</div>
+          <div ></div>
+          <div class="block middle" id="day">1</div>
+          <div class="block middle" id="month">May</div>
+          <div class="block middle" id="year">15</div>
+          <div ></div>
+          <div class="block action" onClick="addDay(-1)">-</div>
+          <div class="block action" onClick="addMonth(-1)">-</div>
+          <div class="block action" onClick="addYear(-1)">-</div>
+          <!--<div class="action-row">
+		    <div class="action" onclick="">Cancel</div>
+		    <div class="action" onclick="">Reset</div>
+		    <div class="action" onclick="">OK</div>
+		  </div>--> 
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="modal-footer">
+        <button type="button" class="col-xs-12 no-padding" data-dismiss="modal">Set Birthday</button>
+        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>--> 
+      </div>
+    </div>
+  </div>
+</div>
+<div id="fb-root"></div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/jquery.ajax-cross-origin.min.js"></script> 
+<script type="text/javascript" src="js/login.js"></script> 
+<script type="text/javascript" src="js/forgot.js"></script> 
+<script type="text/javascript" src="js/register.js"></script>
+<script type="text/javascript" src="js/openfb.js"></script>  
+<script type="text/javascript" src="js/loginfb.js"></script> 
+<script type="text/javascript" src="js/validation.min.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/themes/ui-lightness/jquery-ui.css" />
+<script>
+$("footer").hide();
+$(".homepage").hide();
+$(".loading").show();
+function getUrlParameter(sParam) {
+	var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+		sURLVariables = sPageURL.split('&'),
+		sParameterName,
+		i;
+
+	for (i = 0; i < sURLVariables.length; i++) {
+		sParameterName = sURLVariables[i].split('=');
+
+		if (sParameterName[0] === sParam) {
+			return sParameterName[1] === undefined ? true : sParameterName[1];
+		}
+	}
+};
+$(document).ready(function(){
+
+	
+
+	
+
+	/* $(".birthday_field").click(function(){
+		$("#setdate").modal("show")
+	}) */
+	//localStorage.login_hd = "login"
+	_d = function(id){
+	  return document.getElementById(id);
+	}
+
+	var mylib = {};
+	
+var mylib = {};
+mylib.calendar = {};
+mylib.calendar.months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+mylib.calendar.weekdays = ["Sun", "Mon", "Tue", "Wed", "Thr", "Fri", "Sat"];
+mylib.calendar.currentDate = new Date();
+
+mylib.calendar.setDateLabels = function(){
+  var d = this.currentDate;
+	_d("day").innerText = ("0"+(d.getDate()+1)).slice(-2);
+	//_d("month").innerText = this.months[d.getMonth()];
+	_d("month").innerText = ("0"+(d.getMonth()+1)).slice(-2);
+  _d("year").innerText = d.getFullYear();
+  
+  _d("title").innerText = d.getFullYear() +"-"+ ("0"+(d.getMonth()+1)).slice(-2) + "-" + ("0"+(d.getDate()+1)).slice(-2); 
+}
+
+mylib.calendar.setDateLabels();
+
+addDay = function(numberOfDays){
+  var oldDate = mylib.calendar.currentDate;
+  mylib.calendar.currentDate.setDate(oldDate.getDate() + numberOfDays);
+  mylib.calendar.setDateLabels();
+}
+
+// TODO: Use addDay() function for adding month
+addMonth = function(numberOfMonths){
+  var oldDate = mylib.calendar.currentDate;
+  mylib.calendar.currentDate.setMonth(oldDate.getMonth() + numberOfMonths);
+  mylib.calendar.setDateLabels();
+}
+
+// TODO: Use addDay() function for adding Year
+addYear = function(numberOfYears){
+  var oldDate = mylib.calendar.currentDate;
+  mylib.calendar.currentDate.setFullYear(oldDate.getFullYear() + numberOfYears);
+  mylib.calendar.setDateLabels();
+}
+
+	$(".modal-footer button").click(function(){
+		$("input[name='birthday']").val($(".labels").html());
+	})
+
+	
+
+	$.support.cors = true;
+
+
+	console.log(localStorage.login_hd)
+	if(localStorage.login_hd=="login"){
+		window.location = "home.html";
+	}else{
+		$(".homepage, footer").fadeIn("slow");
+		$(".loading").hide();
+		var getNav = getUrlParameter('go');
+		if(getNav == "login"){
+			$(".login").hide();
+			$(".skip").hide();
+			$(".signup").hide();
+			$(".signfb").hide();
+			$(".loginform").slideToggle();
+			$(".homepage").css("opacity","1");
+			$(".homepage").stop().animate({paddingTop: "30%"},400);
+			
+		}else if(getNav=="signup"){
+			$(".regis").trigger("click");
+			$(".signup").hide();
+			$(".skip").hide();
+			$(".login").hide();
+			$(".signfb").hide();
+			$(".regisform").slideToggle();
+			$(".homepage").css("opacity","1");
+			$(".homepage").stop().animate({paddingTop: "8%"},400);
+		}else if(getNav=="loginfb"){
+			login();
+		}
+	}
+
+
+	
+
+	var vispass = "false";
+
+	$(".hd-visible").click(function(){
+		if(vispass=="false"){
+			$(this).prev("input[name='password']").attr("type","text");
+			vispass="true";
+			$(this).css("background-image","url(img/hide.svg)");
+		}else{
+			$(this).prev("input[name='password']").attr("type","password");
+			vispass="false";
+			$(this).css("background-image","url(img/view.svg)");
+		}
+		/*},function(){
+			$(this).prev("input[name='password']").attr("type","password");*/
+	});
+	var vispass2 = "false";
+	$(".regisform .hd-visible").click(function(){
+		if(vispass2=="false"){
+			$("label").prev("input[name='password']").attr("type","text");
+			vispass2="true";
+			$(this).css("background-image","url(img/hide.svg)");
+		}else{
+			$("label").prev("input[name='password']").attr("type","password");
+			vispass2="false";
+			$(this).css("background-image","url(img/view.svg)");
+		}
+		
+	});
+	
+	var vispass3 = "false";
+	$(".regisform .hd-visible2").click(function(){
+		if(vispass3=="false"){
+			if($("label.error").length !=0){
+				$("label.error").prev("input[name='cpassword']").attr("type","text");
+			}else{
+				$(this).prev("input[name='cpassword']").attr("type","text");
+			}
+			
+			vispass3="true";
+			$(this).css("background-image","url(img/hide.svg)");
+		}else{
+			if($("label.error").length !=0){
+				$("label.error").prev("input[name='cpassword']").attr("type","password");
+			}else{
+				$(this).prev("input[name='cpassword']").attr("type","password");
+			}
+			
+			vispass3="false";
+			$(this).css("background-image","url(img/view.svg)");
+		}
+	});
+
+	$(".signup").click(function(){
+		$(this).hide();
+		$(".skip").hide();
+		$(".login").hide();
+		$(".signfb").hide();
+		$(".regisform").slideToggle();
+		$(".homepage").stop().animate({paddingTop: "8%"},400);
+	});
+
+	$(".regis").click(function(){
+		$(".loginform").slideToggle();
+		$(".skip").hide();
+		$(".login").hide();
+		$(".signfb").hide();
+		$(".regisform").slideToggle();
+		$(".homepage").stop().animate({paddingTop: "8%"},400);
+	});
+	
+	$(".login").click(function(){
+		$(this).hide();
+		$(".skip").hide();
+		$(".signup").hide();
+		$(".signfb").hide();
+		$(".loginform").slideToggle();
+
+		//$(".homepage").css("padding-top","30%");
+		$(".homepage").stop().animate({paddingTop: "30%"},400);
+		//var delay = 1000; //Your delay in milliseconds
+		//setTimeout(function(){ window.location = "login.html"; }, delay);
+	});
+
+
+	$(".forgot1").click(function(){
+		$(this).hide();
+		$(".signup").hide();
+		$(".skip").hide();
+		$(".signfb").hide();		
+		$(".loginform").slideToggle();
+		$(".forgotform").slideToggle();
+		//$(".homepage").css("padding-top","30%");
+		$(".homepage").stop().animate({paddingTop: "30%"},400);
+		//var delay = 1000; //Your delay in milliseconds
+		//setTimeout(function(){ window.location = "login.html"; }, delay);
+	});
+
+	$(".login2").click(function(){
+		$(".regisform").hide();
+		$(".loginform").slideToggle();
+		$(".skip").hide();
+		$(".forgotform").hide();
+		$(".forgot1").show();
+		//$(".homepage").css("padding-top","30%");
+		$(".homepage").stop().animate({paddingTop: "30%"},400);
+		//var delay = 1000; //Your delay in milliseconds
+		//setTimeout(function(){ window.location = "login.html"; }, delay);
+	});
+	
+	$(".signfb").click(login);
+	
+	
+	
+	
+	
+	
+});
+</script>
+<link href="style/bootstrap.min.css" rel="stylesheet" >
+<script src="js/bootstrap.min.js" ></script>
+</body>
+</html>

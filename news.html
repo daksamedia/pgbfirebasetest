@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haagen Daaz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+<meta name="description" content="">
+<link rel="canonical" href="">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href="style/style.css" rel="stylesheet">
+<link href="style/swiper.min.css" rel="stylesheet">
+<link href="style/products.css" rel="stylesheet">
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+<style>
+	.swiper-container {
+        width: 100%;
+        height: 25vh;
+        margin-top:37px;
+    }
+
+    .swiper-container2 {
+       margin-top:12px;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .swiper-container2 .swiper-slide{
+    	border:1px solid #bababa;
+    }
+
+    .swiper-container2 .swiper-button-prev, .swiper-container2 .swiper-button-next{
+    	top:84%;
+    }
+
+    .swiper-container2 .swiper-button-prev{
+    	background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 27 44'%3E%3Cpath d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z' fill%3D'%23810D24'%2F%3E%3C%2Fsvg%3E");
+    	z-index: 3;
+    	display: none;
+    }
+
+    .overlay {
+		position: absolute;
+		background: url(img/overlay-swiper.png) no-repeat center center;
+		width: 100%;
+		height: 189px;
+		z-index: 2;
+		background-size: cover;
+	}
+
+    .swiper-container2 .swiper-button-next{
+    	background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 27 44'%3E%3Cpath d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z' fill%3D'%23810D24'%2F%3E%3C%2Fsvg%3E");
+    	z-index: 3;
+    	display: none;
+    }
+        
+    .promo-title{
+    	background: linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 1) 100%);
+		/* background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%) */
+		/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 1))) */
+		background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 1) 100%);
+		background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1) 100%);
+		background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1) 100%);
+    }
+</style>
+</head>
+<body>
+<section class="header">
+	<div class="col-xs-2">
+		<a href="#" class="ssm-toggle-nav" title="open nav">
+			<div class="burger">-</div>
+			<div class="burger">-</div>
+			<div class="burger">-</div>
+		</a>
+	</div>
+	<div class="col-xs-8 title">
+		<span>News & Promo</span>
+	</div>
+	<div class="col-xs-2 cartbadge">
+			<div class="cart"><span class="cart-count">0</span></div>
+	</div>
+</section>
+<section class="loading">
+	<img src="img/loading.gif" width="20%" />
+</section>
+
+<nav class="nav">
+	<div class="col-xs-6 no-padding">
+		<img src="logo-head.png" width="67px" alt="swipe image" />
+	</div>
+	<div class="col-xs-6 no-padding" style="text-align: right;">
+		<a href="inbox.html"><span class="inbox-count">0</span>
+		<img src="img/inbox.svg" width="28px" style="margin-right: 10px" alt="swipe image" /></a>
+	</div>
+	<div class="clearfix"></div>
+	<div class="current-user">
+		<div class="current-user-data">
+			<h3><a class="name_menu" data-href="profile.html">Loading...</a></h3>
+			<p class="points_menu">Your points: Loading...</p>
+		</div>
+		<div class="avatar"></div>
+		<div style="clear:both"></div>
+	</div>
+	
+	<div class="main-menu">
+		<a class="menu-hom" data-href="home.html"><p>Home</p></a>
+		<a class="menu-cat" data-href="shop.html"><p>Catalog</p></a>
+		<a class="menu-dir" data-href="outlet.html"><p>Directory</p></a>
+		<a class="menu-ner" data-href="nearme.html"><p>Near Me &trade;</p></a>
+		<a class="menu-gam" data-href="games.html"><p>Game</p></a>
+		<a class="menu-nws" data-href="news.html"><p>News</p></a>
+		<a class="menu-set" data-href="setting.html"><p>Setting</p></a>
+		<p class="logout">Log Out</p>
+	</div>
+	<div class="footer-nav">
+		<span><a href="termscondition.html">Term & Condition &nbsp;</a></span>
+		<span><a href="help.html">Help &nbsp;</a></span>
+		<span><a href="legal.html">Legal &nbsp;</a></span>
+		<span><a href="about.html">About &nbsp;</a></span>
+	</div>	
+</nav>
+<div class="container slidernews">
+	<div class="row">
+		<div class="col-xs-12 no-padding">
+			<div class="swiper-container">
+			        <div class="swiper-wrapper">
+			           
+			            
+			        </div>
+			        <!-- Add Pagination -->
+			        <div class="swiper-pagination"></div>
+			        <!-- Add Arrows -->
+			        
+			</div>
+			<h2 style="text-align: left; margin-left: 12px">Hot Promo</h2>
+			<div class="swiper-container2" style="max-height:30vh; overflow: hidden; ">
+			        <!-- <div class="overlay"></div>-->
+			        <div class="swiper-wrapper">
+			          
+			            
+			        </div>
+			        <!-- Add Pagination -->
+			        <div class="swiper-pagination"></div>
+			        <!-- Add Arrows -->
+			        <div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+			</div>
+		</div>	
+	</div>
+</div>
+<section class="newspage">
+
+		<section class="news">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 headline">
+						<h2>News</h2>
+					</div>
+									
+				</div>
+			</div>
+		</section>
+      </section>
+	<div class="ssm-overlay ssm-toggle-nav"></div>
+
+<section class="transition" style="margin-top:100%; width: 100%; height: 20%; z-index: 100; display: none; position: relative;">
+	<img src="img/loading.gif" width="20%" />
+</section>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mycart.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
+
+<script>
+if(localStorage.hd_lang==="IDN"){
+
+	$(".title span").html("Berita & Promo");
+	$(".headline h2").html("Berita & Promo");
+}
+$(".loading").show();
+$(".newspage, .slidernews").hide();
+$(".nav").hide();
+$(".swiper-button-next, .swiper-button-prev").hide();
+$(document).ready(function(){
+
+		$(".swiper-button-next, .swiper-button-prev").fadeIn("fast");
+		
+		function getId(url) {
+		    var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+		    var match = url.match(regExp);
+
+		    if (match && match[2].length == 11) {
+		        return match[2];
+		    } else {
+		        return 'error';
+		    }
+		}
+
+		var sess_key = localStorage.hd_session_key;	
+		if(localStorage.hd_lang==="IDN"){
+			var urlw = "http://api.haagendazsindonesia.co.id/v1/news?session_key="+ sess_key +"&language_code=IDN";
+	 	}else{
+	 		var urlw = "http://api.haagendazsindonesia.co.id/v1/news?session_key="+ sess_key +"&language_code=ENG";
+	 	}
+	 	var headline = $(".news .container").find(".row");
+	  	
+		$.getJSON(urlw,function(menu){
+		      
+
+		      //$.each(menu, function(keys, news){
+		      for (var i = 0, len = menu.payload.length; i < len; i++) {
+		  		var tipe = menu.payload[i].main_youtube_url;
+
+		  	
+		  		if(localStorage.hd_lang==="IDN"){
+		  			if(tipe==""){
+				  		  headline.append('<div class="col-xs-12 newsitem">'+
+							'<div class="col-xs-12 no-padding" style="max-height: 30vh; overflow: hidden; margin-bottom:10px !important">'+
+							'<img src="img/picture.svg" data-original="'+ menu.payload[i].main_image +'" class="lazy img-responsive" />'+
+							'</div>'+
+							'<h3>'+ menu.payload[i].title +'</h3>'+
+							'<div style="max-height: 61px; margin-bottom:10px; overflow:hidden">'+ menu.payload[i].short_description +'</div>'+
+							'<a href="read.html?id='+ menu.payload[i].news_id +'"><button>Baca selengkapnya</button></a>'+										
+							'</div>');
+				  	}else{		    	
+			    		headline.append('<div class="col-xs-12 newsitem">'+
+							'<div class="col-xs-12 no-padding" style="max-height: 31vh; overflow: hidden; margin-bottom:10px !important">'+
+							'<iframe width="100%" height="201" src="https://www.youtube.com/embed/'+ getId(menu.payload[i].main_youtube_url) +'" frameborder="0" allowfullscreen></iframe>'+
+							'</div>'+
+							'<h3>'+ menu.payload[i].title +'</h3>'+
+							'<P>'+ menu.payload[i].short_description +'</P>'+
+							'<a href="'+menu.payload[i].main_youtube_url+'"><button>Tonton selengkapnya</button></a>'+										
+							'</div>');
+				  	}
+		  		}else{
+				  	if(tipe==""){
+				  		  headline.append('<div class="col-xs-12 newsitem">'+
+							'<div class="col-xs-12 no-padding" style="max-height: 30vh; overflow: hidden; margin-bottom:10px !important">'+
+							'<img src="img/picture.svg" data-original="'+ menu.payload[i].main_image +'" class="lazy img-responsive" />'+
+							'</div>'+
+							'<h3>'+ menu.payload[i].title +'</h3>'+
+							'<div style="max-height: 61px; margin-bottom:10px; overflow:hidden">'+ menu.payload[i].short_description +'</div>'+
+							'<a href="read.html?id='+ menu.payload[i].news_id +'"><button>Read more</button></a>'+										
+							'</div>');
+				  	}else{		    	
+				    		headline.append('<div class="col-xs-12 newsitem">'+
+								'<div class="col-xs-12 no-padding" style="max-height: 31vh; overflow: hidden; margin-bottom:10px !important">'+
+								'<iframe width="100%" height="201" src="https://www.youtube.com/embed/'+ getId(menu.payload[i].main_youtube_url) +'" frameborder="0" allowfullscreen></iframe>'+
+								'</div>'+
+								'<h3>'+ menu.payload[i].title +'</h3>'+
+								'<P>'+ menu.payload[i].short_description +'</P>'+
+								'<a href="'+menu.payload[i].main_youtube_url+'"><button>Watch more</button></a>'+										
+								'</div>');
+				  	}
+		    	
+		  		}
+		      };
+		      
+		  }).done(function(){
+		  	$("img.lazy").lazyload();	  	
+		  });
+
+
+		var urlf = "http://api.haagendazsindonesia.co.id/v1/promotion?session_key"+ sess_key +"";
+	 	var slidernews = $(".slidernews .swiper-container").find(".swiper-wrapper");
+	 	var slidernews2 = $(".slidernews .swiper-container2").find(".swiper-wrapper");
+	  	var jml_slide2 = 0;
+
+		$.getJSON(urlf,function(e){
+		     // Slider Components
+			
+		for (var i = 0, len = e.payload.length; i < len; i++) {
+				if(e.payload[i].promotion_type=="CORPORATE"){
+			  		slidernews.append('<div class="swiper-slide">'+
+			  		  	'<a href="event.html?id='+ e.payload[i].promotion_id +'">'+
+			  		  		'<img src="'+  e.payload[i].banner_image +'" width="100%" />'+
+			  		  	'</a>'+									
+						'</div>');
+
+			  		
+			  	}else{
+			  		slidernews2.append('<a class="swiper-slide" href="event.html?id='+ e.payload[i].promotion_id +'">'+
+		  			'<div  style="height: 122px; width:100%; background:url('+  e.payload[i].banner_image +') no-repeat center center; background-size:contain;">'+
+		  				'<div class="promo-title" style="padding:15px; font-weight:600; width:100%; height:60px; position:absolute; bottom:0;">'+
+		  					/* '<p style="font-size:11px; color:white; max-height:32px; overflow:hidden;">' +  e.payload[i].title + '</p>'+ */
+			  				'</div>'+
+			  		  	'</div>'+									
+					'</a>');
+			  		jml_slide2 = jml_slide2 + 1;
+			  		
+			  	}
+		    };
+		    
+		}).done(function(){
+			var swiper = new Swiper('.swiper-container', {
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					//nextButton: '.swiper-button-next',
+					//prevButton: '.swiper-button-prev',
+					autoplay: 4500,
+					spaceBetween: 30
+				});
+			if(jml_slide2 != 0){
+				if(jml_slide2 > 3){
+					var swiper2 = new Swiper('.swiper-container2', {
+						pagination: '.swiper-pagination',
+						paginationClickable: true,
+						nextButton: '.swiper-button-next',
+						prevButton: '.swiper-button-prev',
+						autoplay: 4500,
+						slidesPerView:  3,
+						//grabCursor: true,
+						//freeMode:true,
+						centeredSlides: true,
+						loop: true,
+						spaceBetween: 5
+					});
+				}else{
+					var swiper2 = new Swiper('.swiper-container2', {
+						pagination: '.swiper-pagination',
+						paginationClickable: true,
+						nextButton: '.swiper-button-next',
+						prevButton: '.swiper-button-prev',
+						autoplay: 4500,
+						slidesPerView: 2,
+						//grabCursor: true,
+						//freeMode:true,
+						spaceBetween: 5
+					});
+				}
+			}else{
+				$('.swiper-container2').hide();
+				$('.swiper-container2').prev("h2").hide();
+			}
+			
+		});
+
+});
+
+</script>
+<link href="style/swiper.css" rel="stylesheet">
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/jquery.slideandswipe.js"></script>
+<link href="style/bootstrap.min.css" rel="stylesheet">
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

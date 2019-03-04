@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haagen Daaz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="">
+<link rel="canonical" href="">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="style/style.css" rel="stylesheet">
+<script src="js/6fac2730d4.js"></script>
+<link href="style/products.css" rel="stylesheet">
+<link rel="stylesheet" href="style/slick.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+<style type="text/css">
+	.slick-list{
+		height: inherit !important;
+	}
+	.header{
+		display: none;
+	}
+</style>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+</head>
+<body></div>
+<section class="loading">
+	<img src="img/loading.gif" width="20%" />
+</section>
+<section class="header">
+	<div class="col-xs-2">
+		<a href="#" class="ssm-toggle-nav" title="open nav">
+			<div class="burger">-</div>
+			<div class="burger">-</div>
+			<div class="burger">-</div>
+		</a>
+	</div>
+	<div class="col-xs-8 title">
+		<span>Checkout</span>
+	</div>
+	<div class="col-xs-2 cartbadge" style="display: none">
+			<div class="cart"><span class="cart-count">0</span></div>
+	</div>
+</section>
+<nav class="nav">
+	<div class="col-xs-6 no-padding">
+		<img src="logo-head.png" width="67px" alt="swipe image" />
+	</div>
+	<div class="col-xs-6 no-padding" style="text-align: right;">
+		<a href="inbox.html"><span class="inbox-count">0</span>
+		<img src="img/inbox.svg" width="28px" style="margin-right: 10px" alt="swipe image" /></a>
+	</div>
+	<div class="clearfix"></div>
+	<div class="current-user">
+		<div class="current-user-data">
+			<h3><a class="name_menu" data-href="profile.html">Loading...</a></h3>
+			<p class="points_menu">Your points: Loading...</p>
+		</div>
+		<div class="avatar"></div>
+		<div style="clear:both"></div>
+	</div>
+	
+	<div class="main-menu">
+		<a class="menu-hom" data-href="home.html"><p>Home</p></a>
+		<a class="menu-cat" data-href="shop.html"><p>Catalog</p></a>
+		<a class="menu-dir" data-href="outlet.html"><p>Directory</p></a>
+		<a class="menu-ner" data-href="nearme.html"><p>Near Me &trade;</p></a>
+		<a class="menu-gam" data-href="games.html"><p>Game</p></a>
+		<a class="menu-nws" data-href="news.html"><p>News</p></a>
+		<a class="menu-set" data-href="setting.html"><p>Setting</p></a>
+		<p class="logout">Log Out</p>
+	</div>
+	<div class="footer-nav">
+		<span><a href="termscondition.html">Term & Condition &nbsp;</a></span>
+		<span><a href="help.html">Help &nbsp;</a></span>
+		<span><a href="legal.html">Legal &nbsp;</a></span>
+		<span><a href="about.html">About &nbsp;</a></span>
+	</div>		
+</nav>
+<section class="shoppage">
+		
+		<section class="contentshop slick-initialized">
+			<div class="col-xs-12 no-padding tab-fixed-group">
+				<div class="btnfix" style="width: 100%; position: fixed; bottom: 0; background: white;">
+						<button class="continue" style="width: 100%; height: 40px; padding: 4px; color: #fff; background: #E3B75B; font-weight: bold; font-size: 9pt; text-transform: uppercase; border: none; opacity: 0.3" disabled>Confirm Payment</button>
+				</div>
+				<div class="tab-fixed col-xs-4 tab-click1">
+					Delivery
+				</div>
+				<div class="tab-fixed col-xs-4 tab-click2">
+					Payment
+				</div>
+				<div class="tab-fixed ongoing col-xs-4 tab-click3">
+					Confirmation
+				</div>
+			</div>
+			<div class="sub-header " >
+			  <div class="swipe-tabs">
+
+				
+				<div class="swipe-tab asu" hidden>Payment</div>
+				
+			  </div>
+			</div>
+			<div class="main-container ">
+			  <div class="swipe-tabs-container col-xs-12 no-padding	">
+				<div class="swipe-tab-content" style="background: #f7f7f7">
+					<div class="col-xs-12 align-left sect-2" style="margin-bottom:34px;">
+							<p class="hd_alert2" style="font-size: 16px;background: #f6e4c9;padding: 8px 8px 12px;border: 1px solid #e3b75b; margin-top:12px;"><strong>Attention :</strong><br />The validation process a maximum of 1 x 24-hour</p>
+							
+							<h3 class="sect-2-title">Transfer Receipt</h3>
+							
+							<a class="attachment" style="color:#810D24;" data-toggle="modal" data-target="#chgimg">
+								<div class="col-xs-12 no-padding getpict" style="text-align: center;">
+									<button class="browse" style="width: 100%; padding: 4px; color: #000; background: #E3B75B; margin:15px auto !important; border: none;">Browse...</button>
+								<!--<div class="col-xs-12 no-padding getpict" style="height: 150px; padding-top: 30px; text-align: center; border:4px dotted #DBDBDB; background: url(img/receipt.svg) center center no-repeat; background-size: 30%">-->
+									<!--<img src="img/receipt.svg" width="100%" style="height: 150px; margin: 0px auto; opacity: 0;">-->
+									<p>Click to get your ATM/Banking receipt</p>
+								</div>
+							</a>
+							
+
+							<form class="col-xs-12 no-padding cardinfo" style="margin-top: 23px !important;">
+								<h3>Additional Info</h3>
+								<select required class="hd_order" name="Province" style="width:100%; border: #e4e4e4 1px solid; padding:4px; background:none; margin-bottom:15px; margin-top:15px;">
+								<option value="">-- Select Order ID --</option>
+								</select>
+								<input name="acc_num" type="number" style="width:100%; border: #e4e4e4 1px solid; padding:4px; padding:4px; background:none; margin-bottom:15px; margin-top:10px;" placeholder="Account number..." />
+								<input name="acc_name" type="text" style="width:100%; border: #e4e4e4 1px solid; padding:4px; padding:4px; background:none; margin-bottom:15px; margin-top:10px;" placeholder="Account name..." required />
+								<label>Rp. </label><input name="amount" type="text" style="width:93%; border: #e4e4e4 1px solid; padding:4px; padding:4px; background:none; margin-bottom:15px; margin-top:10px;" placeholder="Transfer amount..." required />
+								<input name="transfer_date" type="text" style="width:100%; border: #e4e4e4 1px solid; padding:4px; padding:4px; background:none; margin-bottom:15px; margin-top:10px;" placeholder="Set transfer date..." required />
+								
+								<select required class="hd_bank" name="Province" style="width:100%; border: #e4e4e4 1px solid; padding:4px; background:none; margin-bottom:15px; margin-top:15px;">
+									<option value="">-- Select Your Bank --</option>
+									<option value="BCA">BCA Bank</option>
+									<option value="Mandiri">Mandiri Bank</option>
+									<option value="BNI">BNI Bank</option>
+									<option value="BRI">BRI Bank</option>
+									<option value="Permata">Permata Bank</option>
+									<option value="DKI">Bank DKI</option>
+									<option value="CIMB">CIMB Bank</option>
+									<option value="Mega">Bank Mega</option>
+								</select>
+								<select required class="hd_bank_to" name="Province" style="width:100%; border: #e4e4e4 1px solid; padding:4px; background:none; margin-bottom:15px; margin-top:15px;">
+									<option value="">-- Select destination Bank --</option>
+									
+								</select>
+								<div class="clearfix"></div>
+								
+							</form>
+
+							
+						</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+		</section>
+      </section>
+	<div class="ssm-overlay ssm-toggle-nav"></div>
+<div class="modal fade" id="chgimg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="img/modal-info.png" width="60" />
+	    <h3 class="modal-title" id="exampleModalLongTitle">Choose Media</h3>
+        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>-->	
+      </div>
+      <div class="modal-body">
+        <div class="col-xs-6 cam">
+        	<img src="img/cam.svg" width="40%" />
+        	<br/>
+        	<p>Camera</p>
+        </div>
+        <div class="col-xs-6 gal">
+        	<img src="img/gal.svg" width="40%" />
+        	<br/>
+        	<p>Image Gallery</p>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="modal-footer">
+        <button type="button" class="col-xs-12" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-success.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Success</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body">
+	      	<p>Some changes has been saved!</p>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding closebtn" data-dismiss="modal">Close</button>
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-error.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Error</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body">
+	      	<p>Some changes failed to save.</p>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding closebtn" data-dismiss="modal">Close</button>
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<div class="modal fade" id="setdate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header"> <img src="img/modal-info.png" width="60" />
+        <h3 class="modal-title" id="exampleModalLongTitle">Set Date</h3>
+        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>--> 
+      </div>
+      <div class="modal-body">
+      	<div class="">
+	        <div class="col-xs-12 no-padding datepicker">
+	          <div id="title" class="labels">1st May 2015</div>
+	          <div class="block action" onClick="addDay(1)">+</div>
+	          <div class="block action" onClick="addMonth(1)">+</div>
+	          <div class="block action" onClick="addYear(1)">+</div>
+	          <div ></div>
+	          <div class="block middle" id="day">1</div>
+	          <div class="block middle" id="month">May</div>
+	          <div class="block middle" id="year">15</div>
+	          <div ></div>
+	          <div class="block action" onClick="addDay(-1)">-</div>
+	          <div class="block action" onClick="addMonth(-1)">-</div>
+	          <div class="block action" onClick="addYear(-1)">-</div>
+	          <!--<div class="action-row">
+			    <div class="action" onclick="">Cancel</div>
+			    <div class="action" onclick="">Reset</div>
+			    <div class="action" onclick="">OK</div>
+			  </div>--> 
+	        </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="modal-footer">
+        <button type="button" class="col-xs-12 no-padding" data-dismiss="modal">Set Date</button>
+        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>--> 
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.creditCardValidator.js"></script>
+<script type="text/javascript" src="js/validation.min.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/additional-methods.min.js"></script>
+<script type="text/javascript" src="js/jquery.mycart.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="js/jquery.slideandswipe.js"></script>
+<!-- touchSwipe library -->
+
+<script>
+$(".loading").show();
+$(".shoppage").hide();
+$(".nav").hide();
+$(".sendmy").hide();
+$(".sendgift").hide();
+$(".codinfo").hide();
+$(".transinfo").hide();
+if(localStorage.hd_lang==="IDN"){
+	/* SECTION 1 */
+	$(".title span").html("Transaksi");
+	$(".tab-click1").html("Pengiriman");
+	$(".tab-click2").html("Pembayaran");
+	$(".tab-click3").html("Konfirmasi");
+	$("select.hd_bank option:first-child").html("-- Pilih Bank Kamu --");
+	$("select.hd_bank_to option:first-child").html("-- Pilih Bank Tujuan --");
+	$("select.hd_order option:first-child").html("-- Pilih ID Pesanan --");
+	$(".continue").html("Selesaikan Pembayaran");
+	$("input[name='acc_name']").attr("placeholder","Masukkan Nama Akun...");
+	$("input[name='acc_num']").attr("placeholder","Masukkan Nomor Rekening...");
+	$("input[name='amount']").attr("placeholder","Masukkan Jumlah Transfer...");
+	$("input[name='transfer_date']").attr("placeholder","Masukkan Tanggal Transfer...");
+	$("#chgimg").find(".modal-title").html("Pilih Media");
+	$("#chgimg .modal-footer button").html("Tutup");
+	$("#chgimg .modal-body .cam").find("p").html("Kamera");
+	$("#chgimg .modal-body .gal").find("p").html("Galeri");
+	$("#success .modal-body p").html("Perubahan telah disimpan!");
+	$("#success .modal-footer button").html("Tutup");
+	$("#error .modal-body p").html("Perubahan gagal disimpan!");
+	$("#error .modal-footer button").html("Tutup");
+	$("#error .modal-title").html("Gagal");
+	$("#success .modal-title").html("Sukses");
+	$("#setdate .modal-title").html("Atur Tanggal");
+	$("#setdate .modal-footer button").html("Pasang");
+	$(".hd_alert2").html("<strong>Perhatian :</strong><br />Proses validasi pembayaran transfer maksimal 1 x 24 jam")
+	/* SECTION 2 */
+	$(".sect-2-title").html("Bukti Bayar");
+	$(".getpict p").html("Klik untuk unggah bukti pembayaran");
+	$(".transinfo h3").html("Nomor Rekening");
+	$(".cardinfo h3").html("Informasi Nota");
+	$(".browse").html("Telusuri...");
+	//$("label[for='radio-z']").html("Kirim sebagai hadiah");
+}
+$(document).ready(function() {
+	$( ".cardinfo" ).validate({
+	  rules: {
+	    inv_number : {
+	      required: true
+	    },
+	    hd_bank : {
+	      required: true
+	    }
+	  }
+	});
+	var fd = new FormData();
+	$(".header").show("fast")
+	/* $("input[name='card number']").keydown(function(){
+		$("input[name='validation']").trigger("click")
+	}) */
+	 var mybank;
+	 var sess_key = localStorage.hd_session_key;
+	 var user_id = localStorage.login_hd_id;
+	 var getorder = "http://api.haagendazsindonesia.co.id/v1/order?session_key="+ sess_key +"&customer_id="+ user_id +"&order_status=UNPAID";
+	 var ulz = "http://api.haagendazsindonesia.co.id/v1/payment_confirmation?session_key="+ sess_key +"";
+	 var urba = "http://api.haagendazsindonesia.co.id/v1/payment_channel?session_key="+ sess_key +"";
+	
+	$.getJSON(getorder, function(order){
+		for (var i = 0, buset = order.payload.length; i < buset; i++) {
+			if(order.payload[i].paid_amount > 0){
+				$("select.hd_order").append('<option value="'+ order.payload[i].order_id +'">'+ order.payload[i].order_id +' - <strong> Rp. '+ addCommas((order.payload[i].total_value - order.payload[i].paid_amount)) +'</strong></option>');
+			}else{
+				$("select.hd_order").append('<option value="'+ order.payload[i].order_id +'">'+ order.payload[i].order_id +' - <strong> Rp. '+ addCommas(order.payload[i].total_value) +'</strong></option>');
+			}
+			
+		}
+	});
+	$.getJSON(urba, function(bank){
+		for (var i = 0, buset = bank.payload.length; i < buset; i++) {
+			
+			$("select.hd_bank_to").append('<option style="text-transform:uppercase;" value="'+ bank.payload[i].payment_channel_id +'">BANK '+ bank.payload[i].bank_name +' - '+ bank.payload[i].bank_account_number +'</option>');
+		}
+	});
+	 $(".btnfix .continue").css("opacity","0.3");
+	 $(".btnfix .continue").attr("disabled",true);
+	 
+	 function validasiform(){
+	 	if($("input[name='transfer_date']").val() != "" && $("input[name='amount']").val() !="" && $("select.hd_order").val()!="" && $(".getpict img").attr("src")!="" && $("select.hd_bank").val()!="" && $("select.hd_bank_to").val()!="" && $("input[name='acc_name']").val()!=""){
+	 		$(".btnfix .continue").css("opacity","1");
+	 		$(".btnfix .continue").attr("disabled",false);
+	 	}else{
+	 		$(".btnfix .continue").css("opacity","0.3");
+	 		$(".btnfix .continue").attr("disabled",true);
+	 	}
+	 }
+	 $("#setdate .modal-footer button").click(function(){
+	 	$("input[name='transfer_date']").val($("#setdate .modal-body .datepicker .labels").html());
+	 	console.log($("#setdate .modal-body .datepicker .labels").html());
+	 });
+	
+ 	 $("input[name='transfer_date']").click(function(){
+ 	 	$("#setdate").modal("show");
+ 	 });
+	 $("input[name='amount']").keyup(function(event){
+	 	if(event.which >= 37 && event.which <= 40) return;
+	 	// format number
+		  $(this).val(function(index, value) {
+		    return value
+		    .replace(/\D/g, "")
+		    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+		    ;
+		  });
+	 	
+	 })
+	 $("input[name='acc_name']").keydown(validasiform)
+	 $("input[name='acc_num']").keydown(validasiform)
+	 $("select.hd_order").change(function(){
+	 	validasiform();
+	 	console.log($(this).val())
+	 });
+	 $("select.hd_bank").change(function(){
+	 	validasiform();
+	 	console.log($(this).val())
+	 });
+	 $("select.hd_bank_to").change(function(){
+	 	validasiform();
+	 	console.log($(this).val())
+	 });
+	function clearCache() {
+	    navigator.camera.cleanup();
+	}
+	function dataURItoBlob(dataURI) {
+	    // convert base64/URLEncoded data component to raw binary data held in a string
+	    var byteString;
+	    if (dataURI.split(',')[0].indexOf('base64') >= 0)
+	        byteString = atob(dataURI.split(',')[1]);
+	    else
+	        byteString = unescape(dataURI.split(',')[1]);
+	    // separate out the mime component
+	    var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
+	    // write the bytes of the string to a typed array
+	    var ia = new Uint8Array(byteString.length);
+	    for (var i = 0; i < byteString.length; i++) {
+	        ia[i] = byteString.charCodeAt(i);
+	    }
+	    return new Blob([ia], {type:mimeString});
+	}
+	function camSuccess(imageURI) {
+		var dataURI = "data:image/jpeg;base64,"+imageURI+"";
+		// Prepare Parameter
+		
+		// Proses Konversi base64 ke Blob
+		var blob = dataURItoBlob(dataURI);
+		var fieldName = "attachment";
+		var fileName = "displaypict"
+		// Field File
+		fd.append(fieldName, blob, fileName);
+		$(".loading").fadeOut("fast");
+		if(localStorage.hd_lang=="IDN"){
+			$(".attachment").hide("fast")
+			$("<p>Lampiran terkirim!</p>").insertAfter(".sect-2-title");
+		}else{
+			$(".attachment").hide("fast")
+			$("<p>Attachment sent!</p>").insertAfter(".sect-2-title");
+			
+		}		
+		// Execute
+		/*
+		$.ajax({
+			url: ulz,
+			data: fd,
+			timeout: 30000,
+			processData: false,
+			contentType: false,
+			type: 'POST',
+			dataType: 'json',
+			success: function (message){
+				$("#success").modal("show");
+				if(localStorage.hd_lang=="IDN"){
+					$(".attachment").hide("fast")
+					$("<p>Lampiran terkirim!</p>").insertAfter(".sect-2-title");
+				}else{
+					$(".attachment").hide("fast")
+					$("<p>Attachment sent!</p>").insertAfter(".sect-2-title");
+					
+				}
+				//$(".getpict img").attr("src", dataURI);
+				//setTimeout("location.reload()",300);
+				$(".loading").fadeOut("fast");
+				//location.reload();
+			},
+			error: function (message){
+				//alert(message);
+				$("#error").modal("show");
+			},
+		});
+		*/
+	
+	}
+	
+	
+	function camFail(message) {
+		alert('Failed because: ' + message);
+		$(".loading").fadeOut("fast");
+	}
+	$(".cam").click(function(){
+		navigator.camera.getPicture(camSuccess, camFail, { quality: 70,
+		destinationType: Camera.DestinationType.DATA_URL});
+		$('#chgimg').modal('hide');
+		$('.loading').fadeIn('slow');
+	});
+	$(".gal").click(function(){
+		navigator.camera.getPicture(galSuccess, galFail, { quality: 70,
+			destinationType: Camera.DestinationType.DATA_URL,
+			sourceType : Camera.PictureSourceType.SAVEDPHOTOALBUM
+		});
+		$('#chgimg').modal('hide');
+		$('.loading').fadeIn('slow');
+	});
+	function galSuccess(imageURI) {
+		var dataURI = "data:image/jpeg;base64,"+imageURI+"";
+		// Prepare Parameter
+		
+		// Proses Konversi base64 ke Blob
+		var blob = dataURItoBlob(dataURI);
+		var fieldName = "attachment";
+		var fileName = "displaypict"
+		// Field File
+		fd.append(fieldName, blob, fileName);
+		$(".loading").fadeOut("fast");
+		if(localStorage.hd_lang=="IDN"){
+			$(".attachment").hide("fast")
+			$("<p>Lampiran tersimpan!</p>").insertAfter(".sect-2-title");
+		}else{
+			$(".attachment").hide("fast")
+			$("<p>Attachment saved!</p>").insertAfter(".sect-2-title");
+			
+		}
+		// Execute
+		/*
+		$.ajax({
+			url: ulz,
+			data: fd,
+			timeout: 30000,
+			processData: false,
+			contentType: false,
+			type: 'POST',
+			dataType: 'json',
+			success: function (message){
+				$("#success").modal("show");
+				//location.reload();
+				if(localStorage.hd_lang=="IDN"){
+					$(".attachment").hide("fast")
+					$("<p>Lampiran terkirim!</p>").insertAfter(".sect-2-title");
+				}else{
+					$(".attachment").hide("fast")
+					$("<p>Attachment sent!</p>").insertAfter(".sect-2-title");
+					
+				}			
+				//$(".getpict img").attr("src", dataURI);
+				$(".loading").fadeOut("fast");
+			},
+			error: function (message){
+				$("#error").modal("show");
+				$(".loading").fadeOut("fast");
+			},
+		});
+		*/
+	}
+	function galFail(message) {
+		alert('Failed because: ' + message);
+	}
+	$(".btnfix .continue").click(function(){
+		$(this).css("opacity","0.3");
+	 	$(this).attr("disabled",true);
+		$(".loading").fadeIn("fast");
+		var payment_channel_id = $("select.hd_bank_to").val();
+		var order_id = $("select.hd_order").val();
+		var source_bank_name = $("select.hd_bank").val();
+		var source_account_name = $("input[name='acc_name']").val();
+		var source_account_number = $("input[name='acc_num']").val();
+		var transfer_amount = $("input[name='amount']").val().replace(/,/g, '');
+		var transfer_date = $("input[name='transfer_date']").val();
+		fd.append("payment_channel_id",payment_channel_id);
+		fd.append("order_id",order_id);
+		fd.append("source_bank_name",source_bank_name);
+		fd.append("source_account_name",source_account_name);
+		fd.append("transfer_date",transfer_date);
+		fd.append("transfer_amount",transfer_amount);
+		fd.append("source_account_number",source_account_number);
+		/*$.post(ulz, fd, "json")
+	        .done(function(data){
+	        	var respon = jQuery.parseJSON(data);
+				
+	        	if(respon.is_error=="false" || respon.is_error==false){
+	        		$(".loading").fadeOut("fast");
+	        		$("#success").modal("show");
+	        		setTimeout('window.location.href = "order.html?id='+ order_id +'"; ',300);
+	        	}else{
+	        		$("#error .modal-body p").html(respon.status_msg);
+	        		$("#error").modal("show");
+	        		$(".loading").fadeOut("fast");
+	        	}
+	        })
+		*/
+	    
+		$.ajax({
+			url: ulz,
+			data: fd,
+			timeout: 30000,
+			processData: false,
+			contentType: false,
+			type: 'POST',
+			dataType: 'json',
+			success: function (respon){
+				//var respon = JSON.parse(message);
+				
+	        	if(respon.is_error=="false" || respon.is_error==false){
+	        		$(".loading").fadeOut("fast");
+	        		$("#success").modal("show");
+	        		setTimeout('window.location.href = "order.html?id='+ order_id +'"; ',800);
+					
+	        	}else{
+					$(".btnfix .continue").css("opacity","1");
+					$(".btnfix .continue").attr("disabled",false);
+	        		//setTimeout('window.location.href = "order.html?id='+ order_id +'"; ',800);
+	        		if(respon.status_code=="501" || respon.status_code==501){
+	        			if(localStorage.hd_lang=="IDN"){
+	        				$("#error .modal-body p").html("Konfirmasi anda sedang diproses oleh staf kami.");
+	        				$("#error .modal-title").html("Gagal")
+	        			}else{
+	        				$("#error .modal-body p").html(respon.status_msg);
+	        			}	        			
+	        		}else{
+	        			if(localStorage.hd_lang=="IDN"){
+	        				$("#error .modal-body p").html("Konfirmasi tidak berhasil dikirim karena data tidak lengkap.");
+	        				$("#error .modal-title").html("Gagal");
+	        			}else{
+		        			$("#error .modal-body p").html(respon.status_msg);
+		        		}
+	        		}
+	        		
+	        		$("#error").modal("show");
+	        		$(".loading").fadeOut("fast");
+	        	}
+			},
+			error: function (respon){
+				//var respon = JSON.parse(message);
+				$("#error .modal-body p").html(respon.status_msg);
+        		$("#error").modal("show");
+        		$(".loading").fadeOut("fast");
+				$(".btnfix .continue").css("opacity","1");
+				$(".btnfix .continue").attr("disabled",false);
+			}
+		});
+		
+	})
+	
+	
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  'use strict';
+  
+  var $swipeTabsContainer = $('.swipe-tabs'),
+    $swipeTabs = $('.swipe-tab'),
+    $swipeTabsContentContainer = $('.swipe-tabs-container'),
+    currentIndex = 0,
+    activeTabClassName = 'active-tab';
+  $swipeTabsContainer.on('init', function(event, slick) {
+    $swipeTabsContentContainer.removeClass('invisible');
+    $swipeTabsContainer.removeClass('invisible');
+    currentIndex = slick.getCurrent();
+    $swipeTabs.removeClass(activeTabClassName);
+        $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+  });
+  $swipeTabsContainer.slick({
+    //slidesToShow: 3.25,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    swipeToSlide: false,
+    touchMove: false,
+    swipe: false,
+    touchThreshold: 10,
+    animating: false,
+    focusOnSelect: true,
+    fade: false,
+  });
+   $swipeTabsContentContainer.slick({
+    asNavFor: $swipeTabsContainer,
+    adaptiveHeight: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    animating: false,
+    //vertical: false,
+    //verticalSwiping: false,
+    //speed:1,
+    fade: false,
+    lazyLoad: 'ondemand',
+   	swipeToSlide: false,
+    //touchMove: false,
+   	swipe: false,
+    draggable: false,
+    touchThreshold: 5,
+    variableWidth: false,
+    focusOnSelect: true,
+    centerMode: true,
+    centerPadding: '1px',
+  });
+  $swipeTabs.on('click', function(event) {
+        // gets index of clicked tab
+        currentIndex = $(this).data('slick-index');
+        $swipeTabs.removeClass(activeTabClassName);
+        $('.swipe-tab[data-slick-index=' + currentIndex +']').addClass(activeTabClassName);
+        $swipeTabsContainer.slick('slickGoTo', currentIndex);
+        $swipeTabsContentContainer.slick('slickGoTo', currentIndex);
+   
+    });
+    //initializes slick navigation tabs swipe handler
+    $swipeTabsContentContainer.on('swipe', function(event, slick, direction) {
+      currentIndex = $(this).slick('slickCurrentSlide');
+    $(".img-responsive")
+         
+    $swipeTabs.removeClass(activeTabClassName);
+    $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+  });
+  
+  
+});
+</script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<link href="style/bootstrap.min.css" rel="stylesheet" >
+<script src="js/bootstrap.min.js" ></script>
+</body>
+</html>

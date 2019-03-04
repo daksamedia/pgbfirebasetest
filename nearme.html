@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haagen Daaz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<link rel="canonical" href="">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href="style/style.css" rel="stylesheet">
+<link href="style/products.css" rel="stylesheet">
+<link href="style/storelocator.css" rel="stylesheet">
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+<style type="text/css">
+	.header img {
+		max-width: 100%;
+		width: 23px;
+		margin-top: 4px;
+	}
+</style>
+
+</head>
+
+<section class="loading">
+	<img src="img/loading.gif" width="20%" />
+</section>
+<section class="header">
+	<div class="col-xs-2">
+		<a href="#" class="ssm-toggle-nav" title="open nav">
+			<div class="burger">-</div>
+			<div class="burger">-</div>
+			<div class="burger">-</div>
+		</a>
+	</div>
+	<div class="col-xs-8 title">
+		<span>Near Me</span>
+	</div>
+	<div class="col-xs-2"  style="text-align: right;">
+		<img src="img/target.svg" id="find_btn" width="30" />
+	</div>
+	
+	<div class="col-xs-2 cartbadge"  style="visibility: hidden;">
+		<div class="cart"><span class="cart-count">0</span></div>
+	</div>
+</section>
+<nav class="nav">
+	<div class="col-xs-6 no-padding">
+		<img src="logo-head.png" width="67px" alt="swipe image" />
+	</div>
+	<div class="col-xs-6 no-padding" style="text-align: right;">
+		<a href="inbox.html"><span class="inbox-count">0</span>
+		<img src="img/inbox.svg" width="28px" style="margin-right: 10px" alt="swipe image" /></a>
+	</div>
+	<div class="clearfix"></div>
+	<div class="current-user">
+		<div class="current-user-data">
+			<h3><a class="name_menu" data-href="profile.html">Loading...</a></h3>
+			<p class="points_menu">Your points: Loading...</p>
+		</div>
+		<div class="avatar"></div>
+		<div style="clear:both"></div>
+	</div>
+	
+	<div class="main-menu">
+		<a class="menu-hom" data-href="home.html"><p>Home</p></a>
+		<a class="menu-cat" data-href="shop.html"><p>Catalog</p></a>
+		<a class="menu-dir" data-href="outlet.html"><p>Directory</p></a>
+		<a class="menu-ner" data-href="nearme.html"><p>Near Me &trade;</p></a>
+		<a class="menu-gam" data-href="games.html"><p>Game</p></a>
+		<a class="menu-nws" data-href="news.html"><p>News</p></a>
+		<a class="menu-set" data-href="setting.html"><p>Setting</p></a>
+		<p class="logout">Log Out</p>
+	</div>
+	<div class="footer-nav">
+		<span><a href="termscondition.html">Term & Condition &nbsp;</a></span>
+		<span><a href="help.html">Help &nbsp;</a></span>
+		<span><a href="legal.html">Legal &nbsp;</a></span>
+		<span><a href="about.html">About &nbsp;</a></span>
+	</div>	
+</nav>
+<section class="shoppage">
+
+		<div id="storeLocator" class="col-xs-12 no-padding storeLocator">
+
+			<!--
+				This is the autocomplete address search field.
+				It must have the "input" class.
+			-->
+			<input type="text" class="input controls" placeholder="Enter an address, city...">
+
+			<!--
+				This is the map div which will contain the map generated
+				by Google Maps. It must have the "map" class.
+			-->
+			
+			<div id="map-canvas" class="map"></div>
+			
+			<div class="container">
+  				<div class="row">
+					<span class="showhide">SHOW MORE</span>
+				</div>
+			</div>
+
+
+			<ul id="stores" data-list-stores>
+
+			<div class="white-shd"></div>
+			
+				<!--
+					This element will be displayed while the stores are
+					loading. It must have the "loading" class.
+				-->
+				<p class="loading">Loading...</p>
+
+				<!--
+					This element will be displayed if no store is found
+					at this place. It must have the "no-store" class.
+				-->
+				<p class="no-store" style="display: none">No store found.</p>
+
+				<!--
+					This element is actually the template which will be
+					cloned for each store to show. It is hidden (display: none)
+					and must have the "data-store-template" attribute.
+				-->
+				<ul class="store col-xs-12" data-store-template style="display: none; text-align: left; list-style: none !important">
+
+					<!--
+						The "data-store-link-to-map" on this div specifies
+						that when the user clicks on the div, the store should
+						be focused on the map. Note that you can add this attribute
+						on a big div or only on a tiny link if you want.
+					-->
+					<li class="col-xs-12 no-padding" data-store-link-to-map>
+
+						<!--
+							The next elements define how this store will be showed
+							in the list. The attribute "data-store-attr" defines which
+							store data must be shown here. For example, if you want to
+							show the name of the store, just use:
+								<span data-store-attr="name"></span>
+							Then the name will be inserted in the span element.
+						-->
+
+						<strong><div class="col-xs-4 no-padding" data-store-attr="distance"></div></strong>
+
+						<!--
+							Here is a new notation for the attibute "data-store-attr"
+							to specify that it is not only the content that should be
+							replaced by a store data, but also the content of an attribute
+							(in this case "href"). The syntax is :
+								data-store-attr='{"content":"the store property which will
+								be used to replace the element's content","attr1":"property
+								used for attribute attr1","attr2":"etc"}'
+							The attribute content must be valid JSON.
+							Note that the following notations are equivalent:
+								<span data-store-attr="name"></span>
+								<span data-store-attr='{"content":"name"}''></span>
+						-->
+						<div class="col-xs-8 no-padding">
+							<strong><a href="#" data-store-attr='{"content":"name","href":"url"}'></a></strong><br>
+							<span data-store-attr="address"></span><br>
+							<span data-store-attr="zip"></span> <span data-store-attr="city"></span>
+						</div>
+					
+				</li>
+			</ul>
+
+			<!--
+				This div defines what will be shown in the balloon window which will
+				appear when the user clicks on a store on the map. It works exactly as
+				the previous template div.
+			-->
+			<div style="display: none" data-store-infowindow-template>
+				<strong><span data-store-link-to-map data-store-attr="name"></span></strong><br>
+				<span data-store-attr="address"></span><br>
+				<span data-store-attr="zip"></span> <span data-store-attr="city"></span>
+			</div>
+
+		</div>
+</section>
+		<!--
+			Remember that the plugins requires jQuery library, and the
+			Google Maps API.
+		-->
+	<div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <img src="img/modal-info.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Near Me &trade;</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body">
+	      	<p>Turn your Location on and get our nearest store.<br>
+	      	To relocate, tap 'Target' icon on top right corner.</p>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-6 no-padding" data-dismiss="modal">Close</button>
+	        <button type="button" class="col-xs-6 no-padding turnlocation">Set Location</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="ssm-overlay ssm-toggle-nav"></div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mycart.js"></script>
+	<script type="text/javascript" src="js/info.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3&sensor=false&libraries=places&key=AIzaSyDWFUAMgabo0ElziEBEhjSnfDort_1cPGg"></script>
+	<script type="text/javascript" src="http://ubilabs.github.io/geocomplete/jquery.geocomplete.js"></script>	
+	<script src="js/jquery.storelctr.js"></script>
+	<script src="js/jquery.touchSwipe.min.js"></script>
+	<script src="js/jquery.slideandswipe.js"></script>
+	<link href="style/bootstrap.min.css" rel="stylesheet">
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	if(localStorage.hd_lang==="IDN"){
+
+		/* SECTION 1 */
+		$(".title span").html("Sekitarku");
+
+	}
+	$(".loading").show();
+	$(".shoppage").hide();
+	$(".nav").hide();
+	var map;
+	var beachMarker;
+	var myLatLng;
+	
+	</script>
+	<script>
+	var showlist = false;
+	var sess_key = localStorage.hd_session_key;
+		// When the document is fully loaded...
+	function fetchStores(lat, lng, callback) {
+		  	// $.get('stores.php', { lat: lat, lng: lng }, 'json').success(callback);
+		    //var sess_key = localStorage.hd_session_key;
+		   	
+	  		var urlx = "http://api.haagendazsindonesia.co.id/v1/store?session_key="+  sess_key +"&nearby=1&lat="+ lat +"&lng="+ lng +"";
+	  	
+ 		   	//$.get(urlx, { lat: lat, lng: lng }, 'json').success(callback);
+ 		   	$.get(urlx, { lat: lat, lng: lng }, function(data){
+			// Original payload
+			var original_payload = [];
+			
+				for(var i = 0; i < data.payload.length; i++){
+					var rec = data.payload[i];
+					
+					// Diisni lo transform sesuai kebutuhan
+					var temp = {
+						id : rec.store_id,
+						name : rec.store_name,
+						address : rec.store_description,
+						latitude : rec.latitude,
+						longitude : rec.longitude,
+						distance : Number(rec.distance).toFixed(2)+" mil",
+						url : "store.html?id="+ rec.store_id+""
+					}
+					
+					original_payload.push(temp);
+				}
+				
+				// Panggil callback asli
+				callback(original_payload);
+			},'json');
+
+		}
+		$(document).ready(function(){
+			//initMap();
+			$(".shoppage").show();
+			$(".nav").show();
+			$(".loading").hide();
+		/*	 cordova.plugins.diagnostic.isLocationAvailable(function(available){
+			    $("#info").modal("hide");
+			    $("#find_btn").trigger("click");
+			}, function(error){
+			    $("#info").modal("show");
+
+			});
+			
+			$(".turnlocation").click(function(){
+		    	cordova.plugins.diagnostic.switchToLocationSettings();
+		    }) */
+  
+		    
+
+		    $("#find_btn").click(function (){
+					///if ("geolocation" in navigator){
+						
+						navigator.geolocation.getCurrentPosition(function(position){
+							$('#storeLocator').append('<input type="text" class="input controls" placeholder="Enter an address, city..." style="z-index:10; position:absolute; left:6%">');
+							var lats = parseFloat(position.coords.latitude);
+						    var lngs = parseFloat(position.coords.longitude);
+						    var newLatLng = new google.maps.LatLng(lats, lngs);
+						    var mapx = new google.maps.Map(document.getElementById('map-canvas'), {
+							    zoom: 30,
+							    center: newLatLng
+							  });
+
+							var markerz = new google.maps.Marker({
+							    position: newLatLng,
+							    map: mapx,
+							    title: 'My Location',
+							    animation: google.maps.Animation.DROP
+							});
+							$('#storeLocator').storeLocator({
+
+
+							
+								fetchStoresFunction: fetchStores,
+								
+								enableGeolocation: true,
+								
+								defaultLocation: { latitude: position.coords.latitude, longitude: position.coords.longitude }
+
+							});
+							
+							
+							/* markers.push(markerz);
+							var markerz = new google.maps.Marker({
+							    position: map.getCurrentPosition,
+							    map: map,
+							    title: 'Hello World!',
+							    animation: google.maps.Animation.DROP
+							}); */
+
+					});
+					
+				});
+
+			$(".showhide").click(function(){
+				if(showlist === false){
+					//$(".showhide").css("position","fixed");
+					$(".showhide").css("bottom","");
+					$("#stores").animate({maxHeight: "100vh", top:"69px"},400,function(){
+						//$("#stores").css("top","69px");
+						$("#stores").css("overflow","")
+							
+						//$(".showhide").css("top","40px");
+						//$(".showhide").css("bottom","unset");
+						
+						
+					});
+					$(".showhide").animate({top:"-1px"},400,function(){
+						//$(".showhide").css("position","fixed");
+						
+					})
+					showlist = true;
+					$(this).html("HIDE THIS");
+					$('.white-shd').fadeOut();
+				}else{
+									
+					$("#stores").css("max-height","119px");
+					$("#stores").css("top","");
+					$("#stores").css("bottom","0");
+					$("#stores").css("overflow","")
+					//console.log("tes")
+					$(".showhide").css("position","absolute");
+					$(".showhide").css("top","");
+					$(".showhide").css("right","0");
+					//119px
+					
+				
+					showlist = false;
+					$(this).html("SHOW MORE");
+					$('.white-shd').fadeIn();
+				}
+			});
+			nana = {lat: -6.2919093, lng: 106.7943786};
+
+		   	var maps = new google.maps.Map(document.getElementById('map-canvas'), {
+			    zoom: 50,
+			    center: nana
+			  });
+
+			var markerx = new google.maps.Marker({
+			    position: nana,
+			    map: maps,
+			    title: 'My Location',
+			    animation: google.maps.Animation.DROP
+			});
+
+
+			$('#storeLocator').storeLocator({
+
+		    	
+		    	fetchStoresFunction: fetchStores,
+
+		    	
+		    	//enableGeolocation: true,
+
+		    	
+		    	defaultLocation:{latitude:-6.2919093, longitude: 106.7943786}
+
+		    });
+
+			
+
+			//markers.push(markerx)
+			
+		
+		
+		
+		/* var lat = -6.228094
+		var lng = 106.843408
+		var toko; */
+	  	//var urlx = "http://api.haagendazsindonesia.co.id/v1/store?session_key="+  sess_key +"";
+		
+		
+	})
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haagen Daaz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="">
+<link rel="canonical" href="">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href="style/style.css" rel="stylesheet">
+<link href="style/products.css" rel="stylesheet">
+<link href="style/swiper.min.css" rel="stylesheet">
+<script src="js/swiper.min.js"></script>
+<style type="text/css">
+	.swiper-container {
+		height: 42vh;
+	}
+
+	.swiper-button-next{
+		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 27 44'%3E%3Cpath d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z' fill%3D'%23810D24'%2F%3E%3C%2Fsvg%3E") !important;
+	}
+
+	.swiper-button-prev{
+		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 27 44'%3E%3Cpath d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z' fill%3D'%23810D24'%2F%3E%3C%2Fsvg%3E") !important;
+	}
+	.delivery{
+		
+	background: brown;
+	color: white;
+	width: 112%;
+	/* float: right; */
+	padding: 4px;
+	position: absolute;
+	right: -15px;
+	top: -16px;
+	z-index: 10;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 9pt;
+	font-weight: bold;
+	-webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	}
+
+	.addcarts{
+		-webkit-backface-visibility: hidden !important;
+	    -moz-backface-visibility: hidden !important;
+	    -ms-backface-visibility: hidden !important;
+	    -o-backface-visibility: hidden !important;
+		backface-visibility: hidden !important;
+	}
+
+	.hd_discount {
+		border-radius: 100px;
+		position: absolute;
+		z-index: 4;
+		background: #d8bc44;
+		width: 100px;
+		height: 100px;
+		padding: 29px 0 0;
+		right: 9px;
+		top: 10px;
+		box-shadow: 1px #000 6px;
+		-webkit-box-shadow: -9px 11px 5px -6px rgba(0,0,0,0.33);
+		-moz-box-shadow: -9px 11px 5px -6px rgba(0,0,0,0.33);
+		box-shadow: -9px 11px 5px -6px rgba(0,0,0,0.33);
+		display: none;
+	}
+
+	.price-java, .non-java{
+		border:1px solid #ccc !important;
+	}
+</style>
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body></div>
+<section class="loading">
+	<img src="img/loading.gif" width="20%" />
+</section>
+<section class="header">
+	<div class="col-xs-2 back no-padding" style="display:none;">
+		<img src="img/last-track-left-arrow.png" width="100%" ">
+	</div>
+	<div class="col-xs-8 title">
+		<span>...</span>
+	</div>
+	<div class="col-xs-2 cartbadge">
+			<div class="cart"><span class="cart-count">0</span></div>
+	</div>
+</section>
+<section class="shoppage">
+		
+		<section class="details">
+			<!--<div class="outer">
+				<div class="inner">
+				<img src="" alt="" />
+				</div>
+			</div>-->
+			<div class="col-xs-12 no-padding">
+			<div class="hd_discount">Discount<br /><strong>Rp. 100.000</strong></div>
+				<div class="swiper-container">
+				        <div class="swiper-wrapper">
+				           
+				            
+				        </div>
+				        <!-- Add Pagination -->
+				        <div class="swiper-pagination"></div>
+				        <!-- Add Arrows -->
+				        <div class="swiper-button-prev"></div>
+				        <div class="swiper-button-next"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 info align-left">
+				<div class="title">....</div>
+				<div class="col-xs-8 no-padding">
+					<div class="price">....</div>
+					<small style='margin-bottom: -75px !important;font-weight: bold;color: brown;'></small>
+				</div>
+				<div class="col-xs-4 no-padding align-right feature" style="margin-top: -10px !important;">
+					<span></span>
+				</div>
+				<div class="clearfix"></div>
+				<p class="tnc" style="font-size: 9pt; margin-top: 10px">*Price does not apply in Ngurah Rai outlet</p>
+				<div class="clearfix"></div>
+				<div class="desc">....</div>
+				<div class="col-xs-12 no-padding btnfix" style="z-index:3; bottom: 0 !important; position: fixed; left: 0; display: none;">
+					<button class="addcarts">BUY NOW</button>
+				</div>
+			</div>
+		</section>
+        <nav class="nav">
+			<img src="logo-head.png" width="23%" alt="swipe image" />
+			
+			<div class="current-user">
+				<div class="current-user-data">
+					<h3><a class="name_menu" data-href="profile.html">Loading...</a></h3>
+					<p class="points_menu">Your points: Loading...</p>
+				</div>
+				<div class="avatar"></div>
+				<div style="clear:both"></div>
+			</div>
+			
+			<a class="menu-cat" data-href="shop.html"><p>Catalog</p></a>
+			<a class="menu-dir" data-href="outlet.html"><p>Directory</p></a>
+			<a class="menu-gam" data-href="games.html"><p>Game</p></a>
+			<a class="menu-nws" data-href="news.html"><p>News</p></a>
+			<a class="menu-set" data-href="setting.html"><p>Setting</p></a>
+			<a class="logout" ><p>Log Out</p></a>		
+		</nav>
+      </section>
+	<div class="ssm-overlay ssm-toggle-nav"></div>
+<div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      	<img src="img/modal-success.png" width="60" />
+        <h3 class="modal-title" id="exampleModalLongTitle">Success</h3>
+        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>-->	
+      </div>
+      <div class="modal-body">
+      	
+      		<p>Select your expect price</p>
+      		<div class="col-xs-6 price-java" style="border-right:1px solid #f4f4f4;">
+      			<h5>Java Only</h5>
+      			<h3>0</h3>
+      		</div>
+      		<div class="col-xs-6 non-java">
+      			<h5>Non-Java</h5>
+      			<h3>0</h3>
+      		</div>
+      	
+      </div>
+      <div class="clearfix"></div>
+      <div class="modal-footer">
+        <button type="button" class="col-xs-6 no-padding gotoclose" data-dismiss="modal">Close</button>
+        <a href="cart.html"><button type="button" class="gotocart col-xs-6 no-padding">Go to Cart</button></a>
+        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/6fac2730d4.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mycart.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<!-- touchSwipe library -->
+
+<script>
+
+$(".loading").show();
+$(".shoppage").hide();
+$(".addcarts").hide();
+$(".nav").hide();
+$(".back").hide();
+
+var __min = 0;
+var __max = 10;
+</script>
+<script>
+$("#success .modal-body .non-java").click(function(){
+	localStorage.hd_areaprice="nonjava";
+	localStorage.hd_pricearea="2";
+});
+
+$("#success .modal-body .price-java").click(function(){
+	localStorage.hd_areaprice="java";
+	localStorage.hd_pricearea="1";
+});
+$(document).ready(function () { // load json file using jquery ajax
+	
+	$(".back").show("fast");
+	$(".btnfix").css("display","block");
+	$(".addcarts").show();
+	$(".back").click(function(){
+		window.location.href="shop.html";
+		return false;
+	})
+
+	if(localStorage.hd_lang==="IDN"){
+		//$(".feature span").append("<div class='delivery' style='background:grey'>Pengiriman tersedia</div>");
+		$(".addcarts").html("BELI SEKARANG")
+		$(".tnc").html("*Harga tidak berlaku di gerai Ngurah Rai");
+	}
+	
+	var getID = getUrlParameter('id');
+	var sess_key = localStorage.hd_session_key;
+	var urlx = "http://api.haagendazsindonesia.co.id/v1/product?session_key="+ sess_key +"&product_id="+ getID +"";
+	$.getJSON(urlx,function(menu){
+		$(".details").find(".title").html(""+ menu.payload[0].product_name +"");
+		$(".details").find(".desc").html(""+ menu.payload[0].product_description +"");
+		
+		//$(".details").find(".outer .inner img").attr("src",""+ menu.payload[0].img +"");
+		var diskonjawa = menu.payload[0].jawa - menu.payload[0].diskon_jawa;
+		var diskononjawa = menu.payload[0].nonjawa - menu.payload[0].diskon_nonjawa;
+		
+
+		if(menu.payload[0].diskon_jawa==="0" && menu.payload[0].diskon_nonjawa==="0"){
+			$(".hd_discount").hide();
+
+			$(".details").find(".price").html("Rp. "+ addCommas(menu.payload[0].jawa) +"");
+			if(menu.payload[0].nonjawa!="0" || menu.payload[0].nonjawa!=0){
+				$("#success .modal-body .non-java h3").html("Rp. "+ addCommas(menu.payload[0].nonjawa) +"");		
+			}else{
+				$("#success .modal-body .non-java").hide();
+				$(".price-java").addClass("col-xs-12");
+				$(".price-java").removeClass("col-xs-6");
+			}
+			$("#success .modal-body .price-java h3").html("Rp. "+ addCommas(menu.payload[0].jawa) +"");
+			if(menu.payload[0].delivery_available==="0"){
+				
+				if(localStorage.hd_lang==="IDN"){				
+					$(".feature span").append("<div class='delivery'>Makan di tempat</div>");				
+					if(menu.payload[0].nonjawa!="0" || menu.payload[0].nonjawa!=0){
+						$(".feature span").append("<h3 style='margin-bottom: 6px !important; color: grey; font-size:20px'>Rp. "+ addCommas(menu.payload[0].nonjawa) +"</h3><small style='margin-bottom: -75px !important;font-weight: bold;color: brown;'>Harga Luar Jawa</small>"+
+					"</div>");
+						$(".tnc").html("*Harga tidak berlaku di gerai Ngurah Rai");
+						$(".details").find(".price").next("small").html("Khusus Pulau Jawa");
+
+					}else{
+						$(".tnc").html("<strong>*Produk ini hanya tersedia di Jawa</strong>");
+						$(".details").find(".price").next("small").hide();						
+					}			
+										
+					$("#success .modal-body .price-java h5").html("Khusus Pulau Jawa");
+
+				}else{
+					$(".feature span").append("<div class='delivery'>Dine In</div>");
+					if(menu.payload[0].nonjawa!="0" || menu.payload[0].nonjawa!=0){
+						$(".feature span").append("<h3 style='margin-bottom: 6px !important; color: grey; font-size:20px'>Rp. "+ addCommas(menu.payload[0].nonjawa) +"</h3><small style='margin-bottom: -75px !important;font-weight: bold;color: brown;'>Non-Java Price</small>"+
+					"</div>");						
+					}else{
+						$(".tnc").html("<strong>Available in Java only</strong>");						
+					}
+
+					$(".details").find(".price").next("small").html("Java Only");
+				}
+			}else{
+				if(localStorage.hd_lang==="IDN"){
+					//$(".feature span").append("<div class='delivery' style='background:grey'>Pengiriman tersedia</div>");
+					$(".tnc").html("Harga tidak berlaku di gerai Ngurah Rai");
+					$("#success .modal-body .non-java h5").html("Khusus Pulau Jawa");
+					if(menu.payload[0].nonjawa!="0" || menu.payload[0].nonjawa!=0){
+						$(".feature span").append("<h3 style='margin-bottom: 6px !important; color: grey; font-size:20px'>Rp. "+ addCommas(menu.payload[0].nonjawa) +"</h3><small style='margin-bottom: -75px !important;font-weight: bold;color: brown;'>Harga Luar Jawa</small>"+
+					"</div>");
+						$(".tnc").html("*Harga tidak berlaku di gerai Ngurah Rai");
+						$(".details").find(".price").next("small").html("Khusus Pulau Jawa");
+
+					}else{
+						$(".tnc").html("<strong>*Produk ini hanya tersedia di Jawa</strong>");
+						$(".details").find(".price").next("small").hide();
+
+					}
+					
+					$("#success .modal-body .price-java h5").html("Khusus Pulau Jawa");
+					$("#success .modal-body .non-java h5").html("Harga Luar Jawa");
+				}else{
+					//$(".feature span").append("<div class='delivery' style='background:grey'>Deliverable</div>");
+					if(menu.payload[0].nonjawa!="0" || menu.payload[0].nonjawa!=0){
+						$(".feature span").append("<h3 style='margin-bottom: 6px !important; color: grey; font-size:20px'>Rp. "+ addCommas(menu.payload[0].nonjawa) +"</h3><small style='margin-bottom: -75px !important;font-weight: bold;color: brown;'>Non-Java Price</small>"+
+					"</div>");
+						$(".details").find(".price").next("small").html("Java Only");
+					}else{
+						$(".tnc").html("<strong>Available in Java only</strong>");
+						$(".details").find(".price").next("small").hide();					
+					}
+
+					
+				}
+			}
+		}else{
+			$(".hd_discount").show();
+			
+			if(menu.payload[0].diskon_jawa>0 && menu.payload[0].diskon_nonjawa===0 || menu.payload[0].diskon_jawa>0 && menu.payload[0].diskon_nonjawa>0){
+				if(localStorage.hd_lang==="IDN"){
+					$(".hd_discount").html("Diskon <br><h3 style='margin-top:0px'><strong>"+ Math.round((menu.payload[0].diskon_jawa / menu.payload[0].jawa)*100) +"%</h3></strong>");
+				}else{
+					$(".hd_discount").html("Discount <br><h3 style='margin-top:0px'><strong>"+ Math.round((menu.payload[0].diskon_jawa / menu.payload[0].jawa)*100) +"%</h3></strong>");
+				}
+			}else if(menu.payload[0].diskon_jawa===0 && menu.payload[0].diskon_nonjawa>0){
+				if(localStorage.hd_lang==="IDN"){
+					$(".hd_discount").html("Diskon <br><h3 style='margin-top:0px'><strong>"+ Math.round((menu.payload[0].diskon_nonjawa / menu.payload[0].nonjawa)*100) +"%</h3></strong>");
+				}else{
+					$(".hd_discount").html("Discount <br><h3 style='margin-top:0px'><strong>"+ Math.round((menu.payload[0].diskon_nonjawa / menu.payload[0].nonjawa)*100) +"%</h3></strong>");
+				}
+			}else{
+				if(localStorage.hd_lang==="IDN"){
+					$(".hd_discount").html("Diskon <br><h3 style='margin-top:0px'><strong>"+ Math.round((menu.payload[0].diskon_jawa / menu.payload[0].jawa)*100) +"%</h3></strong>");
+				}else{
+					$(".hd_discount").html("Discount <br><h3 style='margin-top:0px'><strong>"+ Math.round((menu.payload[0].diskon_jawa / menu.payload[0].jawa)*100) +"%</h3></strong>");
+				}
+			}
+			
+			
+			$(".details").find(".price").html("Rp. "+ addCommas(menu.payload[0].jawa - menu.payload[0].diskon_jawa) +"");
+			$("#success .modal-body .price-java h3").html("Rp. "+ addCommas(menu.payload[0].jawa - menu.payload[0].diskon_jawa) +"");
+			$("#success .modal-body .non-java h3").html("Rp. "+ addCommas(menu.payload[0].nonjawa - menu.payload[0].diskon_nonjawa) +"");
+			if(menu.payload[0].delivery_available==="0"){
+				if(localStorage.hd_lang==="IDN"){				
+					$(".feature span").append("<div class='delivery'>Makan di tempat</div>");				
+					$(".feature span").append("<h3 style='margin-bottom: 0 !important; color: grey; font-size:20px'>Rp. "+ addCommas(menu.payload[0].nonjawa - menu.payload[0].diskon_nonjawa) +"</h3><small style='margin-bottom: -75px !important;font-weight: bold;color: brown;'>Harga Luar Jawa</small>"+
+					"</div>");
+					$(".tnc").html("Harga tidak berlaku di gerai Ngurah Rai");
+					$(".details").find(".price").next("small").html("Khusus Pulau Jawa");
+					$("#success .modal-body .price-java h5").html("Khusus Pulau Jawa");
+					$("#success .modal-body .non-java h5").html("Harga Luar Jawa");
+				}else{
+					$(".feature span").append("<div class='delivery'>Dine In</div>");
+					$(".feature span").append("<h3 style='margin-bottom: 0 !important; color: grey; font-size:20px'>Rp. "+ addCommas(menu.payload[0].nonjawa - menu.payload[0].diskon_nonjawa) +"</h3><small style='margin-bottom: -75px !important;font-weight: bold;color: brown;'>Non-Java Price</small>"+
+					"</div>");
+					$(".details").find(".price").next("small").html("Java Only");
+				}
+			}else{
+				if(localStorage.hd_lang==="IDN"){
+					//$(".feature span").append("<div class='delivery' style='background:grey'>Pengiriman tersedia</div>");
+					$(".tnc").html("Harga tidak berlaku di gerai Ngurah Rai");
+					$("#success .modal-body .non-java h5").html("Khusus Pulau Jawa");
+					$(".feature span").append("<h3 style='margin-bottom: 0 !important; color: grey; font-size:20px'>Rp. "+ addCommas(menu.payload[0].nonjawa - menu.payload[0].diskon_nonjawa) +"</h3><small style='margin-bottom: -75px !important;font-weight: bold;color: brown;'>Harga Luar Jawa</small>"+
+					"</div>");
+					$(".details").find(".price").next("small").html("Khusus Pulau Jawa");
+					$("#success .modal-body .price-java h5").html("Khusus Pulau Jawa");
+					$("#success .modal-body .non-java h5").html("Harga Luar Jawa");
+				}else{
+					//$(".feature span").append("<div class='delivery' style='background:grey'>Deliverable</div>");
+					$(".feature span").append("<h3 style='margin-bottom: 0 !important; color: grey; font-size:20px'>Rp. "+ addCommas(menu.payload[0].nonjawa - menu.payload[0].diskon_nonjawa) +"</h3><small style='margin-bottom: -75px !important;font-weight: bold;color: brown;'>Non-Java Price</small>"+
+					"</div>");
+					$(".details").find(".price").next("small").html("Java Only");
+				}
+			}
+		}
+		var prodimg = menu.payload[0].main_image.split(",");
+		console.log(prodimg[0]);
+	    
+	 	$(prodimg).each(function(num, promo){
+	        console.log(num);
+	      
+	        $(".details").find(".swiper-wrapper").append('<div class="swiper-slide" style="background:url('+ promo +') no-repeat center center; background-size:cover;">'+	
+			'</div>');
+	        
+	        console.log(promo)
+	        
+	    });
+
+
+	    var prodimgs = menu.payload[0].product_image;
+
+	    	$(prodimgs).each(function(num, promos){
+	        console.log(num);
+	      
+	        $(".details").find(".swiper-wrapper").append('<div class="swiper-slide" style="background:url('+ promos.image +') no-repeat center center; background-size:cover;">'+	
+			'</div>');
+	        
+	        console.log(promos)
+	        
+
+	    }); 
+
+	    function addattrtoAddCart(x){
+	    	localStorage.hd_areaprice=x;
+	    	//alert("goblok");
+	    	$(".addcarts").attr("data-id",menu.payload[0].product_id)
+		    $(".addcarts").attr("data-name",menu.payload[0].product_name)
+		    $(".addcarts").attr("data-summary",menu.payload[0].product_description)
+		    $(".addcarts").attr("data-quantity","1")
+		    $(".addcarts").attr("data-image",prodimg[0])
+		    $(".addcarts").attr("data-isdelivery",menu.payload[0].delivery_available);
+	    }
+	    
+	    function show_gotocart(){
+	    	$(".gotocart").show();
+			$(".modal-footer .gotoclose").removeClass("col-xs-12");
+			$(".modal-footer .gotoclose").addClass("col-xs-6");
+	    }
+
+	    function checkprice(){
+	    	// If area not choosen
+		    //if(localStorage.products.length===0 || localStorage.products.length==="0" ){
+		    if(localStorage.hd_pricearea==="0" || localStorage.hd_pricearea===0){	
+		    	/* Modal Product Information */
+			    $("#success .modal-body .price-java").attr("data-id",menu.payload[0].product_id)
+			    $("#success .modal-body .price-java").attr("data-name",menu.payload[0].product_name)
+			    $("#success .modal-body .price-java").attr("data-summary",menu.payload[0].product_description)
+			    $("#success .modal-body .price-java").attr("data-quantity","1")
+			    $("#success .modal-body .price-java").attr("data-image",prodimg[0])
+			    $("#success .modal-body .price-java").attr("data-isdelivery",menu.payload[0].delivery_available);
+			    
+			    $("#success .modal-body .non-java").attr("data-id",menu.payload[0].product_id)
+			    $("#success .modal-body .non-java").attr("data-name",menu.payload[0].product_name)
+			    $("#success .modal-body .non-java").attr("data-summary",menu.payload[0].product_description)
+			    $("#success .modal-body .non-java").attr("data-quantity","1")
+			    $("#success .modal-body .non-java").attr("data-image",prodimg[0])
+			    $("#success .modal-body .non-java").attr("data-isdelivery",menu.payload[0].delivery_available);
+			    
+
+				// Check price discount / not
+			    if(menu.payload[0].diskon_jawa==="0" || menu.payload[0].diskon_nonjawa==="0" || menu.payload[0].diskon_jawa===0 || menu.payload[0].diskon_nonjawa===0){
+
+		    		// Normal Price
+
+		    		$("#success .modal-body .non-java").attr("data-price",menu.payload[0].nonjawa);
+		    		$("#success .modal-body .price-java").attr("data-price",menu.payload[0].jawa);
+		    		
+		    		$("#success .modal-body .non-java").click(function(){
+				    	addattrtoAddCart('nonjava');
+				    	show_gotocart();
+				    	$("#success").modal("hide");
+				    	$(this).css("background","burlywood");
+				    	$(this).siblings().css("background","white");
+				    	localStorage.hd_areaprice="nonjava";
+				    	//localStorage.setItem("hd_areaprice","nonjava");
+				    	
+				    	$(".addcarts").attr("data-price",menu.payload[0].nonjawa);
+				    	
+				    	
+				    	if(localStorage.hd_lang==="IDN"){
+				    		$(".modal-title").html("Sukses");
+				    		$(".modal-body p").html("Pilih harga yang diinginkan.<br>Harga yang ditambahkan harga Khusus Luar Jawa.");
+				    	}else{
+				    		$(".modal-title").html("Success");
+				    		$(".modal-body p").html("Item has been added.<br>Non Java price applied.");
+				    	}
+				    	$("#success .modal-header img").attr("src","img/modal-success.png");
+				    	$(".price-java").hide();
+		    			$(".non-java").hide();
+					    
+				    });
+
+				    $("#success .modal-body .price-java").click(function(){
+				    	addattrtoAddCart('java');
+				    	show_gotocart();
+				    	$("#success").modal("hide");
+				    	$(this).css("background","burlywood");
+				    	$(this).siblings().css("background","white");
+				    	localStorage.hd_areaprice="java";
+				    	//localStorage.setItem("hd_areaprice","java");
+				    	
+				    	$(".addcarts").attr("data-price",menu.payload[0].jawa);
+				    	
+
+				    	if(localStorage.hd_lang==="IDN"){
+				    		$(".modal-title").html("Sukses");
+				    		$(".modal-body p").html("Produk berhasil ditambahkan.<br>Harga yang ditambahkan harga Khusus Pulau Jawa.");
+				    	}else{
+				    		$(".modal-title").html("Success");
+				    		$(".modal-body p").html("Item has been added.<br>Java only price applied.");
+				    	}
+				    	$("#success .modal-header img").attr("src","img/modal-success.png");
+				    	$(".price-java").hide();
+		    			$(".non-java").hide();
+					    
+				    });
+
+
+			    }else{
+		    		// Discount Price
+
+		    		$("#success .modal-body .non-java").attr("data-price",diskononjawa);
+		    		$("#success .modal-body .price-java").attr("data-price",diskonjawa);
+		    		
+
+			    	$("#success .modal-body .non-java").click(function(){
+				    	addattrtoAddCart('nonjava');
+				    	$("#success").modal("hide");
+				    	$(this).css("background","burlywood");
+				    	$(this).siblings().css("background","white");
+				    	localStorage.hd_areaprice="nonjava";
+				    	//localStorage.setItem("hd_areaprice","nonjava");
+				    	show_gotocart()
+				    	$(".addcarts").attr("data-price",diskononjawa);
+				    	
+					    if(localStorage.hd_lang==="IDN"){
+				    		$(".modal-title").html("Sukses");
+				    		$(".modal-body p").html("Produk berhasil ditambahkan.<br>Harga yang ditambahkan harga Khusus Luar Jawa.");
+				    	}else{
+				    		$(".modal-title").html("Success");
+				    		$(".modal-body p").html("Item has been added.<br>Non Java price applied.");
+				    	}
+				    	$("#success .modal-header img").attr("src","img/modal-success.png");
+				    	$(".price-java").hide();
+		    			$(".non-java").hide();
+				    });
+
+				    $("#success .modal-body .price-java").click(function(){
+				    	addattrtoAddCart('java');
+				    	$("#success").modal("hide");
+				    	$(this).css("background","burlywood");
+				    	$(this).siblings().css("background","white");
+				    	localStorage.hd_areaprice="java";
+				    	//localStorage.setItem("hd_areaprice","java");
+				    	show_gotocart()
+				    	$(".addcarts").attr("data-price",diskonjawa);
+				    	
+
+				    	if(localStorage.hd_lang==="IDN"){
+				    		$(".modal-title").html("Sukses");
+				    		$(".modal-body p").html("Produk berhasil ditambahkan.<br>Harga yang ditambahkan harga Khusus Pulau Jawa.");
+				    	}else{
+				    		$(".modal-title").html("Success");
+				    		$(".modal-body p").html("Item has been added.<br>Java only price applied.");
+				    	}
+				    	$("#success .modal-header img").attr("src","img/modal-success.png");
+				    	$(".price-java").hide();
+		    			$(".non-java").hide();
+				    })
+			    }
+			    
+			    
+			    $.getScript('js/jquery.mycart.js',function(){
+					$('.non-java').myCart({
+				      currencySymbol: 'Rp.',
+				      classCartIcon: 'cart',
+				      classCartBadge: 'cart-count',
+				      classProductQuantity: 'cartqty',
+				      classProductRemove: 'my-product-remove',
+				      classCheckoutCart: 'my-cart-checkout',
+				      affixCartIcon: true,
+				      showCheckoutModal: true
+				      
+				    });
+
+				    $('.price-java').myCart({
+				      currencySymbol: 'Rp.',
+				      classCartIcon: 'cart',
+				      classCartBadge: 'cart-count',
+				      classProductQuantity: 'cartqty',
+				      classProductRemove: 'my-product-remove',
+				      classCheckoutCart: 'my-cart-checkout',
+				      affixCartIcon: true,
+				      showCheckoutModal: true				      
+				    });
+
+				    $('.addcarts').myCart({
+				      currencySymbol: 'Rp.',
+				      classCartIcon: 'cart',
+				      classCartBadge: 'cart-count',
+				      classProductQuantity: 'cartqty',
+				      classProductRemove: 'my-product-remove',
+				      classCheckoutCart: 'my-cart-checkout',
+				      affixCartIcon: true,
+				      showCheckoutModal: true
+				      
+				    });
+				});
+				
+
+			    if(localStorage.hd_lang==="IDN"){
+					$(".modal-footer .gotoclose").html('Tutup');
+					//$(".gotocart").html('Lihat Keranjang');
+					$(".modal-body p").html('Pilih harga yang diinginkan');
+					$(".modal-title").html("Pilih Harga");
+				}else{
+					$("#success .modal-title").html("Select Price Area");
+				}
+				$(".gotocart").hide();
+				$(".modal-footer .gotoclose").addClass("col-xs-12");
+				$(".modal-footer .gotoclose").removeClass("col-xs-6");
+				$("#success .modal-header img").attr("src","img/modal-info.png");
+
+
+			}else{
+				// Area Already Choosen
+				$(".price-java").hide();
+		    	$(".non-java").hide();
+
+		    	if(localStorage.hd_lang==="IDN"){
+
+					$(".modal-footer .gotoclose").html('Tutup');
+					$(".gotocart").html('Lihat Keranjang');
+					$(".modal-body p").html('Produk berhasil ditambahkan.');
+					$(".modal-title").html("Sukses");
+				}else{
+					$(".modal-body p").html('Item has been added.');
+					$(".modal-title").html("Success");
+				}
+
+		    	$(".addcarts").attr("data-id",menu.payload[0].product_id)
+			    $(".addcarts").attr("data-name",menu.payload[0].product_name)
+			    $(".addcarts").attr("data-summary",menu.payload[0].product_description)
+			    $(".addcarts").attr("data-quantity","1")
+			    $(".addcarts").attr("data-image",prodimg[0])
+			    $(".addcarts").attr("data-isdelivery",menu.payload[0].delivery_available);
+
+			    if(menu.payload[0].diskon_jawa=="0" && menu.payload[0].diskon_nonjawa=="0" || menu.payload[0].diskon_jawa==0 && menu.payload[0].diskon_nonjawa==0){
+				    if(localStorage.hd_areaprice==="java"){
+				    	$(".addcarts").attr("data-price",menu.payload[0].jawa);
+				    	if(localStorage.hd_lang==="IDN"){
+				    		$(".modal-body p").append("<p>Harga yang ditambahkan harga Khusus Pulau Jawa.</p>");
+				    	}else{
+				    		$(".modal-body p").append("<p>Java only price applied.</p>");
+				    	}
+				    }else{
+				    	if(menu.payload[0].nonjawa!="0" || menu.payload[0].nonjawa!=0){
+					    	$(".addcarts").attr("data-price",menu.payload[0].nonjawa);
+					    	if(localStorage.hd_lang==="IDN"){
+					    		$(".modal-body p").append("<p>Harga yang ditambahkan harga Khusus Luar Jawa.</p>");
+					    	}else{
+					    		$(".modal-body p").append("<p>Non-Java Price applied.</p>");
+					    	}
+				    	}else{
+				    		$(".addcarts").attr("disabled",true);
+				    		$(".addcarts").css("opacity",".4");
+				    		$("#success").modal("show");
+				    		if(localStorage.hd_lang==="IDN"){
+				    			$("#success .modal-title").html("Maaf");
+				    			$("#success .modal-body p").html("Produk ini tidak tersedia pada daerah yang dipilih.");
+				    			$("#success .modal-footer").html("<button data-dismiss='modal' class='col-xs-12 no-padding'>Tutup</button>");
+				    		}else{
+				    			$("#success .modal-title").html("Sorry");
+				    			$("#success .modal-body p").html("This product is not available in current region");
+				    			$("#success .modal-footer").html("<button data-dismiss='modal' class='col-xs-12 no-padding'>Close</button>");
+				    		}
+				    		//setTimeout('window.location.href = "shop.html"',1200);
+				    		
+				    		$("#success .modal-header img").attr("src","img/modal-error.png");
+
+				    	}
+				    }
+				}else{
+					if(localStorage.hd_areaprice==="java"){
+				    	$(".addcarts").attr("data-price",diskonjawa);
+				    	if(localStorage.hd_lang==="IDN"){
+				    		$(".modal-body p").append("<p>Harga yang ditambahkan harga Khusus Pulau Jawa.</p>");
+				    	}else{
+				    		$(".modal-body p").append("<p>Java only price applied.</p>");
+				    	}
+				    }else{
+				    	if(menu.payload[0].nonjawa!="0" || menu.payload[0].nonjawa!=0){
+					    	$(".addcarts").attr("data-price",diskononjawa);
+					    	if(localStorage.hd_lang==="IDN"){
+					    		$(".modal-body p").append("<p>Harga yang ditambahkan harga Khusus Luar Jawa.</p>");
+					    	}else{
+					    		$(".modal-body p").append("<p>Non-Java Price applied.</p>");
+					    	}
+				    	}else{
+				    		$(".addcarts").attr("disabled",true);
+				    		$(".addcarts").css("opacity",".4");
+				    		$("#success").modal("show");
+				    		if(localStorage.hd_lang==="IDN"){
+				    			$("#success .modal-title").html("Maaf");
+				    			$("#success .modal-body p").html("Produk ini tidak tersedia pada daerah yang dipilih.");
+				    			$("#success .modal-footer").html("<button data-dismiss='modal' class='col-xs-12 no-padding'>Tutup</button>");
+				    		}else{
+				    			$("#success .modal-title").html("Sorry");
+				    			$("#success .modal-footer").html("<button data-dismiss='modal' class='col-xs-12 no-padding'>Close</button>");
+				    			$("#success .modal-body p").html("This product is not available in current region");
+				    		}
+				    		//setTimeout('window.location.href = "shop.html"',1200);
+
+				    		$("#success .modal-header img").attr("src","img/modal-error.png");
+
+				    	}
+				    }
+				}
+
+			    $('.addcarts').myCart({
+			      currencySymbol: 'Rp.',
+			      classCartIcon: 'cart',
+			      classCartBadge: 'cart-count',
+			      classProductQuantity: 'cartqty',
+			      classProductRemove: 'my-product-remove',
+			      classCheckoutCart: 'my-cart-checkout',
+			      affixCartIcon: true,
+			      showCheckoutModal: true
+			      
+			    });
+
+			    $(".gotocart").click(function(){
+					$("#success").modal('hide');
+				})
+			}
+	    }
+	    
+	    checkprice();
+
+	    $(".addcarts").click(function(){
+	    	$("#success").modal("show");
+	    	//checkprice();
+	    });
+
+		
+		$(".header .title span").html(""+ menu.payload[0].product_name +"");
+		
+	}).done(function(){
+		var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			autoplay: 4500,
+			spaceBetween: 30
+		});
+	});
+
+});
+</script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/jquery.slideandswipe.js"></script>
+<link href="style/bootstrap.min.css" rel="stylesheet" >
+<script src="js/bootstrap.min.js" ></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+.prod1a{
+		/*  background-color: #f1f1f1; */
+		background: linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%);
+		/* background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%); */
+		/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 1))); */
+		background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%);
+		background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%);
+		background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%);
+		background-size: cover;
+		
+	}
+	
+	.prod1b{
+		/*  background-color: #f1f1f1; */
+		background: linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('http://www.haagendazs.us/images/products/hero/fl_icecream_caramelcone_hero.jpg') no-repeat center;
+		/* background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('http://www.haagendazs.us/images/products/hero/fl_icecream_caramelcone_hero.jpg') no-repeat center; */
+		/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 1))), url('http://www.haagendazs.us/images/products/hero/fl_icecream_caramelcone_hero.jpg') no-repeat center; */
+		background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('http://1.bp.blogspot.com/--07C_KaSFrk/U58GtD5FayI/AAAAAAAAJy8/kHi6-gec9hU/s1600/DSC_0108.png') no-repeat center;
+		background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%), url('http://www.haagendazs.us/images/products/hero/fl_icecream_caramelcone_hero.jpg') no-repeat center;
+		background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%), url('http://www.haagendazs.us/images/products/hero/fl_icecream_caramelcone_hero.jpg') no-repeat center;
+		background-size: cover;
+		
+		
+	}
+	
+	.prod1c{
+		/*  background-color: #f1f1f1; */
+		background: linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('https://s-media-cache-ak0.pinimg.com/736x/6b/13/37/6b1337f5b36738b8d512150675af4b15.jpg') no-repeat center;
+		/* background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('https://s-media-cache-ak0.pinimg.com/736x/6b/13/37/6b1337f5b36738b8d512150675af4b15.jpg') no-repeat center; */
+		/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 1))), url('https://s-media-cache-ak0.pinimg.com/736x/6b/13/37/6b1337f5b36738b8d512150675af4b15.jpg') no-repeat center; */
+		background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('https://s-media-cache-ak0.pinimg.com/736x/6b/13/37/6b1337f5b36738b8d512150675af4b15.jpg') no-repeat center;
+		background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%), url('https://s-media-cache-ak0.pinimg.com/736x/6b/13/37/6b1337f5b36738b8d512150675af4b15.jpg') no-repeat center;
+		background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%), url('https://s-media-cache-ak0.pinimg.com/736x/6b/13/37/6b1337f5b36738b8d512150675af4b15.jpg') no-repeat center;
+		background-size: cover;
+		
+		
+	}
+	
+	.prod1d{
+	/*  background-color: #f1f1f1; */
+		background: linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('https://3.bp.blogspot.com/--MRzK0-Irk0/WFxzm_ZFp9I/AAAAAAAAzfk/WXJ9PyUPM_0W7tcNx9dyvDrE_z5W80ggQCEw/s640/haagen-dazs-coffee-ice-cream.jpg') no-repeat center;
+		/* background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('https://3.bp.blogspot.com/--MRzK0-Irk0/WFxzm_ZFp9I/AAAAAAAAzfk/WXJ9PyUPM_0W7tcNx9dyvDrE_z5W80ggQCEw/s640/haagen-dazs-coffee-ice-cream.jpg') no-repeat center; */
+		/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 1))), url('https://3.bp.blogspot.com/--MRzK0-Irk0/WFxzm_ZFp9I/AAAAAAAAzfk/WXJ9PyUPM_0W7tcNx9dyvDrE_z5W80ggQCEw/s640/haagen-dazs-coffee-ice-cream.jpg') no-repeat center; */
+		background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('https://3.bp.blogspot.com/--MRzK0-Irk0/WFxzm_ZFp9I/AAAAAAAAzfk/WXJ9PyUPM_0W7tcNx9dyvDrE_z5W80ggQCEw/s640/haagen-dazs-coffee-ice-cream.jpg') no-repeat center;
+		background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%), url('https://3.bp.blogspot.com/--MRzK0-Irk0/WFxzm_ZFp9I/AAAAAAAAzfk/WXJ9PyUPM_0W7tcNx9dyvDrE_z5W80ggQCEw/s640/haagen-dazs-coffee-ice-cream.jpg') no-repeat center;
+		background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%), url('https://3.bp.blogspot.com/--MRzK0-Irk0/WFxzm_ZFp9I/AAAAAAAAzfk/WXJ9PyUPM_0W7tcNx9dyvDrE_z5W80ggQCEw/s640/haagen-dazs-coffee-ice-cream.jpg') no-repeat center;
+		background-size: cover;
+		
+		
+	}
+	
+	.prod2a{
+	/*  background-color: #f1f1f1; */
+	background: linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('https://www.haagen-dazs.ca/sites/default/files/styles/product_main_image/public/hd_gel_capp_500ml_e_3d_500x500.png') no-repeat center;
+	/* background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('https://www.haagen-dazs.ca/sites/default/files/styles/product_main_image/public/hd_gel_capp_500ml_e_3d_500x500.png') no-repeat center; */
+	/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 1))), url('https://www.haagen-dazs.ca/sites/default/files/styles/product_main_image/public/hd_gel_capp_500ml_e_3d_500x500.png') no-repeat center; */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('https://www.haagen-dazs.ca/sites/default/files/styles/product_main_image/public/hd_gel_capp_500ml_e_3d_500x500.png') no-repeat center;
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%), url('https://www.haagen-dazs.ca/sites/default/files/styles/product_main_image/public/hd_gel_capp_500ml_e_3d_500x500.png') no-repeat center;
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%), url('https://www.haagen-dazs.ca/sites/default/files/styles/product_main_image/public/hd_gel_capp_500ml_e_3d_500x500.png') no-repeat center;
+	background-size: 100%;
+}
+
+.prod2b{
+	/*  background-color: #f1f1f1; */
+	background: linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('http://3.bp.blogspot.com/-KNgiN79aFhw/UxU8mijV3hI/AAAAAAAAMlw/tXYgByUt9sw/s1600/haagen+daz+gelato+tiramisu+pint+2014.jpg') no-repeat center;
+	/* background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('http://3.bp.blogspot.com/-KNgiN79aFhw/UxU8mijV3hI/AAAAAAAAMlw/tXYgByUt9sw/s1600/haagen+daz+gelato+tiramisu+pint+2014.jpg') no-repeat center; */
+	/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 1))), url('http://3.bp.blogspot.com/-KNgiN79aFhw/UxU8mijV3hI/AAAAAAAAMlw/tXYgByUt9sw/s1600/haagen+daz+gelato+tiramisu+pint+2014.jpg') no-repeat center; */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('http://3.bp.blogspot.com/-KNgiN79aFhw/UxU8mijV3hI/AAAAAAAAMlw/tXYgByUt9sw/s1600/haagen+daz+gelato+tiramisu+pint+2014.jpg') no-repeat center;
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%), url('http://3.bp.blogspot.com/-KNgiN79aFhw/UxU8mijV3hI/AAAAAAAAMlw/tXYgByUt9sw/s1600/haagen+daz+gelato+tiramisu+pint+2014.jpg') no-repeat center;
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%), url('http://3.bp.blogspot.com/-KNgiN79aFhw/UxU8mijV3hI/AAAAAAAAMlw/tXYgByUt9sw/s1600/haagen+daz+gelato+tiramisu+pint+2014.jpg') no-repeat center;
+	background-size: 100%;
+	
+	
+}
+
+.prod2c{
+	/*  background-color: #f1f1f1; */
+	background: linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('http://www.nogarlicnoonions.com/wp-content/uploads/2013/05/Sea-Salt-Caramel.jpg') no-repeat center;
+	/* background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('http://www.nogarlicnoonions.com/wp-content/uploads/2013/05/Sea-Salt-Caramel.jpg') no-repeat center; */
+	/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 1))), url('http://www.nogarlicnoonions.com/wp-content/uploads/2013/05/Sea-Salt-Caramel.jpg') no-repeat center; */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('http://www.nogarlicnoonions.com/wp-content/uploads/2013/05/Sea-Salt-Caramel.jpg') no-repeat center;
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%), url('http://www.nogarlicnoonions.com/wp-content/uploads/2013/05/Sea-Salt-Caramel.jpg') no-repeat center;
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%), url('http://www.nogarlicnoonions.com/wp-content/uploads/2013/05/Sea-Salt-Caramel.jpg') no-repeat center;
+	background-size: 100%;
+}
+
+.prod2d{
+/*  background-color: #f1f1f1; */
+	background: linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('https://foodfetepress.files.wordpress.com/2013/01/haagenstracciatella_14oz_pints_strac.jpg') no-repeat center;
+	/* background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('https://foodfetepress.files.wordpress.com/2013/01/haagenstracciatella_14oz_pints_strac.jpg') no-repeat center; */
+	/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 1))), url('https://foodfetepress.files.wordpress.com/2013/01/haagenstracciatella_14oz_pints_strac.jpg') no-repeat center; */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 59%, rgba(0, 0, 0, 1) 100%), url('https://foodfetepress.files.wordpress.com/2013/01/haagenstracciatella_14oz_pints_strac.jpg') no-repeat center;
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%), url('https://foodfetepress.files.wordpress.com/2013/01/haagenstracciatella_14oz_pints_strac.jpg') no-repeat center;
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 1) 100%), url('https://foodfetepress.files.wordpress.com/2013/01/haagenstracciatella_14oz_pints_strac.jpg') no-repeat center;
+	background-size: 100%;
+	
+	
+}
+
+
+/* Detail Page */
+.outer {
+    width: 100%;
+    max-height:50vh;
+    overflow: hidden;
+}
+
+.inner {
+    display: inline-block;
+    position: relative;
+    right: -50%;
+}
+
+.inner img {
+    position: relative;
+    left: -50%;
+    width: 100%;
+}
+
+.title{
+	font-size:12pt;
+	padding-top:10px;
+	font-weight:bold;
+}
+
+.price{
+	font-size:22pt;
+	font-weight:500;
+	color:#DFB866;
+	margin-bottom:-4px;
+}
+
+.desc{
+	padding:6% 1% 16%;
+	font-size:11pt;
+}
+
+.tnc{
+	font-weight: bold !important;
+}
+
+.opt{
+	margin-top:20px;
+	font-size:8pt;
+	
+}
+
+
+.details button{
+	width:100%;
+	padding:10px;
+	background:#DFB866;
+	border:none;
+	font-size:9pt;
+	font-weight:bold;
+	margin-top:20px;
+	color:white;
+}
+
+
+/* end only demo styles */
+
+.checkbox-custom, .radio-custom {
+    opacity: 0;
+    position: absolute;   
+}
+
+.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+    display: inline;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.checkbox-custom-label, .radio-custom-label {
+    position: relative;
+}
+
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    background: rebeccapurple;
+    color: #fff;
+}
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    color: #bbb;
+}
+
+.checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+  outline: 1px solid #ddd; /* focus style */
+}

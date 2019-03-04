@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haagen Daaz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="">
+<link rel="canonical" href="">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href="style/style.css" rel="stylesheet">
+<link href="style/products.css" rel="stylesheet">
+<link href="style/swiper.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style/xpull.css">
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+<style type="text/css">
+	.swiper-container {
+		height: 42vh;
+	}
+
+	.shoppage .details{
+		 -webkit-overflow-scrolling: touch;
+	}
+
+	.shoppage .buttons{
+		bottom: 0 !important;
+		position: fixed;
+		left: 0;
+	}
+
+	.shoppage .buttons button{
+		width:100%;
+		padding:10px;
+		background:#DFB866;
+		border:none;
+		font-size:9pt;
+		font-weight:bold;
+		margin-top:20px;
+		color:white;
+		text-transform: uppercase;
+	}
+
+</style>
+</head>
+<body></div>
+<section class="loading">
+	<img src="img/loading.gif" width="20%" />
+</section>
+<section class="header">
+	<div class="col-xs-2 back no-padding" style="display:none;">
+			<img src="img/last-track-left-arrow.png" width="100%" ">
+	</div>
+	<div class="col-xs-8 title">
+		<span></span>
+	</div>
+	<div class="col-xs-2 cartbadge">
+			<div class="cart"><span class="cart-count">0</span></div>
+	</div>
+</section>
+<section class="shoppage">
+		
+		<section class="details" style="padding-top:30px;">
+			<!-- Markup for xpull plugin -->
+	        <div class="xpull">
+	            <div class="xpull__start-msg">
+	                <div class="xpull__start-msg-text">Pull Down &amp; Release to Refresh</div>
+	                <div class="xpull__arrow"></div>
+	            </div>
+	            <div class="xpull__spinner">
+	                <div class="xpull__spinner-circle"></div>
+	            </div>
+	        </div>
+	        <!-- End Markup for xpull plugin -->
+			<div class="col-xs-12">
+				<div class="col-xs-7 align-left no-padding order_id" style="margin-bottom: 18pt !important; ">
+					
+				</div>
+				<div class="col-xs-5 align-right no-padding order_date" style="font-size:9pt;">
+					
+				</div>
+				<div class="col-xs-12 align-left no-padding delivery_status" style="display: none; margin-top: 10px">
+					<P class="col-xs-6 no-padding title" style="margin-top: 5px !important;" >Delivery status</P>
+					<!--<P class="col-xs-6 no-padding align-right view_detail" style="margin-top: 12px !important;" ><a style="font-weight:bold; color: #7B0C20">View detail</a></P>-->
+					<img src="img/deliv1.gif" class="img-responsive" />
+					<div class="align-center status_text">
+						<p style="font-weight: bold;"><br /><span style="font-size: 7pt;"></span></p>					
+					</div>				
+				</div>
+				<div class="col-xs-12 align-left no-padding order_delivery">
+					<p><strong>Delivery details :</strong></p>
+
+				</div>
+
+				<div class="col-xs-7 align-left no-padding order_delivery_address">
+					
+				</div>
+
+				<div class="col-xs-12 align-left no-padding order_voucher">
+					Voucher code : <strong></strong>
+				</div>
+				
+				<div class="clearfix"></div>
+				<div class="col-xs-12 no-padding align-left title_order">
+					<h3>Ordered Items</h3>
+				</div>
+				<div class="col-xs-12 no-padding order_products" style="border: 2px solid #ccc; margin-top: 20px !important;">
+					<div class="col-xs-6 th-inv-1" style="background:#fff; border-bottom: #ccc 1px solid; text-align: left; font-weight: bold; padding: 5px;">Product Name</div>
+    				<div class="col-xs-2 th-inv-2" style="background:#e4e4e4; border-bottom: #ccc 1px solid; text-align: center; font-weight: bold;padding: 5px;">Qty</div>
+    				<div class="col-xs-4 th-inv-3" style="background:#E3B75B; border-bottom: #ccc 1px solid; text-align: center; font-weight: bold;padding: 5px;">Price</div>
+    				
+				</div>
+			</div>
+			<div class="col-xs-12 no-padding order_status" style="margin-top:18pt !important; margin-bottom: 45px !important;">
+				<P>Order Status</P>
+				<h3><strong></strong></h3>
+			</div>
+			
+		</section>
+        <nav class="nav">
+			<img src="logo-head.png" width="23%" alt="swipe image" />
+			
+			<div class="current-user">
+				<div class="current-user-data">
+					<h3><a class="name_menu" data-href="profile.html">Loading...</a></h3>
+					<p class="points_menu">Your points: Loading...</p>
+				</div>
+				<div class="avatar"></div>
+				<div style="clear:both"></div>
+			</div>
+			
+			<a class="menu-cat" data-href="shop.html"><p>Catalog</p></a>
+			<a class="menu-dir" data-href="outlet.html"><p>Directory</p></a>
+			<a class="menu-gam" data-href="games.html"><p>Game</p></a>
+			<a class="menu-nws" data-href="news.html"><p>News</p></a>
+			<a class="menu-set" data-href="setting.html"><p>Setting</p></a>
+			<a class="logout" ><p>Log Out</p></a>		
+		</nav>
+		<div class="col-xs-12 no-padding buttons order_confirm" style="bottom: 0;	position: fixed; display: none;">
+				
+		</div>
+		<div class="col-xs-12 no-padding buttons order_pay" style="bottom: 0;	position: fixed; display: none;">
+			
+		</div>
+      </section>
+<div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-success.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Success</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body">
+	      	<p>Some changes has been saved!</p>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding closebtn" data-dismiss="modal">Close</button>
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<img src="img/modal-error.png" width="60" />
+	        <h3 class="modal-title" id="exampleModalLongTitle">Error</h3>
+	        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>-->	
+	      </div>
+	      <div class="modal-body">
+	      	<p>Some changes failed to save.</p>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="col-xs-12 no-padding closebtn" data-dismiss="modal">Close</button>
+	        <!--<button type="button" class="saveimg btn btn-primary">Save changes</button>-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<div class="ssm-overlay ssm-toggle-nav"></div>
+<script src="js/6fac2730d4.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mycart.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<script src="js/xpull.js"></script>
+<!-- touchSwipe library -->
+<script>
+
+$(".loading").show();
+$(".shoppage").hide();
+$(".nav").hide();
+$(".back").hide();
+var __min = 0;
+var __max = 10;
+
+</script>
+<script>
+$(document).ready(function () { // load json file using jquery ajax
+	if(localStorage.hd_lang=="IDN"){
+		$(".title_order h3").html("Daftar Pesanan");
+		$(".delivery_status .title").html("Status Pengiriman");
+		$(".order_delivery p").html("<strong>Rincian Pengiriman</strong>");
+		$(".order_status p").html("Status Pesanan");
+		$(".th-inv-1").html("Produk");
+		$(".th-inv-2").html("Jml");
+		$(".th-inv-3").html("Harga");
+		$(".xpull__start-msg-text").html("Tarik & lepas untuk menyegarkan")
+	}
+
+	//PULL TO REFRESH
+	/*
+	$('.details').xpull({
+        'callback': function () {
+        	$.getJSON(urlx,function(menu){
+        		if(status_order!=menu.payload[0].order_status){
+        			$(".order_confirm").show();
+
+        			if(menu.payload[0].transaction.length > 0){
+						var extra = menu.payload[0].transaction;
+						var pengurang = 0 ;
+
+						$(extra).each(function(num, detil){
+							if(detil.channel_type=="COUPON"){
+								if(localStorage.hd_lang==="IDN"){
+									$(".details").find(".order_products").append('<div class="col-xs-6 th-inv-1" style="background:#96dd6b; text-align: left; padding: 5px; font-size:10pt">Kode Kupon : <strong>'+ detil.remarks +'</strong></div>'+
+								'<div class="col-xs-2 th-inv-2" style="background:#96dd6b; text-align: center;padding: 5px;">1</div>'+
+								'<div class="col-xs-4 th-inv-3" style="background:#96dd6b; text-align: center; padding: 5px;"> - Rp. '+ addCommas(detil.value) +'</div>');
+								}else{
+									$(".details").find(".order_products").append('<div class="col-xs-6 th-inv-1" style="background:#96dd6b; text-align: left; padding: 5px; font-size:10pt">Coupon Code : <strong>'+ detil.remarks +'</strong></div>'+
+								'<div class="col-xs-2 th-inv-2" style="background:#96dd6b; text-align: center;padding: 5px;">1</div>'+
+								'<div class="col-xs-4 th-inv-3" style="background:#96dd6b; text-align: center; padding: 5px;"> - Rp. '+ addCommas(detil.value) +'</div>');
+								}
+
+								pengurang = Number(pengurang) + Number(detil.value);
+								
+							}else{
+								$(".details").find(".order_products").append('<div class="col-xs-6 th-inv-1" style="background:#96dd6b; text-align: left; padding: 5px; font-size:10pt">'+ detil.remarks +'</div>'+
+								'<div class="col-xs-2 th-inv-2" style="background:#96dd6b; text-align: center;padding: 5px;">1</div>'+
+								'<div class="col-xs-4 th-inv-3" style="background:#96dd6b; text-align: center; padding: 5px;"> - Rp. '+ addCommas(detil.value) +'</div>');
+
+								pengurang = Number(pengurang) + Number(detil.value);	
+							}
+
+							//pengurang = Number(pengurang) + Number(detil.value);
+							
+						});
+						
+
+						var gt = Number(menu.payload[0].total_value - pengurang)
+						$(".details").find(".order_products .grand_total strong").html('Rp.'+ addCommas(gt) +'');
+
+					}
+
+					if(menu.payload[0].delivery_status=="DELIVERED" || menu.payload[0].delivery_status=="REDEEMED"){
+						$(".delivery_status img").attr("src","img/deliv2.gif");
+						if(localStorage.hd_lang==="IDN"){
+							$(".order_status h3").html("<strong>TELAH DITUKARKAN</strong>");
+							$(".order_confirm").append('<button style="text-transform: uppercase !important; opacity:0.4; display:block;" disabled>Telah ditukarkan</button>');
+							$(".status_text p").html("<strong>TERKIRIM</strong>");
+
+						}else{
+							$(".order_status h3").html("<strong>"+ menu.payload[0].delivery_status +"</strong>");
+							$(".order_confirm").append('<button style="text-transform: uppercase !important; opacity:0.4; display:block;" disabled>'+ menu.payload[0].delivery_status +'</button>');
+							$(".status_text p").html("<strong>DELIVERED</strong>")	
+						}
+
+					}else{
+
+						if(localStorage.hd_lang==="IDN"){
+							$(".details").find(".order_status h3 strong").html("LUNAS");
+							$(".status_text p").html("DALAM PROSES");
+							$(".order_confirm").append('<button style="text-transform: uppercase !important;">Bagikan Kode Penukaran</button>');
+						}else{
+							$(".details").find(".order_status h3 strong").html(""+ menu.payload[0].order_status +"");
+							$(".status_text p").html("ON PROCESS");
+							$(".order_confirm").append('<button style="text-transform: uppercase !important;">Share Redeem Code</button>');
+						}
+						
+											
+						$(".details").find(".order_confirm button").click(function(){
+
+							var options = {
+							  message: 'Get your order on our store by redeem this code : '+ kodetuker +' now!', // not supported on some apps (Facebook, Instagram);
+							  subject: 'Share your redeem code', // fi. for email
+							  url: 'http://haagendazs.echoscript.net/web/landing/gift/'+ kodetuker +'',
+							  chooserTitle: 'Share your redeem code' // Android only, you can override the default share sheet title
+							}
+
+							var onSuccess = function(result) {
+				  				
+				  				var order_id = getID;
+								var shared = "1"
+
+								var param = {
+									order_id : order_id,
+									shared : shared
+								}
+
+								//SAVE DATA REDEEM STATUS
+								$.post(share_order, param)
+							        .done(function(data){
+							        	//console.log("shared")
+							        	var respon = jQuery.parseJSON(data)
+							        	if(respon.is_error==false || respon.is_error=="false"){
+							        		$("#success").modal("show");
+				  							$("#success .modal-body p").html(respon);
+							        	}else{
+							        		$("#error").modal("show");
+							  	 			if(localStorage.hd_lang==="IDN"){  	 				
+							  	 				var pesan;
+							  	 				if(respon.status_code===404 || respon.status_code==="404"){
+							  	 					pesan = "pesanan tidak ditemukan"
+							  	 				}else if (respon.status_code===502 || respon.status_code==="502"){
+							  	 					pesan = "pesanan sudah pernah ditukarkan"
+							  	 				}else{
+							  	 					pesan = "pesanan sudah pernah ditukarkan"
+							  	 				}
+							  	 				$("#error .modal-body p").html("Kode tidak dapat dibagikan. Karena "+ pesan +"");
+							  	 				$("#error .modal-body p").css("margin","10px")
+							  	 				$("#error .modal-title").html("Gagal");
+							  	 				$("#error .modal-footer button").html("Tutup");
+							  	 			}
+							        	}
+							        })
+							}
+
+							var onError = function(msg) {
+								$("#error").modal("show");
+								$("#error .modal-body p").html(msg);
+
+								var order_id = getID;
+								var shared = "0"
+
+								var param = {
+									order_id : order_id,
+									shared : shared
+								}
+
+								//SAVE DATA REDEEM STATUS
+								$.post(share_order, param)
+							        .done(function(data){
+							        	//console.log("shared")
+							        	var respon = jQuery.parseJSON(data)
+							        	if(respon.is_error==false || respon.is_error=="false"){
+							        		$("#success").modal("show");
+				  							$("#success .modal-body p").html(respon);
+							        	}else{
+							        		$("#error").modal("show");
+							  	 			if(localStorage.hd_lang==="IDN"){  	 				
+							  	 				var pesan;
+							  	 				if(respon.status_code===404 || respon.status_code==="404"){
+							  	 					pesan = "pesanan tidak ditemukan"
+							  	 				}else if (respon.status_code===502 || respon.status_code==="502"){
+							  	 					pesan = "pesanan sudah pernah ditukarkan"
+							  	 				}else{
+							  	 					pesan = "pesanan sudah pernah ditukarkan"
+							  	 				}
+							  	 				$("#error .modal-body p").html("Kode tidak dapat dibagikan. Karena "+ pesan +"");
+							  	 				$("#error .modal-body p").css("margin","10px")
+							  	 				$("#error .modal-title").html("Gagal");
+							  	 				$("#error .modal-footer button").html("Tutup");
+							  	 			}
+							        	}
+							        })
+							}
+
+							window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError);
+
+							
+							
+						});
+
+					}
+        		}
+        	});
+        }
+    });
+	*/
+	$(".back").show("fast");
+	$(".back").click(function(){
+		//history.back();
+		location.href="profile.html";
+	})	
+	function getUrlParameter(sParam) {
+		var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+			sURLVariables = sPageURL.split('&'),
+			sParameterName,
+			i;
+
+		for (i = 0; i < sURLVariables.length; i++) {
+			sParameterName = sURLVariables[i].split('=');
+
+			if (sParameterName[0] === sParam) {
+				return sParameterName[1] === undefined ? true : sParameterName[1];
+			}
+		}
+	};
+	
+
+	function addCommas(nStr)
+	{
+		nStr += '';
+		x = nStr.split('.');
+		x1 = x[0];
+		x2 = x.length > 1 ? '.' + x[1] : '';
+		var rgx = /(\d+)(\d{3})/;
+		while (rgx.test(x1)) {
+			x1 = x1.replace(rgx, '$1' + '.' + '$2');
+		}
+		return x1 + x2;
+	}
+
+	var getID = getUrlParameter('id');
+	var sess_key = localStorage.hd_session_key;
+	var urlx = "http://api.haagendazsindonesia.co.id/v1/order?session_key="+ sess_key +"&order_id="+ getID +"&detail_mode=1";
+	var share_order = "http://api.haagendazsindonesia.co.id/v1/share_order?session_key="+ sess_key +"&order_id="+ getID +"";
+	var hd_kirim;
+	var status_order;
+
+	function get_order_data(){
+		$.getJSON(urlx,function(menu){
+			$(".details").find(".order_id").html("<strong>ID :"+ menu.payload[0].order_id +"</strong>");
+			$(".details").find(".order_date").html(""+ menu.payload[0].__created +"");
+			if(menu.payload[0].redeem_code != null){
+				if(localStorage.hd_lang==="IDN"){
+					$(".details").find(".order_voucher").html("Kode Penukaran &nbsp; : &nbsp;<strong>"+ menu.payload[0].redeem_code +"</strong>");
+				}else{
+					$(".details").find(".order_voucher").html("Redeem Code &nbsp; : &nbsp;<strong>"+ menu.payload[0].redeem_code +"</strong>");
+				}
+				
+			}else{
+				$(".details").find(".order_voucher").hide();
+			}
+
+			var kodetuker = menu.payload[0].redeem_code;
+			//$(".details").find(".outer .inner img").attr("src",""+ menu.payload[0].img +"");
+			if(menu.payload[0].customer_id === menu.payload[0].gift_customer_id){
+				if(menu.payload[0].consignee_address==="null" || menu.payload[0].consignee_address===null || menu.payload[0].consignee_address===""){
+					if(localStorage.hd_lang==="IDN"){
+						$(".details").find(".order_delivery").append("<strong>Pengambilan di Gerai</strong>");
+					}else{
+						$(".details").find(".order_delivery").append("<strong>Pick to store</strong>");
+					}
+					$(".delivery_status").hide();
+					
+					
+					
+				}else{
+					if(localStorage.hd_lang==="IDN"){
+						$(".details").find(".order_delivery").append("Kirim <strong>ke alamat</strong>");
+					}else{
+						$(".details").find(".order_delivery").append("Send to <strong>an address</strong>");
+					}
+					
+					$(".details").find(".order_delivery_address").html(menu.payload[0].consignee_address);
+					
+					if(menu.payload[0].order_status==="PAID"){
+						$(".delivery_status").show();
+					}else{
+						$(".delivery_status").hide();
+					}
+				}	
+				
+			}else{
+				/*var urly = "http://api.haagendazsindonesia.co.id/v1/customer?session_key="+ sess_key +"&customer_id="+ menu.payload[0].gift_customer_id +"";
+				$.getJSON(urly,function(res){
+					$(".details").find(".order_delivery").append("Send to <strong>"+ res.payload[0].full_name +"</strong>");
+					
+				});*/
+				if(localStorage.hd_lang==="IDN"){
+					$(".details").find(".order_delivery").append("Kirim ke <strong>"+ menu.payload[0].full_name +"</strong>");
+				}else{
+					$(".details").find(".order_delivery").append("Send to <strong>"+ menu.payload[0].full_name +"</strong>");	
+				}
+				
+				$(".details").find(".order_delivery_address").html(menu.payload[0].consignee_address);
+			}
+
+			
+
+			console.log(localStorage.hd_kirim)
+			var rincian = menu.payload[0].detail;
+			$(rincian).each(function(num, detil){
+				$(".details").find(".order_products").append('<div class="col-xs-6 th-inv-1" style="background:#fff; text-align: left; padding: 5px; font-size:10pt; height:26px; overflow:hidden;">'+ detil.product_name +'</div>'+
+					'<div class="col-xs-2 th-inv-2" style="background:#e4e4e4; text-align: center;padding: 5px;">'+ detil.qty +'</div>'+
+					'<div class="col-xs-4 th-inv-3" style="background:#E3B75B; text-align: center; padding: 5px;">Rp. '+ addCommas(detil.price * detil.qty) +'</div>');
+
+				if(detil.delivery_available==="1"){
+					
+					localStorage.hd_kirim = "TRUE"
+				}
+			});
+
+
+			if(menu.payload[0].shipping_cost == 0 || menu.payload[0].shipping_cost == "0" || menu.payload[0].shipping_cost == null || menu.payload[0].shipping_cost == "null"){
+				if(localStorage.hd_lang!="IDN"){
+					$(".details").find(".order_products").append(
+							'<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">'+
+					            '<div class="col-xs-6 label-sc" style="background:#fff; text-align: left; padding: 5px; font-size:10pt; font-weight:bold;  height:26px; overflow:hidden;">Service charge</div>'+
+					            '<div class="col-xs-2" style="background:#e4e4e4; text-align: center; padding: 5px;"> - </div>'+
+					            '<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px;">Rp. '+ addCommas(menu.payload[0].service_charge) +'</div>'+
+					         '</div>'
+						)
+				}else{
+					$(".details").find(".order_products").append(
+							'<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">'+
+					            '<div class="col-xs-6 label-sc" style="background:#fff; text-align: left; padding: 5px; font-size:10pt; font-weight:bold;  height:26px; overflow:hidden;">Biaya layanan</div>'+
+					            '<div class="col-xs-2" style="background:#e4e4e4; text-align: center; padding: 5px;"> - </div>'+
+					            '<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px;">Rp. '+ addCommas(menu.payload[0].service_charge) +'</div>'+
+					         '</div>'
+						)
+				}
+			}else{
+				if(localStorage.hd_lang!="IDN"){
+					$(".details").find(".order_products").append(
+							'<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">'+
+					            '<div class="col-xs-6 label-deliv" style="background:#fff; text-align: left; padding: 5px; font-size:10pt; font-weight:bold;  height:26px; overflow:hidden;">Delivery fee</div>'+
+					            '<div class="col-xs-2" style="background:#e4e4e4; text-align: center; padding: 5px;"> - </div>'+
+					            '<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px;">Rp. '+ addCommas(menu.payload[0].shipping_cost) +'</div>'+
+					         '</div>'
+						)
+				}else{
+					$(".details").find(".order_products").append(
+							'<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">'+
+					            '<div class="col-xs-6 label-deliv" style="background:#fff; text-align: left; padding: 5px; font-size:10pt; font-weight:bold;  height:26px; overflow:hidden;">Ongkos kirim</div>'+
+					            '<div class="col-xs-2" style="background:#e4e4e4; text-align: center; padding: 5px;"> - </div>'+
+					            '<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px;">Rp. '+ addCommas(menu.payload[0].shipping_cost) +'</div>'+
+					         '</div>'
+						)
+				}
+			}
+			
+			if(localStorage.hd_lang!="IDN"){
+				$(".details").find(".order_products").append(
+						'<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">'+
+				            '<div class="col-xs-6 label-tax" style="background:#fff; text-align: left; padding: 5px; font-size:10pt; font-weight:bold;  height:26px; overflow:hidden;">Tax</div>'+
+				            '<div class="col-xs-2" style="background:#e4e4e4; text-align: center; padding: 5px;"> - </div>'+
+				            '<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px;">Rp. '+ addCommas(menu.payload[0].tax) +'</div>'+
+				         '</div>'
+					)
+			}else{
+				$(".details").find(".order_products").append(
+						'<div class="col-xs-12 no-padding" style="border: 2px solid #ccc;">'+
+				            '<div class="col-xs-6 label-tax;  height:26px; overflow:hidden;" style="background:#fff; text-align: left; padding: 5px; font-size:10pt; font-weight:bold">PB 1</div>'+
+				            '<div class="col-xs-2" style="background:#e4e4e4; text-align: center; padding: 5px;"> - </div>'+
+				            '<div class="col-xs-4 priceperitem" style="background:#E3B75B; text-align: center; padding: 5px;">Rp. '+ addCommas(menu.payload[0].tax) +'</div>'+
+				         '</div>'
+					)
+			}
+			
+
+			status_order = menu.payload[0].order_status;
+			if(menu.payload[0].order_status==="UNPAID"){
+				$(".order_pay").show();
+				if(localStorage.hd_lang!="IDN"){
+					$(".order_pay").append('<a href="creditcard.html?id='+ menu.payload[0].order_id +'"><button style="text-transform: uppercase !important;">Continue to Payment</button></a>');
+					$(".details").find(".order_status h3 strong").html(""+ menu.payload[0].order_status +"");
+				}else{
+					$(".details").find(".order_status h3 strong").html("BELUM LUNAS");
+					$(".order_pay").append('<a href="creditcard.html?id='+ menu.payload[0].order_id +'"><button style="text-transform: uppercase !important;">Lanjutkan ke Pembayaran</button></a>');
+				}
+				
+				
+			}else{
+				$(".order_confirm").show();
+
+				
+				if(menu.payload[0].delivery_status=="DELIVERED" || menu.payload[0].delivery_status=="REDEEMED"){
+					$(".delivery_status img").attr("src","img/deliv2.gif");
+					if(localStorage.hd_lang==="IDN"){
+						$(".order_status h3").html("<strong>TELAH DITUKARKAN</strong>");
+						$(".order_confirm").append('<button style="text-transform: uppercase !important; opacity:0.4; display:block;" disabled>Telah ditukarkan</button>');
+						$(".status_text p").html("<strong>TERKIRIM</strong>");
+
+					}else{
+						$(".order_status h3").html("<strong>"+ menu.payload[0].delivery_status +"</strong>");
+						$(".order_confirm").append('<button style="text-transform: uppercase !important; opacity:0.4; display:block;" disabled>'+ menu.payload[0].delivery_status +'</button>');
+						$(".status_text p").html("<strong>DELIVERED</strong>")	
+					}
+
+				}else{
+
+					if(localStorage.hd_lang==="IDN"){
+						$(".details").find(".order_status h3 strong").html("LUNAS");
+						$(".status_text p").html("DALAM PROSES");
+						$(".order_confirm").append('<button style="text-transform: uppercase !important;">Bagikan Kode Penukaran</button>');
+					}else{
+						$(".details").find(".order_status h3 strong").html(""+ menu.payload[0].order_status +"");
+						$(".status_text p").html("ON PROCESS");
+						$(".order_confirm").append('<button style="text-transform: uppercase !important;">Share Redeem Code</button>');
+					}
+					
+										
+					$(".details").find(".order_confirm button").click(function(){
+
+						var options = {
+						  message: 'Get your order on our store by redeem this code : '+ kodetuker +' now!', // not supported on some apps (Facebook, Instagram);
+						  subject: 'Share your redeem code', // fi. for email
+						  url: 'http://haagendazs.echoscript.net/web/landing/gift/'+ kodetuker +'',
+						  chooserTitle: 'Share your redeem code' // Android only, you can override the default share sheet title
+						}
+
+						var onSuccess = function(result) {
+			  				
+			  				var order_id = getID;
+							var shared = "1"
+
+							var param = {
+								order_id : order_id,
+								shared : shared
+							}
+
+							//SAVE DATA REDEEM STATUS
+							$.post(share_order, param)
+						        .done(function(data){
+						        	//console.log("shared")
+						        	var respon = jQuery.parseJSON(data)
+						        	if(respon.is_error==false || respon.is_error=="false"){
+						        		$("#success").modal("show");
+			  							$("#success .modal-body p").html(respon);
+						        	}else{
+						        		$("#error").modal("show");
+						  	 			if(localStorage.hd_lang==="IDN"){  	 				
+						  	 				var pesan;
+						  	 				if(respon.status_code===404 || respon.status_code==="404"){
+						  	 					pesan = "pesanan tidak ditemukan"
+						  	 				}else if (respon.status_code===502 || respon.status_code==="502"){
+						  	 					pesan = "pesanan sudah pernah ditukarkan"
+						  	 				}else{
+						  	 					pesan = "pesanan sudah pernah ditukarkan"
+						  	 				}
+						  	 				$("#error .modal-body p").html("Kode tidak dapat dibagikan. Karena "+ pesan +"");
+						  	 				$("#error .modal-body p").css("margin","10px")
+						  	 				$("#error .modal-title").html("Gagal");
+						  	 				$("#error .modal-footer button").html("Tutup");
+						  	 			}
+						        	}
+						        })
+						}
+
+						var onError = function(msg) {
+							$("#error").modal("show");
+							$("#error .modal-body p").html(msg);
+
+							var order_id = getID;
+							var shared = "0"
+
+							var param = {
+								order_id : order_id,
+								shared : shared
+							}
+
+							//SAVE DATA REDEEM STATUS
+							$.post(share_order, param)
+						        .done(function(data){
+						        	//console.log("shared")
+						        	var respon = jQuery.parseJSON(data)
+						        	if(respon.is_error==false || respon.is_error=="false"){
+						        		$("#success").modal("show");
+			  							$("#success .modal-body p").html(respon);
+						        	}else{
+						        		$("#error").modal("show");
+						  	 			if(localStorage.hd_lang==="IDN"){  	 				
+						  	 				var pesan;
+						  	 				if(respon.status_code===404 || respon.status_code==="404"){
+						  	 					pesan = "pesanan tidak ditemukan"
+						  	 				}else if (respon.status_code===502 || respon.status_code==="502"){
+						  	 					pesan = "pesanan sudah pernah ditukarkan"
+						  	 				}else{
+						  	 					pesan = "pesanan sudah pernah ditukarkan"
+						  	 				}
+						  	 				$("#error .modal-body p").html("Kode tidak dapat dibagikan. Karena "+ pesan +"");
+						  	 				$("#error .modal-body p").css("margin","10px")
+						  	 				$("#error .modal-title").html("Gagal");
+						  	 				$("#error .modal-footer button").html("Tutup");
+						  	 			}
+						        	}
+						        })
+						}
+
+						window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError);
+
+						
+						
+					});
+				
+					
+				}
+				
+			}
+
+			
+
+			
+
+			if(menu.payload[0].transaction.length > 0){
+				var extra = menu.payload[0].transaction;
+				var pengurang = 0 ;
+
+				$(extra).each(function(num, detil){
+					if(detil.channel_type=="COUPON"){
+						if(localStorage.hd_lang==="IDN"){
+							$(".details").find(".order_products").append('<div class="col-xs-6 th-inv-1" style="background:#96dd6b; text-align: left; padding: 5px; font-size:10pt;  height:29px; overflow:hidden;">Kode Kupon : <strong>'+ detil.remarks +'</strong></div>'+
+						'<div class="col-xs-2 th-inv-2" style="background:#96dd6b; text-align: center;padding: 5px;">1</div>'+
+						'<div class="col-xs-4 th-inv-3" style="background:#96dd6b; text-align: center; padding: 5px;"> - Rp. '+ addCommas(detil.value) +'</div>');
+						}else{
+							$(".details").find(".order_products").append('<div class="col-xs-6 th-inv-1" style="background:#96dd6b; text-align: left; padding: 5px; font-size:10pt">Coupon Code : <strong>'+ detil.remarks +'</strong></div>'+
+						'<div class="col-xs-2 th-inv-2" style="background:#96dd6b; text-align: center;padding: 5px;">1</div>'+
+						'<div class="col-xs-4 th-inv-3" style="background:#96dd6b; text-align: center; padding: 5px;"> - Rp. '+ addCommas(detil.value) +'</div>');
+						}
+						pengurang = Number(pengurang) + Number(detil.value);
+					}else{
+						$(".details").find(".order_products").append('<div class="col-xs-6 th-inv-1" style="background:#96dd6b; text-align: left; padding: 5px; font-size:10pt; ">'+ detil.remarks +'</div>'+
+						'<div class="col-xs-2 th-inv-2" style="background:#96dd6b; text-align: center;padding: 5px;">1</div>'+
+						'<div class="col-xs-4 th-inv-3" style="background:#96dd6b; text-align: center; padding: 5px;"> - Rp. '+ addCommas(detil.value) +'</div>');
+						pengurang = Number(pengurang) + Number(detil.value);
+					}
+
+					
+					
+				});
+				
+
+				var gt = Number(menu.payload[0].total_value - pengurang)
+				$(".details").find(".order_products").append('<div class="clearfix"></div><div class="col-xs-6 th-inv-1" style="background:#E3B75B; text-align: left; padding: 5px;"><strong>Total</strong></div>'+
+	    				'<div class="col-xs-2 th-inv-2" style="background:#E3B75B; text-align: center;padding: 5px;"><strong>'+ menu.payload[0].total_qty +'</strong></div>'+
+	    				'<div class="col-xs-4 th-inv-3" style="background:#E3B75B; text-align: center; padding: 5px;"><strong>Rp.'+ addCommas(gt) +'</strong></div>');
+
+			}else{
+
+				var gt = Number(menu.payload[0].total_value);
+				$(".details").find(".order_products").append('<div class="clearfix"></div><div class="col-xs-6 th-inv-1" style="background:#E3B75B; text-align: left; padding: 5px;"><strong>Total</strong></div>'+
+	    				'<div class="col-xs-2 th-inv-2" style="background:#E3B75B; text-align: center;padding: 5px;"><strong>'+ menu.payload[0].total_qty +'</strong></div>'+
+	    				'<div class="col-xs-4 th-inv-3 grand_total" style="background:#E3B75B; text-align: center; padding: 5px;"><strong>Rp.'+ addCommas(gt) +'</strong></div>');
+			}
+
+			
+			//alert(status_order)
+			
+
+			if(localStorage.hd_lang==="IDN"){
+				$(".header .title span").html("ID Pesanan : "+ menu.payload[0].order_id +"");
+			}else{
+				$(".header .title span").html("Order ID : "+ menu.payload[0].order_id +"");
+			}
+
+			$.getScript('js/jquery.mycart.js',function(){
+				$('.addcart').myCart({
+			      currencySymbol: 'Rp.',
+			      classCartIcon: 'cart',
+			      classCartBadge: 'cart-count',
+			      classProductQuantity: 'cartqty',
+			      classProductRemove: 'my-product-remove',
+			      classCheckoutCart: 'my-cart-checkout',
+			      affixCartIcon: true,
+			      showCheckoutModal: true
+			      
+			    });
+
+			});
+		});
+	}
+	get_order_data();
+	//alert(status_order)
+});
+</script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/jquery.slideandswipe.js"></script>
+<link href="style/bootstrap.min.css" rel="stylesheet" >
+<script src="js/bootstrap.min.js" ></script>
+</body>
+</html>

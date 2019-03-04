@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haagen Daaz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="">
+<link rel="canonical" href="">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href="style/style.css" rel="stylesheet">
+<link href="style/products.css" rel="stylesheet">
+<link href="style/swiper.min.css" rel="stylesheet">
+<script src="js/swiper.min.js"></script>
+<style type="text/css">
+	.swiper-container {
+		height: 88vh;
+		background: url(img/pattern.png) no-repeat center center, #9c153b;
+		background-size: cover;
+		background-blend-mode: multiply; 
+	}
+
+	.swiper-button-next{
+		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 27 44'%3E%3Cpath d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z' fill%3D'%23DFB866'%2F%3E%3C%2Fsvg%3E") !important;
+	}
+
+	.swiper-button-prev{
+		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 27 44'%3E%3Cpath d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z' fill%3D'%23DFB866'%2F%3E%3C%2Fsvg%3E") !important;
+	}
+	.delivery{
+		
+	background: brown;
+	color: white;
+	width: 112%;
+	/* float: right; */
+	padding: 4px;
+	position: absolute;
+	right: -15px;
+	top: -16px;
+	z-index: 10;
+	text-align: left;
+	text-transform: uppercase;
+
+	}
+
+	.hd_discount {
+		border-radius: 100px;
+		position: absolute;
+		z-index: 4;
+		background: #d8bc44;
+		width: 100px;
+		height: 100px;
+		padding: 29px 0 0;
+		right: 9px;
+		top: 10px;
+		box-shadow: 1px #000 6px;
+		-webkit-box-shadow: -9px 11px 5px -6px rgba(0,0,0,0.33);
+		-moz-box-shadow: -9px 11px 5px -6px rgba(0,0,0,0.33);
+		box-shadow: -9px 11px 5px -6px rgba(0,0,0,0.33);
+		display: none;
+	}
+</style>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+</head>
+<body></div>
+<section class="loading">
+	<img src="img/loading.gif" width="20%" />
+</section>
+<section class="header">
+	<div class="col-xs-2 back no-padding" style="display:none;">
+		<img src="img/last-track-left-arrow.png" width="100%" ">
+	</div>
+	<div class="col-xs-8 title">
+		<span>Welcome</span>
+	</div>
+	<div class="col-xs-2 cartbadge" style="display:none;">
+			<div class="cart"><span class="cart-count">0</span></div>
+	</div>
+</section>
+<section class="shoppage">
+		
+	<section class="details">
+		<!--<div class="outer">
+			<div class="inner">
+			<img src="" alt="" />
+			</div>
+		</div>-->
+		<div class="col-xs-12 no-padding">
+		
+			<div class="swiper-container">
+			        <div class="swiper-wrapper">
+			           	<div class="swiper-slide">
+			           		<img src="img/slide/t1.png" width="100%">
+			           		<img src="img/slide/1-min.png" width="100%" style="margin-top: -151px">
+			        	</div>
+			        	<div class="swiper-slide">
+			        		<img src="img/slide/t2.png" width="100%">
+			           		<img src="img/slide/2-min.png" width="100%" style="margin-top: -151px">
+			        	</div>
+			        	<div class="swiper-slide">
+			        		<img src="img/slide/t3.png" width="100%">
+			           		<img src="img/slide/3-min.png" width="100%" style="margin-top: -151px">
+			        	</div>
+			        	<div class="swiper-slide">
+			        		<img src="img/slide/t4.png" width="100%">
+			           		<img src="img/slide/4-min.png" width="100%" style="margin-top: -151px">
+			        	</div>
+			        	<div class="swiper-slide">
+			        		<img src="img/slide/t5.png" width="100%">
+			           		<img src="img/slide/5-min.png" width="100%" style="margin-top: -151px">
+			        	</div>
+			        	<div class="swiper-slide">
+			        		<img src="img/slide/t6.png" width="100%">
+			           		<img src="img/slide/6-min.png" width="100%" style="margin-top: -151px">
+			        	</div>
+			        	<div class="swiper-slide">
+			        		<img src="img/slide/t7.png" width="100%">
+			           		<img src="img/slide/7-min.png" width="100%" style="margin-top: -151px">
+			        	</div>
+			        </div>
+			        <!-- Add Pagination -->
+			        <div class="swiper-pagination"></div>
+			        <!-- Add Arrows -->
+			        <div class="swiper-button-prev"></div>
+			        <div class="swiper-button-next"></div>
+			</div>
+		</div>
+		<div class="col-xs-12 no-padding" style="z-index:3; bottom: 0 !important; position: fixed; left: 0;">
+					<button style="display: none" class="next_slide">NEXT</button>
+				</div>
+	</section>
+    <nav class="nav">
+		<img src="logo-head.png" width="23%" alt="swipe image" />
+		
+		<div class="current-user">
+			<div class="current-user-data">
+				<h3><a class="name_menu" data-href="profile.html">Loading...</a></h3>
+				<p class="points_menu">Your points: Loading...</p>
+			</div>
+			<div class="avatar"></div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<a class="menu-cat" data-href="shop.html"><p>Catalog</p></a>
+		<a class="menu-dir" data-href="outlet.html"><p>Directory</p></a>
+		<a class="menu-gam" data-href="games.html"><p>Game</p></a>
+		<a class="menu-nws" data-href="news.html"><p>News</p></a>
+		<a class="menu-set" data-href="setting.html"><p>Setting</p></a>
+		<a class="logout" ><p>Log Out</p></a>		
+	</nav>
+</section>
+<div class="ssm-overlay ssm-toggle-nav"></div>
+<script src="js/6fac2730d4.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<script type="text/javascript" src="js/jquery.mycart.js"></script>
+
+<script type="text/javascript" src="js/tools.js"></script>
+<!-- touchSwipe library -->
+<script>
+
+$(".loading").show();
+$(".shoppage").hide();
+$(".addcart").hide();
+$(".nav").hide();
+$(".addcart").hide();
+
+</script>
+<script>
+$(document).ready(function () { // load json file using jquery ajax
+	$(".back").show();
+	$(".loading").fadeOut("fast");
+	$(".shoppage").fadeIn("fast");
+	$(".title").fadeIn("fast");
+	$("img").css("background","none")
+	$(".next_slide").show();
+	$(".back").click(function(){
+		window.location.href="index.html";
+	});
+	localStorage.hd_start="ON";
+	localStorage.hd_kirim_on=0;
+	//localStorage.hd_subdist=31;
+	$(".next_slide").click(function(){
+		$(".swiper-button-next").trigger("click")
+	});
+	var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			//autoplay: 4500,
+			spaceBetween: 30
+	});
+	swiper.on('onReachEnd', function(swiper) {
+	    $(".next_slide").html("START NOW");
+	   	$(".next_slide").click(function(){
+	   		window.location.href="index.html";
+	   	})
+	});
+
+	swiper.on('onSlidePrevStart', function(swiper) {       
+	    $(".next_slide").html("NEXT");
+	    $(".next_slide").click(function(){
+			$(".swiper-button-next").trigger("click")
+		})
+	});
+
+});
+</script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/jquery.slideandswipe.js"></script>
+<link href="style/bootstrap.min.css" rel="stylesheet" >
+<script src="js/bootstrap.min.js" ></script>
+</body>
+</html>
