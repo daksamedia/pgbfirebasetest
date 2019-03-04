@@ -544,10 +544,11 @@ var lib, images, createjs, ss;
 			  var notificationOpenedCallback = function(jsonData) {
 				alert('notificationOpenedCallback: ' + JSON.stringify(jsonData));
 				var notif_data = eval(jsonData)
+				var this_notif_data = notif_data.notification.payload;
 				//alert(notif_data);
-				if(notif_data.data.url){
-					direction = notif_data.data.url;
-					dir_id = notif_data.data.id;
+				if(this_notif_data.additionalData.url){
+					direction = this_notif_data.additionalData.url;
+					dir_id = this_notif_data.additionalData.id;
 				}
 			  };
 			
