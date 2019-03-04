@@ -46,9 +46,7 @@
     <plugin name="cordova-plugin-whitelist" spec="1.3.2" />
     <icon src="icon.png" />
     <splash src="screen.png" />
-    <platform name="android">
-        <resource-file src="google-services.json" target="google-services.json" />
-    </platform>
+   
     <platform name="android">
         <icon density="ldpi" src="res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="res/icon/android/drawable-mdpi-icon.png" />
