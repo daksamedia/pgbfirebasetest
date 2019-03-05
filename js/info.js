@@ -35,23 +35,24 @@ $(document).ready(function()
 
 
 	//WHEN NOTIF IS COMING WHEN APP IS OPENED
-	window.plugins.OneSignal
-	.startInit("14024293-9df2-4fbf-9c61-6c6edfabb7cf")
-	.inFocusDisplaying(2)
-	.handleNotificationReceived(function(jsonData) {
-		var notif_data = eval(jsonData)
-		var this_notif_data = notif_data.notification.payload;
-		var this_notif_title = this_notif_data.title;
-		var this_notif_body = this_notif_data.body;
-		//alert(notif_data);
-		if(this_notif_data.additionalData.url){
-			direction = this_notif_data.additionalData.url;
-			dir_id = this_notif_data.additionalData.id;
-			notif_show(this_notif_title,this_notif_body,dir_id)
-		}
+	$.getScript("../cordova.js",function(){
+		window.plugins.OneSignal
+		.startInit("14024293-9df2-4fbf-9c61-6c6edfabb7cf")
+		.inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.None)
+		.handleNotificationReceived(function(jsonData) {
+			var notif_data = eval(jsonData)
+			var this_notif_data = notif_data.notification.payload;
+			var this_notif_title = this_notif_data.title;
+			var this_notif_body = this_notif_data.body;
+			//alert(notif_data);
+			if(this_notif_data.additionalData.url){
+				direction = this_notif_data.additionalData.url;
+				dir_id = this_notif_data.additionalData.id;
+				notif_show(this_notif_title,this_notif_body,dir_id)
+			}
+		})
+		.endInit();
 	})
-	.endInit();
-	
 	
 	// Get themes
 	
