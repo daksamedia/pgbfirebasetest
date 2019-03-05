@@ -37,7 +37,7 @@ $(document).ready(function()
 	//WHEN NOTIF IS COMING WHEN APP IS OPENED
 	window.plugins.OneSignal
 	.startInit("14024293-9df2-4fbf-9c61-6c6edfabb7cf")
-	.inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.None)
+	.inFocusDisplaying(2)
 	.handleNotificationReceived(function(jsonData) {
 		var notif_data = eval(jsonData)
 		var this_notif_data = notif_data.notification.payload;
