@@ -1,7 +1,56 @@
 //var waiting_time = setTimeout(function(){ location.reload(); },50000);
+var direction="";
+var dir_id="";
 
 $(document).ready(function()
 { 	
+	//DIALOG BOX FOR IN APP
+	$("body").append('<div class="modal fade" id="notif-info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">'+
+	  '<div class="modal-dialog" role="document">'+
+		'<div class="modal-content">'+
+		 ' <div class="modal-header">'+
+		   ' <img src="img/modal-info.png" width="60" />'+
+			'<h3 class="modal-title" id="exampleModalLongTitle"></h3>'+
+		  '</div>'+
+		  '<div class="modal-body">'+
+			'<p></p>'+
+		  '</div>'+
+		  '<div class="clearfix"></div>'+
+		  '<div class="modal-footer">'+
+			'<button type="button" class="col-xs-6 no-padding" data-dismiss="modal">Close</button>'+
+			'<button type="button" class="col-xs-6 no-padding view_now">View</button>'+
+		  '</div>'+
+		'</div>'+
+	  '</div>'+
+	'</div>');
+	
+	function notif_show(title,body,id){
+		$("#notif-info").modal("show")
+		$("#notif-info").find(".modal-title").html(title)		
+		$("#notif-info").find(".modal-body p").html(body)		
+		$("#notif-info").find(".view_now").click(function(){
+			window.location.href=direction+".html?id="+id;			
+		})				
+	}
+
+
+	//WHEN NOTIF IS COMING WHEN APP IS OPENED
+	window.plugins.OneSignal
+	.startInit("14024293-9df2-4fbf-9c61-6c6edfabb7cf")
+	.inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.None)
+	.handleNotificationReceived(function(jsonData) {
+		var notif_data = eval(jsonData)
+		var this_notif_data = notif_data.notification.payload;
+		var this_notif_title = this_notif_data.title;
+		var this_notif_body = this_notif_data.body;
+		//alert(notif_data);
+		if(this_notif_data.additionalData.url){
+			direction = this_notif_data.additionalData.url;
+			dir_id = this_notif_data.additionalData.id;
+			notif_show(this_notif_title,this_notif_body,dir_id)
+		}
+	})
+	.endInit();
 	
 	
 	// Get themes
